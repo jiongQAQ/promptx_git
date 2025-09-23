@@ -1,0 +1,22 @@
+# 临时测试文件
+test*.sql
+test*.puml
+test*.png
+test*.svg
+test*.json
+simple-*.sql
+simple-*.json
+
+# 系统文件
+.DS_Store
+*.log
+
+# 工具沙箱目录
+toolbox/
+
+# 临时文件
+*.txt
+!README.txt
+
+# 日志文件
+logs/

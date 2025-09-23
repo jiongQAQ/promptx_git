@@ -1,0 +1,361 @@
+{
+  "version": "1.0",
+  "timestamp": 1758589897240,
+  "cues": {
+    "JSON DOCX生成器": {
+      "word": "JSON DOCX生成器",
+      "connections": [
+        {
+          "target": "工具注册",
+          "weight": 1582730907513.3
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "工具注册": {
+      "word": "工具注册",
+      "connections": [
+        {
+          "target": "PromptX体系",
+          "weight": 1424457816761.97
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "PromptX体系": {
+      "word": "PromptX体系",
+      "connections": [
+        {
+          "target": "Word文档",
+          "weight": 1282012035085.7732
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Word文档": {
+      "word": "Word文档",
+      "connections": [
+        {
+          "target": "程序化生成",
+          "weight": 1153810831577.1958
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "程序化生成": {
+      "word": "程序化生成",
+      "connections": [
+        {
+          "target": "JSON配置",
+          "weight": 1038429748419.4762
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "JSON配置": {
+      "word": "JSON配置",
+      "connections": [
+        {
+          "target": "DOCX文件",
+          "weight": 934586773577.5286
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "DOCX文件": {
+      "word": "DOCX文件",
+      "connections": [
+        {
+          "target": "Downloads目录",
+          "weight": 841128096219.7758
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Downloads目录": {
+      "word": "Downloads目录",
+      "connections": [
+        {
+          "target": "测试成功",
+          "weight": 757015286597.7982
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "测试成功": {
+      "word": "测试成功",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "样式引用系统": {
+      "word": "样式引用系统",
+      "connections": [
+        {
+          "target": "styleRef",
+          "weight": 1406871917792
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "styleRef": {
+      "word": "styleRef",
+      "connections": [
+        {
+          "target": "层级结构",
+          "weight": 1266184726012.8
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "层级结构": {
+      "word": "层级结构",
+      "connections": [
+        {
+          "target": "children",
+          "weight": 1139566253411.5203
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "children": {
+      "word": "children",
+      "connections": [
+        {
+          "target": "内容类型",
+          "weight": 1025609628070.3682
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "内容类型": {
+      "word": "内容类型",
+      "connections": [
+        {
+          "target": "heading",
+          "weight": 923048665263.3313
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "heading": {
+      "word": "heading",
+      "connections": [
+        {
+          "target": "paragraph",
+          "weight": 830743798736.9982
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "paragraph": {
+      "word": "paragraph",
+      "connections": [
+        {
+          "target": "figure",
+          "weight": 747669418863.2983
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "figure": {
+      "word": "figure",
+      "connections": [
+        {
+          "target": "reference",
+          "weight": 672902476976.9686
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "reference": {
+      "word": "reference",
+      "connections": [
+        {
+          "target": "样式转换",
+          "weight": 605612229279.2719
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "样式转换": {
+      "word": "样式转换",
+      "connections": [
+        {
+          "target": "font",
+          "weight": 545051006351.34454
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "font": {
+      "word": "font",
+      "connections": [
+        {
+          "target": "size",
+          "weight": 490545905716.2102
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "size": {
+      "word": "size",
+      "connections": [
+        {
+          "target": "alignment",
+          "weight": 441491315144.5891
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "alignment": {
+      "word": "alignment",
+      "connections": [
+        {
+          "target": "spacing",
+          "weight": 397342183630.1303
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "spacing": {
+      "word": "spacing",
+      "connections": [
+        {
+          "target": "数据驱动",
+          "weight": 357607965267.1172
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "数据驱动": {
+      "word": "数据驱动",
+      "connections": [
+        {
+          "target": "文档生成",
+          "weight": 321847168740.4055
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "文档生成": {
+      "word": "文档生成",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "战略价值": {
+      "word": "战略价值",
+      "connections": [
+        {
+          "target": "灵活化革命",
+          "weight": 1582730907516
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "灵活化革命": {
+      "word": "灵活化革命",
+      "connections": [
+        {
+          "target": "程序化控制",
+          "weight": 1424457816764.4001
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "程序化控制": {
+      "word": "程序化控制",
+      "connections": [
+        {
+          "target": "文档格式",
+          "weight": 1282012035087.9602
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "文档格式": {
+      "word": "文档格式",
+      "connections": [
+        {
+          "target": "数据驱动设计",
+          "weight": 1153810831579.1643
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "数据驱动设计": {
+      "word": "数据驱动设计",
+      "connections": [
+        {
+          "target": "文档结构",
+          "weight": 1038429748421.2477
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "文档结构": {
+      "word": "文档结构",
+      "connections": [
+        {
+          "target": "数据化",
+          "weight": 934586773579.1229
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "数据化": {
+      "word": "数据化",
+      "connections": [
+        {
+          "target": "可编程文档",
+          "weight": 841128096221.2107
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "可编程文档": {
+      "word": "可编程文档",
+      "connections": [
+        {
+          "target": "API化",
+          "weight": 757015286599.0896
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "API化": {
+      "word": "API化",
+      "connections": [
+        {
+          "target": "TRANSFORM型工具",
+          "weight": 681313757939.1808
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "TRANSFORM型工具": {
+      "word": "TRANSFORM型工具",
+      "connections": [
+        {
+          "target": "JSON",
+          "weight": 613182382145.2626
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "JSON": {
+      "word": "JSON",
+      "connections": [
+        {
+          "target": "DOCX",
+          "weight": 551864143930.7365
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "DOCX": {
+      "word": "DOCX",
+      "connections": [],
+      "recallFrequency": 0
+    }
+  }
+}
