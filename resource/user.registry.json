@@ -4,9 +4,9 @@
   "metadata": {
     "version": "2.0.0",
     "description": "user 级资源注册表",
-    "createdAt": "2025-09-22T17:14:14.480Z",
-    "updatedAt": "2025-09-22T17:14:14.488Z",
-    "resourceCount": 11
+    "createdAt": "2025-09-23T08:36:33.889Z",
+    "updatedAt": "2025-09-23T08:36:33.911Z",
+    "resourceCount": 27
   },
   "resources": [
     {
@@ -35,6 +35,34 @@
         "updatedAt": "2025-09-22T17:14:14.482Z",
         "scannedAt": "2025-09-22T17:14:14.482Z",
         "path": "tool/academic-paper-generator/academic-paper-generator.tool.js"
+      }
+    },
+    {
+      "id": "academic-expression-optimizer",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Academic Expression Optimizer manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/academic-expression-optimizer/academic-expression-optimizer.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.895Z",
+        "updatedAt": "2025-09-23T08:36:33.895Z",
+        "scannedAt": "2025-09-23T08:36:33.895Z",
+        "path": "tool/academic-expression-optimizer/academic-expression-optimizer.manual.md"
+      }
+    },
+    {
+      "id": "academic-expression-optimizer",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Academic Expression Optimizer tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/academic-expression-optimizer/academic-expression-optimizer.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.897Z",
+        "updatedAt": "2025-09-23T08:36:33.897Z",
+        "scannedAt": "2025-09-23T08:36:33.897Z",
+        "path": "tool/academic-expression-optimizer/academic-expression-optimizer.tool.js"
       }
     },
     {
@@ -80,6 +108,34 @@
       }
     },
     {
+      "id": "docx-toc-extractor",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Docx Toc Extractor manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/docx-toc-extractor/docx-toc-extractor.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.899Z",
+        "updatedAt": "2025-09-23T08:36:33.899Z",
+        "scannedAt": "2025-09-23T08:36:33.899Z",
+        "path": "tool/docx-toc-extractor/docx-toc-extractor.manual.md"
+      }
+    },
+    {
+      "id": "docx-toc-extractor",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Docx Toc Extractor tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/docx-toc-extractor/docx-toc-extractor.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.900Z",
+        "updatedAt": "2025-09-23T08:36:33.900Z",
+        "scannedAt": "2025-09-23T08:36:33.900Z",
+        "path": "tool/docx-toc-extractor/docx-toc-extractor.tool.js"
+      }
+    },
+    {
       "id": "fixed-docx-exporter",
       "source": "user",
       "protocol": "tool",
@@ -110,15 +166,141 @@
     {
       "id": "json-docx-generator",
       "source": "user",
+      "protocol": "manual",
+      "name": "Json Docx Generator manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/json-docx-generator/json-docx-generator.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.903Z",
+        "updatedAt": "2025-09-23T08:36:33.903Z",
+        "scannedAt": "2025-09-23T08:36:33.903Z",
+        "path": "tool/json-docx-generator/json-docx-generator.manual.md"
+      }
+    },
+    {
+      "id": "json-docx-generator",
+      "source": "user",
       "protocol": "tool",
       "name": "Json Docx Generator tool",
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/json-docx-generator/json-docx-generator.tool.js",
       "metadata": {
-        "createdAt": "2025-09-22T17:14:14.486Z",
-        "updatedAt": "2025-09-22T17:14:14.486Z",
-        "scannedAt": "2025-09-22T17:14:14.486Z",
+        "createdAt": "2025-09-23T08:36:33.903Z",
+        "updatedAt": "2025-09-23T08:36:33.903Z",
+        "scannedAt": "2025-09-23T08:36:33.903Z",
         "path": "tool/json-docx-generator/json-docx-generator.tool.js"
+      }
+    },
+    {
+      "id": "luban-sql",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Luban Sql manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-sql/luban-sql.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.904Z",
+        "updatedAt": "2025-09-23T08:36:33.904Z",
+        "scannedAt": "2025-09-23T08:36:33.904Z",
+        "path": "tool/luban-sql/luban-sql.manual.md"
+      }
+    },
+    {
+      "id": "luban-sql",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Luban Sql tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-sql/luban-sql.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.905Z",
+        "updatedAt": "2025-09-23T08:36:33.905Z",
+        "scannedAt": "2025-09-23T08:36:33.905Z",
+        "path": "tool/luban-sql/luban-sql.tool.js"
+      }
+    },
+    {
+      "id": "luban-table",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Luban Table manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-table/luban-table.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.905Z",
+        "updatedAt": "2025-09-23T08:36:33.905Z",
+        "scannedAt": "2025-09-23T08:36:33.905Z",
+        "path": "tool/luban-table/luban-table.manual.md"
+      }
+    },
+    {
+      "id": "luban-table",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Luban Table tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-table/luban-table.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.906Z",
+        "updatedAt": "2025-09-23T08:36:33.906Z",
+        "scannedAt": "2025-09-23T08:36:33.906Z",
+        "path": "tool/luban-table/luban-table.tool.js"
+      }
+    },
+    {
+      "id": "luban-uml",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Luban Uml manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.907Z",
+        "updatedAt": "2025-09-23T08:36:33.907Z",
+        "scannedAt": "2025-09-23T08:36:33.907Z",
+        "path": "tool/luban-uml/luban-uml.manual.md"
+      }
+    },
+    {
+      "id": "luban-uml",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Luban Uml tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.907Z",
+        "updatedAt": "2025-09-23T08:36:33.907Z",
+        "scannedAt": "2025-09-23T08:36:33.907Z",
+        "path": "tool/luban-uml/luban-uml.tool.js"
+      }
+    },
+    {
+      "id": "luban-word",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Luban Word manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-word/luban-word.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.908Z",
+        "updatedAt": "2025-09-23T08:36:33.908Z",
+        "scannedAt": "2025-09-23T08:36:33.908Z",
+        "path": "tool/luban-word/luban-word.manual.md"
+      }
+    },
+    {
+      "id": "luban-word",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Luban Word tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/luban-word/luban-word.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.909Z",
+        "updatedAt": "2025-09-23T08:36:33.909Z",
+        "scannedAt": "2025-09-23T08:36:33.909Z",
+        "path": "tool/luban-word/luban-word.tool.js"
       }
     },
     {
@@ -150,6 +332,34 @@
       }
     },
     {
+      "id": "txt-creator",
+      "source": "user",
+      "protocol": "manual",
+      "name": "Txt Creator manual",
+      "description": "manual类型的资源",
+      "reference": "@user://.promptx/resource/tool/txt-creator/txt-creator.manual.md",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.910Z",
+        "updatedAt": "2025-09-23T08:36:33.910Z",
+        "scannedAt": "2025-09-23T08:36:33.910Z",
+        "path": "tool/txt-creator/txt-creator.manual.md"
+      }
+    },
+    {
+      "id": "txt-creator",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Txt Creator tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/txt-creator/txt-creator.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-23T08:36:33.910Z",
+        "updatedAt": "2025-09-23T08:36:33.910Z",
+        "scannedAt": "2025-09-23T08:36:33.910Z",
+        "path": "tool/txt-creator/txt-creator.tool.js"
+      }
+    },
+    {
       "id": "web-automation-test",
       "source": "user",
       "protocol": "tool",
@@ -165,12 +375,13 @@
     }
   ],
   "stats": {
-    "totalResources": 11,
+    "totalResources": 27,
     "byProtocol": {
-      "tool": 11
+      "manual": 8,
+      "tool": 19
     },
     "bySource": {
-      "user": 11
+      "user": 27
     }
   }
 }

@@ -1,0 +1,70 @@
+{
+  "structure": [
+    {
+      "id": "abstract",
+      "title": "摘要",
+      "level": 1
+    },
+    {
+      "id": "introduction",
+      "title": "1. 引言",
+      "level": 1
+    },
+    {
+      "id": "related_work",
+      "title": "2. 相关工作",
+      "level": 1,
+      "children": [
+        {
+          "id": "traditional_methods",
+          "title": "2.1 传统方法",
+          "level": 2
+        },
+        {
+          "id": "deep_learning_methods",
+          "title": "2.2 深度学习方法",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "methodology",
+      "title": "3. 方法论",
+      "level": 1,
+      "children": [
+        {
+          "id": "model_architecture",
+          "title": "3.1 模型架构",
+          "level": 2
+        },
+        {
+          "id": "training_strategy",
+          "title": "3.2 训练策略",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "experiments",
+      "title": "4. 实验结果",
+      "level": 1,
+      "children": [
+        {
+          "id": "experimental_setup",
+          "title": "4.1 实验设置",
+          "level": 2
+        },
+        {
+          "id": "results_analysis",
+          "title": "4.2 结果分析",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "5. 结论",
+      "level": 1
+    }
+  ]
+}
