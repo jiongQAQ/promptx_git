@@ -1,0 +1,63 @@
+{"level":30,"time":1758626183502,"pid":63460,"package":"@promptx/mcp-server","file":"mcp-server.js","line":28,"msg":"PromptX MCP Server v1.18.0"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: discover"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: action"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: init"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: recall"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: remember"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: toolx"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1327,"msg":"Registered 6 PromptX tools"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] IDLE -> STARTING"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":383,"msg":"Starting MCP server..."}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":662,"msg":"Connecting stdio transport..."}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":665,"msg":"Stdio transport connected"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] STARTING -> RUNNING"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":391,"msg":"MCP server started successfully"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":711,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":712,"msg":"Listening for JSON-RPC messages on stdin"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1385,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626183503,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1386,"msg":"Listening for JSON-RPC messages on stdin"}
+{"level":30,"time":1758626228412,"pid":64430,"package":"@promptx/mcp-server","file":"mcp-server.js","line":28,"msg":"PromptX MCP Server v1.18.0"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: discover"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: action"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: init"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: recall"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: remember"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: toolx"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1327,"msg":"Registered 6 PromptX tools"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] IDLE -> STARTING"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":383,"msg":"Starting MCP server..."}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":662,"msg":"Connecting stdio transport..."}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":665,"msg":"Stdio transport connected"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] STARTING -> RUNNING"}
+{"level":30,"time":1758626228413,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":391,"msg":"MCP server started successfully"}
+{"level":30,"time":1758626228414,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":711,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626228414,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":712,"msg":"Listening for JSON-RPC messages on stdin"}
+{"level":30,"time":1758626228414,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1385,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626228414,"pid":64430,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1386,"msg":"Listening for JSON-RPC messages on stdin"}
+{"level":30,"time":1758626278530,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1365,"msg":"\nReceived SIGINT, shutting down gracefully..."}
+{"level":30,"time":1758626278530,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":419,"msg":"Graceful shutdown initiated with 5000ms timeout"}
+{"level":30,"time":1758626278530,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] RUNNING -> STOPPING"}
+{"level":30,"time":1758626278530,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":404,"msg":"Stopping MCP server..."}
+{"level":30,"time":1758626278531,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":671,"msg":"Disconnecting stdio transport..."}
+{"level":30,"time":1758626278531,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":676,"msg":"Stdio transport disconnected"}
+{"level":30,"time":1758626278531,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] STOPPING -> STOPPED"}
+{"level":30,"time":1758626278531,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":410,"msg":"MCP server stopped"}
+{"level":30,"time":1758626278531,"pid":63460,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1369,"msg":"Server stopped cleanly"}
+{"level":30,"time":1758626298504,"pid":65556,"package":"@promptx/mcp-server","file":"mcp-server.js","line":28,"msg":"PromptX MCP Server v1.18.0"}
+{"level":30,"time":1758626298504,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: discover"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: action"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: init"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: recall"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: remember"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":456,"msg":"Tool registered: toolx"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1327,"msg":"Registered 6 PromptX tools"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] IDLE -> STARTING"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":383,"msg":"Starting MCP server..."}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":662,"msg":"Connecting stdio transport..."}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":665,"msg":"Stdio transport connected"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":445,"msg":"[STATE_CHANGE] STARTING -> RUNNING"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":391,"msg":"MCP server started successfully"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":711,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":712,"msg":"Listening for JSON-RPC messages on stdin"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1385,"msg":"STDIO Server Ready"}
+{"level":30,"time":1758626298505,"pid":65556,"package":"@promptx/mcp-server","file":"chunk-6B7M2P6M.js","line":1386,"msg":"Listening for JSON-RPC messages on stdin"}

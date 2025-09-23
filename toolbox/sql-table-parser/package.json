@@ -1,0 +1,9 @@
+{
+  "name": "toolbox-sql-table-parser",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: sql-table-parser",
+  "private": true,
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}

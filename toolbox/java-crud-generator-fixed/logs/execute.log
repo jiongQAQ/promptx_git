@@ -1,0 +1,32 @@
+2025-09-20T07:16:01.494Z [INFO] [java-crud-generator-fixed] 开始生成Java CRUD代码 { params: { sql: 'CREATE TABLE products (\n  id BIGINT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(255) NOT NULL,\n  status TINYINT DEFAULT 1\n);' } }
+2025-09-20T07:16:01.495Z [ERROR] [java-crud-generator-fixed] 代码生成失败 { error: TypeError: Cannot read properties of undefined (reading 'replace')
+       at Object.generateCRUDFiles (java-crud-generator-fixed.js:249:44)
+       at Object.execute (java-crud-generator-fixed.js:81:34)
+       at _ToolSandbox.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:12620:41)
+       at async ToolCommand.executeNormalMode (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17578:26)
+       at async ToolCommand.executeToolInternal (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17547:22)
+       at async ToolCommand.getContent (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17430:26)
+       at async ToolCommand.assembleAreas (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14108:27)
+       at async ToolCommand.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14186:11)
+       at async PouchStateMachine.transition (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:13564:24)
+       at async PouchCLI.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:18074:26) }
+2025-09-20T07:16:11.367Z [INFO] [java-crud-generator-fixed] 开始生成Java CRUD代码 { params: { sql: 'CREATE TABLE products (\n  id BIGINT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(255) NOT NULL,\n  status TINYINT DEFAULT 1\n);', basePackage: 'com.graduation', outputPath: 'project/backend/src/main/java', author: '鲁班' } }
+2025-09-20T07:16:11.484Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/entity/Products.java
+2025-09-20T07:16:11.493Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/mapper/ProductsMapper.java
+2025-09-20T07:16:11.501Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/service/ProductsService.java
+2025-09-20T07:16:11.509Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/service/impl/ProductsServiceImpl.java
+2025-09-20T07:16:11.518Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/controller/ProductsController.java
+2025-09-20T07:16:11.526Z [INFO] [java-crud-generator-fixed] 生成文件: project/backend/src/main/java/com/graduation/dto/ProductsDTO.java
+2025-09-20T07:16:11.526Z [INFO] [java-crud-generator-fixed] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-20T07:16:20.898Z [INFO] [java-crud-generator-fixed] 开始生成Java CRUD代码 { params: { sql: "CREATE TABLE products (\n  id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '产品ID',\n  name VARCHAR(255) NOT NULL COMMENT '产品名称',\n  description TEXT COMMENT '产品描述',\n  price DECIMAL(10,2) NOT NULL COMMENT '价格',\n  stock INT DEFAULT 0 COMMENT '库存数量',\n  category VARCHAR(100) COMMENT '产品分类',\n  status TINYINT DEFAULT 1 COMMENT '【枚举】：0-下架，1-上架，2-预售',\n  create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',\n  update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',\n  is_deleted TINYINT DEFAULT 0 COMMENT '是否删除：0-否，1-是'\n) COMMENT '产品表';\n\nCREATE TABLE payments (\n  id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '支付ID',\n  order_id BIGINT NOT NULL COMMENT '订单ID',\n  user_id BIGINT NOT NULL COMMENT '用户ID',\n  amount DECIMAL(10,2) NOT NULL COMMENT '支付金额',\n  payment_method VARCHAR(50) COMMENT '支付方式',\n  status TINYINT DEFAULT 0 COMMENT '【枚举】：0-待支付，1-已支付，2-支付失败，3-已退款',\n  transaction_id VARCHAR(100) COMMENT '第三方交易号',\n  create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',\n  update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',\n  is_deleted TINYINT DEFAULT 0 COMMENT '是否删除：0-否，1-是'\n) COMMENT '支付记录表';" } }
+2025-09-20T07:16:20.899Z [ERROR] [java-crud-generator-fixed] 代码生成失败 { error: TypeError: Cannot read properties of undefined (reading 'replace')
+       at Object.generateCRUDFiles (java-crud-generator-fixed.js:249:44)
+       at Object.execute (java-crud-generator-fixed.js:81:34)
+       at _ToolSandbox.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:12620:41)
+       at async ToolCommand.executeNormalMode (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17578:26)
+       at async ToolCommand.executeToolInternal (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17547:22)
+       at async ToolCommand.getContent (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17430:26)
+       at async ToolCommand.assembleAreas (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14108:27)
+       at async ToolCommand.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14186:11)
+       at async PouchStateMachine.transition (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:13564:24)
+       at async PouchCLI.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:18074:26) }

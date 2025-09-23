@@ -1,0 +1,85 @@
+{"level":50,"time":1758547133116,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758547133116,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758547133119,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758547133119,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758547297418,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758547297426,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758547297426,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758547949455,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 测试执行失败"}
+{"level":50,"time":1758549004901,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 4 执行失败"}
+{"level":50,"time":1758549005404,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 5 执行失败"}
+{"level":50,"time":1758549005405,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 测试执行失败"}
+{"level":50,"time":1758549070595,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 3 执行失败"}
+{"level":50,"time":1758549071098,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 4 执行失败"}
+{"level":50,"time":1758549071099,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 测试执行失败"}
+{"level":50,"time":1758549117677,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 2 执行失败"}
+{"level":50,"time":1758549118179,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 3 执行失败"}
+{"level":50,"time":1758549118180,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 测试执行失败"}
+{"level":50,"time":1758549152143,"pid":32495,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:web-automation-test] 动作 2 执行失败"}
+{"level":50,"time":1758553966426,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758553966426,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758553966429,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758553966430,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758554047983,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758554047990,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758554047990,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758554236795,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758554236800,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758554236800,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758556634574,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758556634581,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758556634581,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758556975734,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758556975742,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758556975742,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758556986879,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758556986879,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758556986879,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: 路径越权: /tmp/docx-editor-old.tool.js 不在允许的目录范围内 [/Users/jiongjiong/.promptx]"}
+{"level":50,"time":1758557101693,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: 文件或目录不存在: /Users/jiongjiong/.promptx/resource/tool/docx-editor/docx-editor.tool.js"}
+{"level":50,"time":1758557101693,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: 文件或目录不存在: /Users/jiongjiong/.promptx/resource/tool/docx-editor/docx-editor.tool.js"}
+{"level":50,"time":1758557110195,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: 文件或目录不存在: /Users/jiongjiong/.promptx/resource/tool/docx-editor/docx-editor-enhanced.tool.js"}
+{"level":50,"time":1758557110195,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: 文件或目录不存在: /Users/jiongjiong/.promptx/resource/tool/docx-editor/docx-editor-enhanced.tool.js"}
+{"level":50,"time":1758557286682,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758557286689,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758557286689,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758557683576,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:docx-editor-perfect"}
+{"level":50,"time":1758557683576,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758557683576,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:docx-editor-perfect"}
+{"level":50,"time":1758557683576,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:docx-editor-perfect"}
+{"level":50,"time":1758557688070,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758557688079,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758557688079,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758557833394,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758557833394,"pid":42704,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: 不支持的方法: undefined"}
+{"level":50,"time":1758558182040,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558182040,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758558182042,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758558182043,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758558271028,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558271036,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558271036,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758558545035,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Parameters must be an object for execute/rebuild mode"}
+{"level":50,"time":1758558784508,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558784516,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558784516,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758558833526,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:academic-paper-generator] 学术论文生成失败"}
+{"level":50,"time":1758558865269,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Parameters must be an object for execute/rebuild mode"}
+{"level":50,"time":1758558870824,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758558870824,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758558870824,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Could not find exact match for edit:\n        TabStopPosition, TabStopType,"}
+{"level":50,"time":1758558962208,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558962216,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758558962216,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758560874139,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758561052880,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:json-docx-generator"}
+{"level":50,"time":1758561052880,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758561052880,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:json-docx-generator"}
+{"level":50,"time":1758561052880,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:json-docx-generator"}
+{"level":50,"time":1758561061582,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758561061591,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758561061591,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758561142830,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:json-docx-generator] JSON DOCX文档生成失败"}
+{"level":50,"time":1758561190240,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758561254480,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758561254489,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758561254489,"pid":51219,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}

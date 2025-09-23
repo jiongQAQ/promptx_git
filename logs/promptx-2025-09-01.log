@@ -1,0 +1,4 @@
+{"level":30,"time":1756731342956,"pid":84025,"package":"@promptx/mcp-server","file":"chunk-DDJA2SUA.js","line":289,"msg":"✅ MCP HTTP Server started on http://localhost:5203/mcp"}
+{"level":30,"time":1756731342957,"pid":84025,"package":"@promptx/mcp-server","file":"chunk-DDJA2SUA.js","line":290,"msg":"📊 Mode: Stateless (Schema)"}
+{"level":30,"time":1756731342957,"pid":84025,"package":"@promptx/mcp-server","file":"chunk-DDJA2SUA.js","line":291,"msg":"🔧 Tools: 7 registered"}
+{"level":30,"time":1757177099197,"pid":84025,"package":"@promptx/mcp-server","file":"chunk-DDJA2SUA.js","line":316,"msg":"MCP HTTP Server stopped gracefully"}

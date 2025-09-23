@@ -1,0 +1,10 @@
+{
+  "name": "toolbox-web-automation-test",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: web-automation-test",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "puppeteer": "^21.11.0"
+  }
+}

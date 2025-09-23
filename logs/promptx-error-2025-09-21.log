@@ -1,0 +1,28 @@
+{"level":50,"time":1758467016509,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758467016509,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758467016512,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758467016513,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758467793067,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758467793071,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758467793071,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758468305705,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758468305711,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758468305711,"pid":38140,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758471194443,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758471194443,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758471194446,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758471194446,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758471586924,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758471586930,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758471586930,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758471597903,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:er-diagram-generator"}
+{"level":50,"time":1758471597903,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758471597903,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:er-diagram-generator"}
+{"level":50,"time":1758471597903,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:er-diagram-generator"}
+{"level":50,"time":1758471602861,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758471602864,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758471602864,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758471609296,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:er-diagram-generator"}
+{"level":50,"time":1758471609296,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758471609297,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:er-diagram-generator"}
+{"level":50,"time":1758471609297,"pid":48095,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:er-diagram-generator"}

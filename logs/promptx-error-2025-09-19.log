@@ -1,0 +1,221 @@
+{"level":50,"time":1758284735265,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758284735265,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758284735269,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758284735270,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758286290882,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:java-crud-generator"}
+{"level":50,"time":1758286290882,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758286290882,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:java-crud-generator"}
+{"level":50,"time":1758286290882,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:java-crud-generator"}
+{"level":50,"time":1758286294702,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758286294706,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758286294706,"pid":46843,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758299094027,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758299094027,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758299094030,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758299094030,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758299486266,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:api-validator"}
+{"level":50,"time":1758299486266,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758299486266,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:api-validator"}
+{"level":50,"time":1758299486266,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:api-validator"}
+{"level":50,"time":1758299515202,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:api-validator"}
+{"level":50,"time":1758299515202,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758299515202,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:api-validator"}
+{"level":50,"time":1758299515202,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:api-validator"}
+{"level":50,"time":1758299522518,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758299522523,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758299522523,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758299531982,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":12592,"msg":"[ToolSandbox] 参数验证失败:"}
+{"level":50,"time":1758299531983,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: 参数验证失败: tool.getSchema is not a function"}
+{"level":50,"time":1758299869473,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758300094512,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Parameters must be an object for execute/rebuild mode"}
+{"level":50,"time":1758300208478,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300208482,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300208482,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758300617161,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758300622428,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300622432,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300622432,"pid":83801,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758300981104,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300981104,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758300981107,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758300981107,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758300985291,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300985296,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758300985296,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758301034997,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301035002,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301035002,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758301176974,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301176979,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301176979,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758301763505,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758301768548,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301768553,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758301768553,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758301968742,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758301968742,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758301968743,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: ENOENT: no such file or directory, open '/Users/jiongjiong/.promptx/resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js'"}
+{"level":50,"time":1758302487799,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758302547879,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758302681782,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302723638,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302767953,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302767954,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302804970,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302804970,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302845596,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302845596,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302866110,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758302866114,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758302866114,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758302942703,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302942703,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302960993,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302960993,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758302981176,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758302981176,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758303296609,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758303301819,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758303301823,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758303301823,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758303833723,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758303833724,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758303873458,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758303873458,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758303900415,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758303900415,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758303942387,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758303942387,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758303978037,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758303978037,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758304032740,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758304032740,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758304212867,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] 文件写入失败"}
+{"level":50,"time":1758304212867,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758304263754,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758304276088,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758304276088,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758304276089,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: ENOENT: no such file or directory, stat '/Users/jiongjiong/.promptx/resource/tool/java-crud-generator/java-crud-generator-v2.tool.js'"}
+{"level":50,"time":1758304442973,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758304442977,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758304442977,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758304464267,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":10704,"msg":"[ToolModuleImport] Failed to import @tool://filesystem: Cannot find module '@tool://filesystem'\nRequire stack:\n- /Users/jiongjiong/.promptx/toolbox/java-crud-generator-v3/package.json"}
+{"level":50,"time":1758304464268,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v3] 文件写入失败"}
+{"level":50,"time":1758304464268,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v3] Java CRUD代码生成失败"}
+{"level":50,"time":1758304485868,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758304485868,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758304485868,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Cannot read properties of undefined (reading 'replace')"}
+{"level":50,"time":1758304749386,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v3] Java CRUD代码生成失败"}
+{"level":50,"time":1758304974549,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758304989769,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758304989776,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758304989776,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758305053284,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305053286,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305053286,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758305240275,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305240277,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305240277,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758305569314,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305618313,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305710377,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758305774459,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305802152,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305895537,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305910805,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305916025,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2] Java CRUD代码生成失败"}
+{"level":50,"time":1758305993302,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305993305,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758305993305,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758306161203,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2-1] 生成失败"}
+{"level":50,"time":1758306171731,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2-1] 生成失败"}
+{"level":50,"time":1758306275859,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306275865,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306275865,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758306519261,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-generator-v2-1] 生成失败"}
+{"level":50,"time":1758306810906,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306810910,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306810910,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758306834327,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306834329,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306834329,"pid":90908,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758306974195,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758306974195,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758306974198,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":432,"msg":"[Network] Failed to load"}
+{"level":50,"time":1758306974199,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758307038659,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758307038664,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758307038664,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758308173919,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758308173923,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758308173923,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758308212721,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758308212721,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758308212721,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Cannot read properties of undefined (reading 'replace')"}
+{"level":50,"time":1758308853328,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758308853333,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758308853333,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758309414335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758309535752,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758309535759,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758309535759,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758309588031,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758309588031,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758309588031,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Cannot read properties of undefined (reading 'replace')"}
+{"level":50,"time":1758309705028,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758309705032,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758309705032,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758309721516,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":10704,"msg":"[ToolModuleImport] Failed to import @tool://filesystem: Cannot find module '@tool://filesystem'\nRequire stack:\n- /Users/jiongjiong/.promptx/toolbox/java-entity-crud-generator-fixed/package.json"}
+{"level":50,"time":1758309721516,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-entity-crud-generator-fixed] 文件写入失败"}
+{"level":50,"time":1758309721517,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-entity-crud-generator-fixed] 代码生成失败"}
+{"level":50,"time":1758309930365,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758309930365,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758309930365,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758309930365,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758310004787,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758310004787,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758310004787,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758310004787,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:java-entity-crud-generator-final"}
+{"level":50,"time":1758310009018,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310009024,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310009024,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758310280743,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758310405583,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310405588,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310405588,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758310519592,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758310519592,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758310519592,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: 路径越权: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Products.java 不在允许的目录范围内 [/Users/jiongjiong/.promptx]"}
+{"level":50,"time":1758310650059,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310650067,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758310650067,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758310739335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:java-entity-crud-generator-direct-write"}
+{"level":50,"time":1758310739335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758310739335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:java-entity-crud-generator-direct-write"}
+{"level":50,"time":1758310739335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:java-entity-crud-generator-direct-write"}
+{"level":50,"time":1758310773335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7788,"msg":"[ResourceManager] Resource not found: tool:java-crud-generator-direct-write"}
+{"level":50,"time":1758310773335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":7789,"msg":"[ResourceManager] Available tool resources:"}
+{"level":50,"time":1758310773335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12291,"msg":"[ToolSandbox] Analysis failed: Failed to load tool: Resource not found: tool:java-crud-generator-direct-write"}
+{"level":50,"time":1758310773335,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Failed to load tool: Resource not found: tool:java-crud-generator-direct-write"}
+{"level":50,"time":1758310808605,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-entity-crud-generator-final] 代码生成失败"}
+{"level":50,"time":1758348375555,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758348524913,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758348524920,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758348524920,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758348812943,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758348830383,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758348830391,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758348830391,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758349144989,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758349144995,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758349144995,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758349698529,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":1675,"msg":"[Prime] Failed to find prime word, network empty or no suitable node"}
+{"level":50,"time":1758349803244,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758349803252,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758349803253,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758349823542,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":10704,"msg":"[ToolModuleImport] Failed to import @tool://filesystem: Cannot find module '@tool://filesystem'\nRequire stack:\n- /Users/jiongjiong/.promptx/toolbox/java-crud-complete-generator/package.json"}
+{"level":50,"time":1758349823542,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-complete-generator] 代码生成失败"}
+{"level":50,"time":1758349929570,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:java-crud-complete-generator] 代码生成失败"}
+{"level":50,"time":1758350116100,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
+{"level":50,"time":1758350116100,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
+{"level":50,"time":1758350116101,"pid":12525,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Cannot read properties of undefined (reading 'replace')"}

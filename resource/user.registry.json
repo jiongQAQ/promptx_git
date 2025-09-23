@@ -1,0 +1,176 @@
+{
+  "version": "2.0.0",
+  "source": "user",
+  "metadata": {
+    "version": "2.0.0",
+    "description": "user 级资源注册表",
+    "createdAt": "2025-09-22T17:14:14.480Z",
+    "updatedAt": "2025-09-22T17:14:14.488Z",
+    "resourceCount": 11
+  },
+  "resources": [
+    {
+      "id": "academic-paper-generator-fixed",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Academic Paper Generator Fixed tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/academic-paper-generator/academic-paper-generator-fixed.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.482Z",
+        "updatedAt": "2025-09-22T17:14:14.482Z",
+        "scannedAt": "2025-09-22T17:14:14.482Z",
+        "path": "tool/academic-paper-generator/academic-paper-generator-fixed.tool.js"
+      }
+    },
+    {
+      "id": "academic-paper-generator",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Academic Paper Generator tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/academic-paper-generator/academic-paper-generator.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.482Z",
+        "updatedAt": "2025-09-22T17:14:14.482Z",
+        "scannedAt": "2025-09-22T17:14:14.482Z",
+        "path": "tool/academic-paper-generator/academic-paper-generator.tool.js"
+      }
+    },
+    {
+      "id": "docx-editor-fixed",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Docx Editor Fixed tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-fixed.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.483Z",
+        "updatedAt": "2025-09-22T17:14:14.483Z",
+        "scannedAt": "2025-09-22T17:14:14.483Z",
+        "path": "tool/docx-editor/docx-editor-fixed.tool.js"
+      }
+    },
+    {
+      "id": "docx-editor-perfect",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Docx Editor Perfect tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-perfect.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.483Z",
+        "updatedAt": "2025-09-22T17:14:14.483Z",
+        "scannedAt": "2025-09-22T17:14:14.483Z",
+        "path": "tool/docx-editor/docx-editor-perfect.tool.js"
+      }
+    },
+    {
+      "id": "docx-editor-ultimate",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Docx Editor Ultimate tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-ultimate.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.484Z",
+        "updatedAt": "2025-09-22T17:14:14.484Z",
+        "scannedAt": "2025-09-22T17:14:14.484Z",
+        "path": "tool/docx-editor/docx-editor-ultimate.tool.js"
+      }
+    },
+    {
+      "id": "fixed-docx-exporter",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Fixed Docx Exporter tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/fixed-docx-exporter/fixed-docx-exporter.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.485Z",
+        "updatedAt": "2025-09-22T17:14:14.485Z",
+        "scannedAt": "2025-09-22T17:14:14.485Z",
+        "path": "tool/fixed-docx-exporter/fixed-docx-exporter.tool.js"
+      }
+    },
+    {
+      "id": "frontend-api-generator",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Frontend Api Generator tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/frontend-api-generator/frontend-api-generator.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.486Z",
+        "updatedAt": "2025-09-22T17:14:14.486Z",
+        "scannedAt": "2025-09-22T17:14:14.486Z",
+        "path": "tool/frontend-api-generator/frontend-api-generator.tool.js"
+      }
+    },
+    {
+      "id": "json-docx-generator",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Json Docx Generator tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/json-docx-generator/json-docx-generator.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.486Z",
+        "updatedAt": "2025-09-22T17:14:14.486Z",
+        "scannedAt": "2025-09-22T17:14:14.486Z",
+        "path": "tool/json-docx-generator/json-docx-generator.tool.js"
+      }
+    },
+    {
+      "id": "sql-er-visualizer",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Sql Er Visualizer tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/sql-er-visualizer/sql-er-visualizer.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.487Z",
+        "updatedAt": "2025-09-22T17:14:14.487Z",
+        "scannedAt": "2025-09-22T17:14:14.487Z",
+        "path": "tool/sql-er-visualizer/sql-er-visualizer.tool.js"
+      }
+    },
+    {
+      "id": "sql-table-parser",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Sql Table Parser tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/sql-table-parser/sql-table-parser.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.488Z",
+        "updatedAt": "2025-09-22T17:14:14.488Z",
+        "scannedAt": "2025-09-22T17:14:14.488Z",
+        "path": "tool/sql-table-parser/sql-table-parser.tool.js"
+      }
+    },
+    {
+      "id": "web-automation-test",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Web Automation Test tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/web-automation-test/web-automation-test.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-22T17:14:14.488Z",
+        "updatedAt": "2025-09-22T17:14:14.488Z",
+        "scannedAt": "2025-09-22T17:14:14.488Z",
+        "path": "tool/web-automation-test/web-automation-test.tool.js"
+      }
+    }
+  ],
+  "stats": {
+    "totalResources": 11,
+    "byProtocol": {
+      "tool": 11
+    },
+    "bySource": {
+      "user": 11
+    }
+  }
+}

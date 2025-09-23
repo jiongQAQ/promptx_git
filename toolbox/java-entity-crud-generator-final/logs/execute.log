@@ -1,0 +1,34 @@
+2025-09-19T19:27:03.997Z [INFO] [java-entity-crud-generator-final] 开始生成Java代码 { sqlLength: 691 }
+2025-09-19T19:27:03.998Z [INFO] [java-entity-crud-generator-final] SQL分割结果 { statementCount: 1 }
+2025-09-19T19:27:03.998Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'courses' }
+2025-09-19T19:27:03.999Z [INFO] [java-entity-crud-generator-final] SQL解析完成 { tableCount: 1 }
+2025-09-19T19:27:03.999Z [INFO] [java-entity-crud-generator-final] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-19T19:28:23.160Z [INFO] [java-entity-crud-generator-final] 开始生成Java代码 { sqlLength: 2321 }
+2025-09-19T19:28:23.160Z [INFO] [java-entity-crud-generator-final] SQL分割结果 { statementCount: 5 }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'products' }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'payments' }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'notifications' }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'courses' }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'devices' }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] SQL解析完成 { tableCount: 5 }
+2025-09-19T19:28:23.161Z [INFO] [java-entity-crud-generator-final] 代码生成完成 { tableCount: 5, fileCount: 30 }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 开始生成Java代码 { sqlLength: 2321 }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] SQL分割结果 { statementCount: 5 }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'products' }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'payments' }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'notifications' }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'courses' }
+2025-09-19T19:34:13.669Z [INFO] [java-entity-crud-generator-final] 解析到表 { tableName: 'devices' }
+2025-09-19T19:34:13.670Z [INFO] [java-entity-crud-generator-final] SQL解析完成 { tableCount: 5 }
+2025-09-19T19:34:13.670Z [INFO] [java-entity-crud-generator-final] 代码生成完成 { tableCount: 5, fileCount: 30 }
+2025-09-19T19:40:08.604Z [ERROR] [java-entity-crud-generator-final] 代码生成失败 { error: TypeError: Cannot read properties of undefined (reading 'length')
+       at Object.execute (java-entity-crud-generator-final.js:89:60)
+       at _ToolSandbox.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:12620:41)
+       at async ToolCommand.executeNormalMode (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17578:26)
+       at async ToolCommand.executeToolInternal (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17547:22)
+       at async ToolCommand.getContent (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17430:26)
+       at async ToolCommand.assembleAreas (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14108:27)
+       at async ToolCommand.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14186:11)
+       at async PouchStateMachine.transition (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:13564:24)
+       at async PouchCLI.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:18074:26)
+       at async Object.handler (file:///Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/dist/chunk-I5OG24NJ.js:684:20) }

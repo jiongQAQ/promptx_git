@@ -1,0 +1,4 @@
+2025-09-21T15:25:35.298Z [INFO] [sql-er-visualizer] 开始解析SQL语句 { sqlLength: 4940 }
+2025-09-21T15:25:35.299Z [INFO] [sql-er-visualizer] 解析完成，共发现 7 个表
+2025-09-21T15:25:35.299Z [INFO] [sql-er-visualizer] 识别关系完成，共发现 4 个关系
+2025-09-21T15:25:35.304Z [INFO] [sql-er-visualizer] HTML文件导出成功 { path: '/Users/jiongjiong/.promptx/canteen-er-diagram.html' }

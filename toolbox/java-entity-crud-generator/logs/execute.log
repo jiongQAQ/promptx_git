@@ -1,0 +1,16 @@
+2025-09-19T18:56:28.245Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 478 }
+2025-09-19T18:56:28.257Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-19T19:01:13.104Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 2321 }
+2025-09-19T19:01:13.109Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 5, fileCount: 30 }
+2025-09-19T19:07:45.529Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 471 }
+2025-09-19T19:07:45.532Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-19T19:09:37.943Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 471 }
+2025-09-19T19:09:37.945Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-19T19:13:09.863Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 378 }
+2025-09-19T19:13:09.865Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 1, fileCount: 6 }
+2025-09-19T19:19:05.086Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 378 }
+2025-09-19T19:19:05.087Z [INFO] [java-entity-crud-generator] SQL解析完成 { tableCount: 0 }
+2025-09-19T19:19:05.087Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 0, fileCount: 0 }
+2025-09-19T19:19:19.235Z [INFO] [java-entity-crud-generator] 开始生成Java代码 { sqlLength: 378 }
+2025-09-19T19:19:19.235Z [INFO] [java-entity-crud-generator] SQL解析完成 { tableCount: 0 }
+2025-09-19T19:19:19.235Z [INFO] [java-entity-crud-generator] 代码生成完成 { tableCount: 0, fileCount: 0 }

@@ -1,0 +1,10 @@
+{
+  "name": "toolbox-java-crud-generator-enhanced",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: java-crud-generator-enhanced",
+  "private": true,
+  "dependencies": {
+    "@tool://sql-table-parser": "latest",
+    "@tool://filesystem": "latest"
+  }
+}

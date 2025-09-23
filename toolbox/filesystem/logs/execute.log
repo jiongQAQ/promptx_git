@@ -1,0 +1,560 @@
+2025-09-19T12:49:42.976Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator' }
+2025-09-19T12:49:42.990Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T12:49:42.991Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T12:51:08.835Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator/java-crud-generator.tool.js' }
+2025-09-19T12:51:08.835Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T12:51:08.836Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T12:52:18.520Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator/java-crud-generator.tool.js' }
+2025-09-19T12:52:18.521Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T12:52:18.524Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T16:27:43.526Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/api-validator/test-api-validator.js' }
+2025-09-19T16:27:43.534Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:27:43.534Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/resource/tool/api-validator' }
+2025-09-19T16:27:43.535Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T16:43:23.098Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/api-validator/api-validator.tool.js' }
+2025-09-19T16:43:23.099Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:43:23.101Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T16:57:05.613Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-19T16:57:05.623Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:57:05.623Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-19T16:57:09.076Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/api-validator' }
+2025-09-19T16:57:09.076Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:57:09.077Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-19T16:57:12.211Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator' }
+2025-09-19T16:57:12.211Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:57:12.212Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-19T16:57:53.423Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/frontend-api-generator' }
+2025-09-19T16:57:53.424Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:57:53.424Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T16:59:24.644Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/frontend-api-generator/frontend-api-generator.tool.js' }
+2025-09-19T16:59:24.644Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T16:59:24.645Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T17:12:48.741Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T17:12:48.742Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:12:48.742Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'read_text_file', error: "ENOENT: no such file or directory, open '/Users/jiongjiong/.promptx/resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js'" } }
+2025-09-19T17:35:24.127Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'project/backend/src/main/java/com/graduation/entity/Orders.java' }
+2025-09-19T17:35:24.128Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:35:24.131Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/project/backend/src/main/java/com/graduation/entity' }
+2025-09-19T17:35:24.132Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T17:35:45.548Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'project/backend/src/main/java/com/graduation/controller/OrdersController.java' }
+2025-09-19T17:35:45.548Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:35:45.549Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/project/backend/src/main/java/com/graduation/controller' }
+2025-09-19T17:35:45.549Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T17:51:16.087Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator/java-crud-generator-v2.tool.js' }
+2025-09-19T17:51:16.088Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:51:16.088Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'read_text_file', error: "ENOENT: no such file or directory, stat '/Users/jiongjiong/.promptx/resource/tool/java-crud-generator/java-crud-generator-v2.tool.js'" } }
+2025-09-19T17:51:19.970Z [INFO] [filesystem] Executing filesystem operation { method: 'directory_tree', path: '.' }
+2025-09-19T17:51:19.970Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:51:19.977Z [INFO] [filesystem] Filesystem operation completed { method: 'directory_tree', success: true }
+2025-09-19T17:51:26.067Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator.deleted/java-crud-generator-v2.tool.js' }
+2025-09-19T17:51:26.067Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:51:26.068Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T17:51:32.747Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator-v3' }
+2025-09-19T17:51:32.747Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:51:32.747Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T17:53:57.345Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-v3/java-crud-generator-v3.tool.js' }
+2025-09-19T17:53:57.346Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:53:57.347Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T17:54:32.212Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator-v3/java-crud-generator-v3.tool.js' }
+2025-09-19T17:54:32.212Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:54:32.213Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T17:54:45.867Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v3/java-crud-generator-v3.tool.js' }
+2025-09-19T17:54:45.868Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:54:45.868Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-19T17:58:04.265Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-v3/java-crud-generator-v3.tool.js' }
+2025-09-19T17:58:04.266Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T17:58:04.267Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:03:50.101Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-19T18:03:50.102Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:03:50.102Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-19T18:03:54.794Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/java-crud-generator-v3' }
+2025-09-19T18:03:54.794Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:03:54.794Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-19T18:04:09.616Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-19T18:04:09.616Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:04:09.616Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-19T18:04:55.060Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator-v2' }
+2025-09-19T18:04:55.061Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:04:55.061Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T18:07:14.765Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:07:14.765Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:07:14.767Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:15:31.807Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:15:31.807Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:15:31.808Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T18:15:52.040Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:15:52.040Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:15:52.043Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:16:04.006Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:16:04.006Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:16:04.008Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:16:09.071Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:16:09.072Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:16:09.074Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:16:35.662Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:16:35.662Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:16:35.663Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:16:53.473Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:16:53.473Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:16:53.477Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:17:05.911Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:17:05.911Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:17:05.913Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:17:47.944Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:17:47.945Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:17:47.946Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:18:08.687Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:18:08.687Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:18:08.689Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:18:24.902Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2/java-crud-generator-v2.tool.js' }
+2025-09-19T18:18:24.902Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:18:24.903Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:18:49.734Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator-v2-1' }
+2025-09-19T18:18:49.734Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:18:49.734Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T18:19:49.068Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:19:49.069Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:19:49.069Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:21:06.223Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:21:06.223Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:21:06.224Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-19T18:24:47.400Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: '~/.promptx' }
+2025-09-19T18:24:47.400Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:24:47.410Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-19T18:24:51.105Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: '~/.promptx/resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:24:51.106Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:24:51.106Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T18:25:58.104Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: '~/.promptx/resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:25:58.104Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:25:58.105Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:29:00.459Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: '~/.promptx/resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:29:00.459Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:29:00.460Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T18:29:28.769Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: '~/.promptx/resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:29:28.769Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:29:28.770Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-19T18:30:41.461Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: '~/.promptx/resource/tool/java-crud-generator-v2-1/java-crud-generator-v2-1.tool.js' }
+2025-09-19T18:30:41.462Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:30:41.462Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:33:36.518Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: '~/.promptx' }
+2025-09-19T18:33:36.519Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:33:36.522Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-19T18:33:49.621Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: '~/.promptx' }
+2025-09-19T18:33:49.621Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:33:49.623Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-19T18:36:28.982Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/sql-table-parser' }
+2025-09-19T18:36:28.994Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:36:28.994Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T18:37:13.960Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-19T18:37:13.960Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:37:13.961Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:54:08.734Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-entity-crud-generator' }
+2025-09-19T18:54:08.735Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:54:08.735Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-19T18:55:56.639Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-entity-crud-generator/java-entity-crud-generator.tool.js' }
+2025-09-19T18:55:56.639Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:55:56.640Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T18:56:52.720Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-entity-crud-generator/java-entity-crud-generator.tool.js' }
+2025-09-19T18:56:52.720Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T18:56:52.721Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-19T19:07:28.266Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-entity-crud-generator/java-entity-crud-generator.tool.js' }
+2025-09-19T19:07:28.267Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:07:28.269Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T19:18:50.118Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-entity-crud-generator/java-entity-crud-generator.tool.js' }
+2025-09-19T19:18:50.119Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:18:50.121Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T19:19:48.030Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-entity-crud-generator/java-entity-crud-generator.tool.js' }
+2025-09-19T19:19:48.030Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:19:48.031Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-19T19:21:38.924Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-entity-crud-generator-fixed/java-entity-crud-generator-fixed.tool.js' }
+2025-09-19T19:21:38.924Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:21:38.924Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/resource/tool/java-entity-crud-generator-fixed' }
+2025-09-19T19:21:38.924Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T19:24:35.577Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-entity-crud-generator-final/java-entity-crud-generator-final.tool.js' }
+2025-09-19T19:24:35.578Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:24:35.578Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/resource/tool/java-entity-crud-generator-final' }
+2025-09-19T19:24:35.578Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T19:33:16.399Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'promptx_tools/java-crud-generator/java-entity-crud-generator-with-filesystem.tool.js' }
+2025-09-19T19:33:16.400Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:33:16.401Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/promptx_tools/java-crud-generator' }
+2025-09-19T19:33:16.402Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-19T19:35:19.591Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Products.java' }
+2025-09-19T19:35:19.592Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-19T19:35:19.592Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:35:19.592Z [WARN] [filesystem] Path access denied { path: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Products.java', allowedDirs: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:35:19.592Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'write_file', error: '路径越权: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Products.java 不在允许的目录范围内 [/Users/jiongjiong/.promptx]' } }
+2025-09-19T19:37:24.386Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'promptx_tools/java-crud-generator/java-entity-crud-generator-direct-write.tool.js' }
+2025-09-19T19:37:24.386Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-19T19:37:24.386Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-19T19:37:24.387Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:07:20.934Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator-with-write' }
+2025-09-20T06:07:20.935Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:07:20.935Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:07:20.935Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T06:08:41.502Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-with-write/java-crud-generator-with-write.tool.js' }
+2025-09-20T06:08:41.503Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:08:41.503Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:08:41.504Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:17:47.721Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-code-writer' }
+2025-09-20T06:17:47.722Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:17:47.722Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:17:47.722Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T06:19:01.166Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-code-writer/java-code-writer.tool.js' }
+2025-09-20T06:19:01.166Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:19:01.166Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:19:01.167Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:21:30.901Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-code-writer/java-code-writer.tool.js' }
+2025-09-20T06:21:30.901Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:21:30.901Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:21:30.902Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:28:31.460Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-complete-generator' }
+2025-09-20T06:28:31.461Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:28:31.461Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:28:31.461Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T06:29:58.342Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:29:58.343Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:29:58.343Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:29:58.344Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:30:29.509Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:30:29.510Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:30:29.510Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:30:29.510Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T06:31:50.199Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:31:50.200Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:31:50.200Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:31:50.200Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:35:07.666Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:35:07.666Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:35:07.666Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:35:07.667Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T06:35:16.099Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:35:16.100Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:35:16.100Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:35:16.100Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-20T06:35:20.256Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: 'resource/tool/java-crud-complete-generator' }
+2025-09-20T06:35:20.256Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:35:20.256Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:35:20.261Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-20T06:35:24.998Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:35:24.998Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:35:24.998Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:35:24.999Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T06:36:51.196Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-complete-generator/java-crud-complete-generator.tool.js' }
+2025-09-20T06:36:51.196Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:36:51.197Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:36:51.197Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:46:07.252Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/luban-java-crud-generator' }
+2025-09-20T06:46:07.262Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:46:07.262Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:46:07.263Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T06:48:23.992Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-20T06:48:23.992Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:48:23.992Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:48:23.993Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T06:48:33.960Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-20T06:48:33.960Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:48:33.960Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:48:33.960Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T06:50:49.075Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/sql-table-parser' }
+2025-09-20T06:50:49.075Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:50:49.075Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:50:49.076Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T06:50:54.338Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T06:50:54.338Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:50:54.338Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:50:54.339Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T06:51:17.987Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T06:51:17.988Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:51:17.988Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:51:17.989Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-20T06:52:58.305Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: undefined }
+2025-09-20T06:53:05.782Z [INFO] [filesystem] Executing filesystem operation { method: 'directory_tree', path: '.' }
+2025-09-20T06:53:05.783Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:53:05.783Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:53:05.793Z [INFO] [filesystem] Filesystem operation completed { method: 'directory_tree', success: true }
+2025-09-20T06:53:10.904Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T06:53:10.905Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:53:10.905Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:53:10.905Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T06:53:27.654Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T06:53:27.655Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:53:27.655Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:53:27.655Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-20T06:54:13.190Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-table-parser/sql-table-parser-fixed.tool.js' }
+2025-09-20T06:54:13.191Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:54:13.191Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:54:13.192Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T06:54:17.857Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/sql-table-parser/sql-table-parser-fixed.tool.js' }
+2025-09-20T06:54:17.857Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T06:54:17.857Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T06:54:17.858Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-20T07:02:50.022Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/java-crud-generator-enhanced' }
+2025-09-20T07:02:50.023Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:02:50.023Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:02:50.023Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T07:04:29.792Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced.tool.js' }
+2025-09-20T07:04:29.793Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:04:29.794Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:04:29.794Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T07:05:20.047Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced.tool.js' }
+2025-09-20T07:05:20.047Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:05:20.048Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:05:20.048Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T07:05:24.188Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced.tool.js' }
+2025-09-20T07:05:24.188Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:05:24.188Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:05:24.189Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: "Cannot read properties of undefined (reading 'replace')" } }
+2025-09-20T07:07:15.326Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced-fixed.tool.js' }
+2025-09-20T07:07:15.327Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:07:15.327Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:07:15.328Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T07:07:19.889Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced-fixed.tool.js' }
+2025-09-20T07:07:19.889Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:07:19.889Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:07:19.890Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-20T07:07:50.876Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T07:07:50.877Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:07:50.877Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:07:50.877Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T07:09:35.189Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-simple.tool.js' }
+2025-09-20T07:09:35.190Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:09:35.190Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:09:35.191Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T07:13:39.702Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/test.txt' }
+2025-09-20T07:13:39.704Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:13:39.704Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:13:39.704Z [WARN] [filesystem] Path access denied { path: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/test.txt', allowedDirs: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:13:39.704Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'write_file', error: '路径越权: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/test.txt 不在允许的目录范围内 [/Users/jiongjiong/.promptx]' } }
+2025-09-20T07:15:44.336Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/java-crud-generator-fixed/java-crud-generator-fixed.tool.js' }
+2025-09-20T07:15:44.337Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:15:44.337Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:15:44.337Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/jiongjiong/.promptx/resource/tool/java-crud-generator-fixed' }
+2025-09-20T07:15:44.338Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T07:20:00.392Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool' }
+2025-09-20T07:20:00.403Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:00.403Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:00.404Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:20:06.530Z [INFO] [filesystem] Executing filesystem operation { method: 'delete_directory', path: 'resource/tool/java-crud-generator-enhanced' }
+2025-09-20T07:20:15.743Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/java-crud-generator-enhanced' }
+2025-09-20T07:20:15.744Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:15.745Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:15.745Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:20:20.993Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/java-crud-generator-fixed' }
+2025-09-20T07:20:20.994Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:20.994Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:20.994Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:20:24.838Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/luban-java-crud-generator' }
+2025-09-20T07:20:24.838Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:24.838Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:24.838Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:20:30.250Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced.tool.js' }
+2025-09-20T07:20:30.250Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:30.250Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:30.251Z [WARN] [filesystem] Path access denied { path: '/tmp/deleted-java-crud-generator-enhanced.tool.js', allowedDirs: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:30.251Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'move_file', error: '路径越权: /tmp/deleted-java-crud-generator-enhanced.tool.js 不在允许的目录范围内 [/Users/jiongjiong/.promptx]' } }
+2025-09-20T07:20:35.004Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'deleted' }
+2025-09-20T07:20:35.004Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:35.004Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:35.005Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-20T07:20:39.016Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-enhanced.tool.js' }
+2025-09-20T07:20:39.017Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:39.017Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:39.017Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-20T07:20:42.634Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator-enhanced/java-crud-generator-simple.tool.js' }
+2025-09-20T07:20:42.634Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:42.634Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:42.634Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-20T07:20:53.695Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/java-crud-generator-fixed/java-crud-generator-fixed.tool.js' }
+2025-09-20T07:20:53.696Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:20:53.696Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:20:53.696Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-20T07:21:07.698Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/java-crud-generator-enhanced' }
+2025-09-20T07:21:07.699Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:21:07.699Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:21:07.699Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:21:11.876Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/java-crud-generator-fixed' }
+2025-09-20T07:21:11.876Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:21:11.876Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:21:11.876Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-20T07:24:36.683Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T07:24:36.684Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:24:36.684Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:24:36.685Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T07:25:45.955Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T07:25:45.955Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:25:45.955Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:25:45.957Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T07:26:32.681Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'test_schema.json' }
+2025-09-20T07:26:32.682Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:26:32.682Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:26:32.683Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-20T07:31:18.285Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T07:31:18.286Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T07:31:18.286Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T07:31:18.286Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-20T08:28:18.010Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: 'resource/tool' }
+2025-09-20T08:28:18.011Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T08:28:18.011Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T08:28:18.016Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-20T08:28:23.104Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-table-parser/sql-table-parser.tool.js' }
+2025-09-20T08:28:23.105Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-20T08:28:23.105Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-20T08:28:23.106Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-21T15:23:10.369Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/sql-er-visualizer' }
+2025-09-21T15:23:10.382Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T15:23:10.382Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T15:23:10.382Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-21T15:24:48.043Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-er-visualizer/sql-er-visualizer.tool.js' }
+2025-09-21T15:24:48.043Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T15:24:48.043Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T15:24:48.044Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-21T15:36:46.905Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/sql-er-visualizer/sql-er-generator-web.html' }
+2025-09-21T15:36:46.905Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T15:36:46.905Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T15:36:46.906Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-21T15:37:48.233Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/sql-er-visualizer/sql-er-generator-web.html' }
+2025-09-21T15:37:48.233Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T15:37:48.233Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T15:37:48.234Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-21T16:18:07.693Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/er-diagram-generator' }
+2025-09-21T16:18:07.701Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T16:18:07.702Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T16:18:07.702Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-21T16:19:32.946Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/er-diagram-generator/er-diagram-generator.tool.js' }
+2025-09-21T16:19:32.947Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-21T16:19:32.947Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-21T16:19:32.948Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T13:20:20.806Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/web-automation-test' }
+2025-09-22T13:20:20.817Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T13:20:20.817Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T13:20:20.818Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T13:21:21.766Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/web-automation-test/web-automation-test.tool.js' }
+2025-09-22T13:21:21.767Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T13:21:21.767Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T13:21:21.767Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T13:32:46.874Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/web-automation-test/web-automation-test.tool.js' }
+2025-09-22T13:32:46.876Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T13:32:46.876Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T13:32:46.878Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-22T13:50:55.663Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/web-automation-test/web-automation-test.tool.js' }
+2025-09-22T13:50:55.665Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T13:50:55.665Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T13:50:55.667Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-22T13:51:20.493Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/web-automation-test/web-automation-test.tool.js' }
+2025-09-22T13:51:20.494Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T13:51:20.494Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T13:51:20.495Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-22T15:15:42.557Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/docx-editor' }
+2025-09-22T15:15:42.567Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T15:15:42.567Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T15:15:42.567Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T15:16:55.220Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/docx-editor/docx-editor.tool.js' }
+2025-09-22T15:16:55.220Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T15:16:55.220Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T15:16:55.221Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T15:54:40.876Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/docx-editor/docx-editor.tool.js' }
+2025-09-22T15:54:40.879Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T15:54:40.879Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T15:54:40.880Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-22T15:54:45.913Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/docx-editor/docx-editor.tool.js' }
+2025-09-22T15:54:45.913Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T15:54:45.913Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T15:54:45.914Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-22T15:56:52.681Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/docx-editor/docx-editor-enhanced.tool.js' }
+2025-09-22T15:56:52.681Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T15:56:52.681Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T15:56:52.682Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:02:39.441Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/docx-editor/docx-editor-fixed.tool.js' }
+2025-09-22T16:02:39.441Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:02:39.442Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:02:39.442Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:03:01.707Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'resource/tool/docx-editor' }
+2025-09-22T16:03:01.707Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:03:01.707Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:03:01.708Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-22T16:03:06.878Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/docx-editor/docx-editor.tool.js' }
+2025-09-22T16:03:06.878Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:03:06.878Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:03:06.878Z [WARN] [filesystem] Path access denied { path: '/tmp/docx-editor-old.tool.js', allowedDirs: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:03:06.878Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'move_file', error: '路径越权: /tmp/docx-editor-old.tool.js 不在允许的目录范围内 [/Users/jiongjiong/.promptx]' } }
+2025-09-22T16:03:11.542Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/docx-editor/docx-editor.tool.js' }
+2025-09-22T16:03:11.542Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:03:11.542Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:03:11.542Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-22T16:03:17.365Z [INFO] [filesystem] Executing filesystem operation { method: 'move_file', path: 'resource/tool/docx-editor/docx-editor-enhanced.tool.js' }
+2025-09-22T16:03:17.365Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:03:17.366Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:03:17.366Z [INFO] [filesystem] Filesystem operation completed { method: 'move_file', success: true }
+2025-09-22T16:07:52.213Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/docx-editor/docx-editor-ultimate.tool.js' }
+2025-09-22T16:07:52.215Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:07:52.215Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:07:52.215Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:13:49.295Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/docx-editor/docx-editor-perfect.tool.js' }
+2025-09-22T16:13:49.296Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:13:49.296Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:13:49.297Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:17:13.393Z [INFO] [filesystem] Executing filesystem operation { method: undefined, path: [ 'docx-editor-fixed.tool.js', 'docx-editor-perfect.tool.js', 'docx-editor-ultimate.tool.js' ] }
+2025-09-22T16:17:41.979Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: '~/.promptx' }
+2025-09-22T16:17:41.980Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:17:41.980Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:17:41.981Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-22T16:17:49.680Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: '~/.promptx/promptx_tools' }
+2025-09-22T16:17:49.680Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:17:49.680Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:17:49.681Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-22T16:17:53.655Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: '~/.promptx/toolbox' }
+2025-09-22T16:17:53.656Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:17:53.656Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:17:53.656Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-22T16:18:02.775Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: '~/.promptx/toolbox' }
+2025-09-22T16:18:02.776Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:18:02.776Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:18:02.776Z [INFO] [filesystem] Filesystem operation completed { method: 'list_directory', success: true }
+2025-09-22T16:23:54.082Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/fixed-docx-exporter' }
+2025-09-22T16:23:54.091Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:23:54.091Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:23:54.091Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T16:24:26.380Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/fixed-docx-exporter/fixed-docx-exporter.tool.js' }
+2025-09-22T16:24:26.380Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:24:26.380Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:24:26.381Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:28:33.475Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/fixed-docx-exporter/fixed-docx-exporter.tool.js' }
+2025-09-22T16:28:33.476Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:28:33.476Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:28:33.477Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-22T16:31:05.313Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/academic-paper-generator' }
+2025-09-22T16:31:05.313Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:31:05.313Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:31:05.314Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T16:32:44.968Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/academic-paper-generator/academic-paper-generator.tool.js' }
+2025-09-22T16:32:44.968Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:32:44.968Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:32:44.969Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T16:34:30.822Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/academic-paper-generator/academic-paper-generator.tool.js' }
+2025-09-22T16:34:30.823Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:34:30.823Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:34:30.824Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'edit_file', error: 'Could not find exact match for edit:\n        TabStopPosition, TabStopType,' } }
+2025-09-22T16:35:57.467Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/academic-paper-generator/academic-paper-generator-fixed.tool.js' }
+2025-09-22T16:35:57.468Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T16:35:57.468Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T16:35:57.469Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T17:08:16.353Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/json-docx-generator' }
+2025-09-22T17:08:16.354Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T17:08:16.354Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T17:08:16.354Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T17:09:47.836Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/json-docx-generator/json-docx-generator.tool.js' }
+2025-09-22T17:09:47.836Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T17:09:47.836Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T17:09:47.837Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T17:13:20.413Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/json-docx-generator' }
+2025-09-22T17:13:20.415Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T17:13:20.415Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T17:13:20.415Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-22T17:14:02.809Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/json-docx-generator/json-docx-generator.tool.js' }
+2025-09-22T17:14:02.810Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T17:14:02.810Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T17:14:02.811Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-22T17:17:00.546Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/json-docx-generator/json-docx-generator.tool.js' }
+2025-09-22T17:17:00.547Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-22T17:17:00.547Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
+2025-09-22T17:17:00.547Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }

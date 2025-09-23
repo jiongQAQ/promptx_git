@@ -1,0 +1,2 @@
+2025-09-22T16:36:44.846Z [INFO] [academic-paper-generator-fixed] 开始生成学术论文 { title: '基于人工智能的智能推荐系统研究', contentLength: 335 }
+2025-09-22T16:36:44.873Z [INFO] [academic-paper-generator-fixed] 学术论文生成成功 { filePath: '/Users/jiongjiong/Documents/a_git_project/praAiTool/智能推荐系统论文.docx' }

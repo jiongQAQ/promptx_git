@@ -1,0 +1,9 @@
+{
+  "name": "toolbox-fixed-docx-exporter",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: fixed-docx-exporter",
+  "private": true,
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}

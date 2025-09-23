@@ -1,0 +1,9 @@
+{
+  "name": "toolbox-academic-paper-generator",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: academic-paper-generator",
+  "private": true,
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}

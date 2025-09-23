@@ -1,0 +1,69 @@
+2025-09-19T16:32:52.997Z [INFO] [api-validator] 开始执行前端接口双向校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ] }
+2025-09-19T16:32:52.998Z [INFO] [api-validator] 步骤1: 扫描后端Controller接口
+2025-09-19T16:32:52.999Z [INFO] [api-validator] 扫描完成: 1个Controller, 3个接口
+2025-09-19T16:32:52.999Z [INFO] [api-validator] 步骤2: 扫描前端API调用
+2025-09-19T16:32:53.000Z [INFO] [api-validator] 扫描完成: 10个前端API文件
+2025-09-19T16:32:53.000Z [INFO] [api-validator] 步骤3: 执行双向校验
+2025-09-19T16:32:53.000Z [WARN] [api-validator] Entity文件不存在: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Void.java
+2025-09-19T16:32:53.000Z [WARN] [api-validator] Entity文件不存在: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Void.java
+2025-09-19T16:32:53.000Z [INFO] [api-validator] 步骤5: 生成修复报告
+2025-09-19T16:32:53.001Z [INFO] [api-validator] 校验完成 { mode: 'check', issuesFound: 7, issuesFixed: 0 }
+2025-09-19T16:37:43.008Z [INFO] [api-validator] 开始执行前端接口双向校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ] }
+2025-09-19T16:37:43.009Z [INFO] [api-validator] 步骤1: 扫描后端Controller接口
+2025-09-19T16:37:43.009Z [INFO] [api-validator] 扫描完成: 1个Controller, 3个接口
+2025-09-19T16:37:43.009Z [INFO] [api-validator] 步骤2: 扫描前端API调用
+2025-09-19T16:37:43.010Z [INFO] [api-validator] 扫描完成: 10个前端API文件
+2025-09-19T16:37:43.010Z [INFO] [api-validator] 步骤3: 执行双向校验
+2025-09-19T16:37:43.010Z [WARN] [api-validator] Entity文件不存在: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Void.java
+2025-09-19T16:37:43.010Z [WARN] [api-validator] Entity文件不存在: /Users/jiongjiong/Documents/a_git_project/main-毕设模版/project/backend/src/main/java/com/graduation/entity/Void.java
+2025-09-19T16:37:43.010Z [INFO] [api-validator] 步骤5: 生成修复报告
+2025-09-19T16:37:43.010Z [INFO] [api-validator] 校验完成 { mode: 'check', issuesFound: 7, issuesFixed: 0 }
+2025-09-19T16:43:34.399Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ] }
+2025-09-19T16:43:34.399Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:43:34.401Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:43:34.401Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:43:34.402Z [INFO] [api-validator] 扫描完成: 3个前端API
+2025-09-19T16:43:34.402Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:43:34.402Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:48:50.992Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'fix', projects: [ 'admin_front' ] }
+2025-09-19T16:48:50.992Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:48:50.994Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:48:50.994Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:48:50.995Z [INFO] [api-validator] 扫描完成: 3个前端API
+2025-09-19T16:48:50.995Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:48:50.995Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:49:19.904Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'fix', projects: [ 'admin_front' ] }
+2025-09-19T16:49:19.904Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:49:19.905Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:49:19.905Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:49:19.905Z [INFO] [api-validator] 扫描完成: 4个前端API
+2025-09-19T16:49:19.905Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:49:19.905Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:53:10.701Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ], targetFiles: [ 'test-ratings-wrong.js' ] }
+2025-09-19T16:53:10.701Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:53:10.703Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:53:10.703Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:53:10.704Z [INFO] [api-validator] 扫描完成: 4个前端API
+2025-09-19T16:53:10.704Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:53:10.704Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:53:42.958Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ], targetFiles: [ 'test-ratings-wrong.js' ] }
+2025-09-19T16:53:42.959Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:53:42.960Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:53:42.960Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:53:42.960Z [INFO] [api-validator] 扫描完成: 4个前端API
+2025-09-19T16:53:42.960Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:53:42.960Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:54:15.896Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ], targetFiles: [ 'test-ratings-wrong.js' ] }
+2025-09-19T16:54:15.896Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:54:15.898Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:54:15.898Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:54:15.898Z [INFO] [api-validator] 扫描完成: 4个前端API
+2025-09-19T16:54:15.898Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:54:15.898Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }
+2025-09-19T16:55:35.878Z [INFO] [api-validator] 开始执行前端接口参数校验 { projectPath: '/Users/jiongjiong/Documents/a_git_project/main-毕设模版/project', mode: 'check', projects: [ 'admin_front' ], targetFiles: [ 'test-ratings-wrong.js' ] }
+2025-09-19T16:55:35.878Z [INFO] [api-validator] 步骤1: 扫描后端Controller和DTO定义
+2025-09-19T16:55:35.879Z [INFO] [api-validator] 扫描完成: 1个Controller, 6个接口
+2025-09-19T16:55:35.879Z [INFO] [api-validator] 步骤2: 扫描前端API调用文件
+2025-09-19T16:55:35.879Z [INFO] [api-validator] 扫描完成: 4个前端API
+2025-09-19T16:55:35.879Z [INFO] [api-validator] 步骤3: 执行参数字段校验
+2025-09-19T16:55:35.879Z [INFO] [api-validator] 参数校验完成 { issues: 0, fixes: 0 }

@@ -1,0 +1,10 @@
+{
+  "name": "toolbox-java-crud-complete-generator",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: java-crud-complete-generator",
+  "private": true,
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

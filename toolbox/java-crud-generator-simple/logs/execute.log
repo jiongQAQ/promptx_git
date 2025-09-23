@@ -1,0 +1,2 @@
+2025-09-20T07:13:15.203Z [INFO] [java-crud-generator-simple] 开始生成Java CRUD代码 { sqlLength: 123, basePackage: 'com.graduation' }
+2025-09-20T07:13:15.203Z [INFO] [java-crud-generator-simple] SQL解析成功 { tableCount: 1 }

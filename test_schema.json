@@ -1,0 +1,62 @@
+{
+  "users": {
+    "comment": "用户表",
+    "fields": [
+      {
+        "name": "id",
+        "type": "bigint(20)",
+        "comment": "用户ID"
+      },
+      {
+        "name": "username",
+        "type": "varchar(50)",
+        "comment": "用户名"
+      },
+      {
+        "name": "email",
+        "type": "varchar(100)",
+        "comment": "邮箱地址"
+      },
+      {
+        "name": "status",
+        "type": "tinyint(1)",
+        "comment": "状态【枚举】：0-禁用，1-启用"
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp",
+        "comment": "创建时间"
+      }
+    ]
+  },
+  "products": {
+    "comment": "产品表",
+    "fields": [
+      {
+        "name": "id",
+        "type": "bigint(20)",
+        "comment": "产品ID"
+      },
+      {
+        "name": "name",
+        "type": "varchar(200)",
+        "comment": "产品名称"
+      },
+      {
+        "name": "price",
+        "type": "decimal(10,2)",
+        "comment": "价格"
+      },
+      {
+        "name": "category_id",
+        "type": "bigint(20)",
+        "comment": "分类ID"
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "comment": "产品描述"
+      }
+    ]
+  }
+}

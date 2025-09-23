@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL ER图生成器 - 在线工具</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            height: calc(100vh - 200px);
+        }
+        
+        .input-panel {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input-panel h2 {
+            margin-bottom: 20px;
+            color: #4a5568;
+            font-size: 1.3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        select:focus, input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+        
+        .generate-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: auto;
+        }
+        
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+        
+        .generate-btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .output-panel {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .output-header {
+            background: #f8fafc;
+            padding: 20px 25px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .output-header h2 {
+            color: #4a5568;
+            font-size: 1.3rem;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .control-btn {
+            padding: 8px 16px;
+            border: 1px solid #cbd5e0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        .control-btn:hover {
+            background: #f7fafc;
+            border-color: #a0aec0;
+        }
+        
+        #network {
+            flex: 1;
+            width: 100%;
+            background: #fafafa;
+        }
+        
+        .stats {
+            background: #f8fafc;
+            padding: 15px 25px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #718096;
+        }
+        
+        .example-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .example-btn:hover {
+            background: #38a169;
+        }
+        
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #feb2b2;
+        }
+        
+        .success-message {
+            background: #c6f6d5;
+            color: #22543d;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #9ae6b4;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+                height: auto;
+            }
+            
+            .input-panel {
+                margin-bottom: 20px;
+            }
+            
+            #network {
+                height: 500px;
+            }
+        }
+        
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #718096;
+            font-size: 18px;
+        }
+        
+        .spinner {
+            border: 3px solid #e2e8f0;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-right: 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗂️ SQL ER图生成器</h1>
+            <p>将MySQL建表语句转换为交互式ER图 - 支持智能关系识别</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="input-panel">
+                <h2>📝 输入SQL语句</h2>
+                
+                <button class="example-btn" onclick="loadExample()">📄 加载示例数据</button>
+                
+                <div id="message-area"></div>
+                
+                <div class="form-group">
+                    <label for="sqlInput">MySQL建表语句:</label>
+                    <textarea id="sqlInput" placeholder="请输入CREATE TABLE语句...\n\n示例：\nCREATE TABLE users (\n    id BIGINT PRIMARY KEY AUTO_INCREMENT,\n    username VARCHAR(50) NOT NULL,\n    email VARCHAR(100) UNIQUE\n) ENGINE=InnoDB;\n\nCREATE TABLE posts (\n    id BIGINT PRIMARY KEY AUTO_INCREMENT,\n    user_id BIGINT NOT NULL,\n    title VARCHAR(200) NOT NULL,\n    content TEXT\n) ENGINE=InnoDB;"></textarea>
+                </div>
+                
+                <div class="options">
+                    <div class="form-group">
+                        <label for="layout">布局方式:</label>
+                        <select id="layout">
+                            <option value="hierarchical">层次布局</option>
+                            <option value="network">网络布局</option>
+                            <option value="circular">环形布局</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="theme">主题:</label>
+                        <select id="theme">
+                            <option value="light">浅色主题</option>
+                            <option value="dark">深色主题</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="showFields" checked>
+                            <label for="showFields">显示字段详情</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="showComments" checked>
+                            <label for="showComments">显示注释</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="generate-btn" onclick="generateERDiagram()" id="generateBtn">
+                    🚀 生成ER图
+                </button>
+            </div>
+            
+            <div class="output-panel">
+                <div class="output-header">
+                    <h2>📊 ER图可视化</h2>
+                    <div class="controls">
+                        <button class="control-btn" onclick="fitNetwork()" title="适应画布">🎯 适应</button>
+                        <button class="control-btn" onclick="exportPNG()" title="导出图片">📷 导出</button>
+                        <button class="control-btn" onclick="togglePhysics()" title="切换动画">⚡ 动画</button>
+                        <button class="control-btn" onclick="exportJSON()" title="导出数据">💾 数据</button>
+                    </div>
+                </div>
+                
+                <div id="network">
+                    <div class="loading">
+                        <div>👆 请在左侧输入SQL语句并点击生成按钮</div>
+                    </div>
+                </div>
+                
+                <div class="stats" id="stats" style="display: none;">
+                    <span id="tableCount">表数量: 0</span>
+                    <span id="relationCount">关系数量: 0</span>
+                    <span id="fieldCount">字段数量: 0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let network = null;
+        let nodes = null;
+        let edges = null;
+        let physicsEnabled = false;
+        let currentData = null;
+        
+        // 加载示例数据
+        function loadExample() {
+            const exampleSQL = `-- 用户表
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '用户ID',
+    username VARCHAR(50) NOT NULL UNIQUE COMMENT '用户名',
+    email VARCHAR(100) NOT NULL UNIQUE COMMENT '邮箱',
+    password VARCHAR(255) NOT NULL COMMENT '密码',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
+) ENGINE=InnoDB COMMENT='用户表';
+
+-- 文章表
+CREATE TABLE posts (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '文章ID',
+    user_id BIGINT NOT NULL COMMENT '作者ID',
+    title VARCHAR(200) NOT NULL COMMENT '文章标题',
+    content TEXT NOT NULL COMMENT '文章内容',
+    status VARCHAR(20) DEFAULT 'draft' COMMENT '状态(draft/published)',
+    view_count INT DEFAULT 0 COMMENT '浏览次数',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
+) ENGINE=InnoDB COMMENT='文章表';
+
+-- 评论表
+CREATE TABLE comments (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '评论ID',
+    post_id BIGINT NOT NULL COMMENT '文章ID',
+    user_id BIGINT NOT NULL COMMENT '评论者ID',
+    content TEXT NOT NULL COMMENT '评论内容',
+    parent_id BIGINT COMMENT '父评论ID(回复)',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间'
+) ENGINE=InnoDB COMMENT='评论表';
+
+-- 标签表
+CREATE TABLE tags (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '标签ID',
+    name VARCHAR(50) NOT NULL UNIQUE COMMENT '标签名称',
+    description VARCHAR(200) COMMENT '标签描述',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间'
+) ENGINE=InnoDB COMMENT='标签表';
+
+-- 文章标签关联表
+CREATE TABLE post_tags (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT 'ID',
+    post_id BIGINT NOT NULL COMMENT '文章ID',
+    tag_id BIGINT NOT NULL COMMENT '标签ID',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    UNIQUE KEY uk_post_tag (post_id, tag_id)
+) ENGINE=InnoDB COMMENT='文章标签关联表';`;
+            
+            document.getElementById('sqlInput').value = exampleSQL;
+            showMessage('示例数据已加载，点击生成按钮查看ER图！', 'success');
+        }
+        
+        // 显示消息
+        function showMessage(text, type = 'info') {
+            const messageArea = document.getElementById('message-area');
+            const className = type === 'error' ? 'error-message' : 'success-message';
+            messageArea.innerHTML = `<div class="${className}">${text}</div>`;
+            
+            setTimeout(() => {
+                messageArea.innerHTML = '';
+            }, 5000);
+        }
+        
+        // 生成ER图
+        function generateERDiagram() {
+            const sqlInput = document.getElementById('sqlInput').value.trim();
+            if (!sqlInput) {
+                showMessage('请先输入SQL建表语句！', 'error');
+                return;
+            }
+            
+            const generateBtn = document.getElementById('generateBtn');
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = '<div class="spinner"></div>正在生成...';
+            
+            try {
+                // 解析SQL
+                const tables = parseSQL(sqlInput);
+                if (tables.length === 0) {
+                    throw new Error('未发现有效的CREATE TABLE语句');
+                }
+                
+                // 识别关系
+                const relations = extractRelations(tables);
+                
+                // 生成图表
+                renderERDiagram(tables, relations);
+                
+                // 更新统计
+                updateStats(tables, relations);
+                
+                // 保存当前数据
+                currentData = { tables, relations };
+                
+                showMessage(`成功解析 ${tables.length} 个表，识别 ${relations.length} 个关系！`, 'success');
+                
+            } catch (error) {
+                console.error('生成ER图失败:', error);
+                showMessage(`生成失败: ${error.message}`, 'error');
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.innerHTML = '🚀 生成ER图';
+            }
+        }
+        
+        // 解析SQL语句
+        function parseSQL(sql) {
+            const tables = [];
+            
+            // 匹配CREATE TABLE语句
+            const tableRegex = /CREATE\s+TABLE\s+([`\w]+)\s*\((.*?)\)\s*(?:ENGINE\s*=\s*\w+)?(?:\s*DEFAULT\s+CHARSET\s*=\s*[\w\d_]+)?(?:\s*COLLATE\s*=\s*[\w\d_]+)?(?:\s*COMMENT\s*=\s*['"]([^'"]*)['"])?\s*;?/gis;
+            let match;
+            
+            while ((match = tableRegex.exec(sql)) !== null) {
+                const tableName = match[1].replace(/`/g, '');
+                const tableBody = match[2];
+                const tableComment = match[3] || '';
+                
+                const table = {
+                    name: tableName,
+                    comment: tableComment,
+                    fields: [],
+                    primaryKeys: [],
+                    foreignKeys: []
+                };
+                
+                // 解析字段和约束
+                parseTableBody(tableBody, table);
+                
+                tables.push(table);
+            }
+            
+            return tables;
+        }
+        
+        // 解析表体
+        function parseTableBody(tableBody, table) {
+            // 按逗号分割，但要考虑括号内的逗号
+            const lines = splitTableLines(tableBody);
+            
+            for (const line of lines) {
+                const trimmedLine = line.trim();
+                if (!trimmedLine) continue;
+                
+                if (trimmedLine.toUpperCase().includes('PRIMARY KEY')) {
+                    const pkMatch = trimmedLine.match(/PRIMARY\s+KEY\s*\(([^)]+)\)/i);
+                    if (pkMatch) {
+                        table.primaryKeys = pkMatch[1].split(',').map(k => k.trim().replace(/`/g, ''));
+                    }
+                } else if (trimmedLine.toUpperCase().includes('FOREIGN KEY')) {
+                    const fkMatch = trimmedLine.match(/FOREIGN\s+KEY\s*\(([^)]+)\)\s*REFERENCES\s+([`\w]+)\s*\(([^)]+)\)/i);
+                    if (fkMatch) {
+                        table.foreignKeys.push({
+                            field: fkMatch[1].trim().replace(/`/g, ''),
+                            referencedTable: fkMatch[2].trim().replace(/`/g, ''),
+                            referencedField: fkMatch[3].trim().replace(/`/g, '')
+                        });
+                    }
+                } else if (trimmedLine.toUpperCase().includes('UNIQUE KEY') || 
+                          trimmedLine.toUpperCase().includes('KEY ') ||
+                          trimmedLine.toUpperCase().includes('INDEX ')) {
+                    // 跳过索引定义
+                    continue;
+                } else {
+                    // 解析字段定义
+                    const field = parseFieldDefinition(trimmedLine);
+                    if (field) {
+                        table.fields.push(field);
+                    }
+                }
+            }
+        }
+        
+        // 智能分割表定义行
+        function splitTableLines(tableBody) {
+            const lines = [];
+            let current = '';
+            let parenthesesCount = 0;
+            let inQuotes = false;
+            let quoteChar = '';
+            
+            for (let i = 0; i < tableBody.length; i++) {
+                const char = tableBody[i];
+                
+                if (!inQuotes && (char === '"' || char === "'")) {
+                    inQuotes = true;
+                    quoteChar = char;
+                } else if (inQuotes && char === quoteChar) {
+                    inQuotes = false;
+                    quoteChar = '';
+                }
+                
+                if (!inQuotes) {
+                    if (char === '(') parenthesesCount++;
+                    else if (char === ')') parenthesesCount--;
+                    else if (char === ',' && parenthesesCount === 0) {
+                        lines.push(current.trim());
+                        current = '';
+                        continue;
+                    }
+                }
+                
+                current += char;
+            }
+            
+            if (current.trim()) {
+                lines.push(current.trim());
+            }
+            
+            return lines;
+        }
+        
+        // 解析字段定义
+        function parseFieldDefinition(line) {
+            // 匹配字段定义: field_name TYPE [constraints] [COMMENT 'xxx']
+            const fieldMatch = line.match(/^([`\w]+)\s+([\w()]+)(.*)$/i);
+            if (!fieldMatch) return null;
+            
+            const fieldName = fieldMatch[1].replace(/`/g, '');
+            const fieldType = fieldMatch[2];
+            const constraints = fieldMatch[3] || '';
+            
+            return {
+                name: fieldName,
+                type: fieldType,
+                nullable: !constraints.toUpperCase().includes('NOT NULL'),
+                autoIncrement: constraints.toUpperCase().includes('AUTO_INCREMENT'),
+                unique: constraints.toUpperCase().includes('UNIQUE'),
+                defaultValue: extractDefault(constraints),
+                comment: extractFieldComment(constraints)
+            };
+        }
+        
+        // 提取默认值
+        function extractDefault(constraints) {
+            const defaultMatch = constraints.match(/DEFAULT\s+([^\s,]+)/i);
+            if (defaultMatch) {
+                let value = defaultMatch[1];
+                if (value.startsWith("'") && value.endsWith("'")) {
+                    value = value.slice(1, -1);
+                }
+                return value;
+            }
+            return null;
+        }
+        
+        // 提取字段注释
+        function extractFieldComment(constraints) {
+            const commentMatch = constraints.match(/COMMENT\s+['"]([^'"]*)['"]/);
+            return commentMatch ? commentMatch[1] : '';
+        }
+        
+        // 识别表关系
+        function extractRelations(tables) {
+            const relations = [];
+            
+            for (const table of tables) {
+                // 显式外键关系
+                for (const fk of table.foreignKeys) {
+                    relations.push({
+                        from: table.name,
+                        to: fk.referencedTable,
+                        fromField: fk.field,
+                        toField: fk.referencedField,
+                        type: 'many-to-one',
+                        explicit: true
+                    });
+                }
+                
+                // 基于命名规范的隐式关系
+                for (const field of table.fields) {
+                    if (field.name.endsWith('_id') && field.name !== 'id') {
+                        const baseName = field.name.replace('_id', '');
+                        const possibleTableNames = [baseName + 's', baseName, baseName + 'es'];
+                        
+                        const referencedTable = tables.find(t => 
+                            possibleTableNames.includes(t.name) || 
+                            t.name === baseName
+                        );
+                        
+                        if (referencedTable && !table.foreignKeys.some(fk => fk.field === field.name)) {
+                            relations.push({
+                                from: table.name,
+                                to: referencedTable.name,
+                                fromField: field.name,
+                                toField: 'id',
+                                type: 'many-to-one',
+                                explicit: false
+                            });
+                        }
+                    }
+                }
+            }
+            
+            return relations;
+        }
+        
+        // 渲染ER图
+        function renderERDiagram(tables, relations) {
+            const container = document.getElementById('network');
+            const layout = document.getElementById('layout').value;
+            const theme = document.getElementById('theme').value;
+            const showFields = document.getElementById('showFields').checked;
+            const showComments = document.getElementById('showComments').checked;
+            
+            // 生成节点
+            const nodeData = tables.map(table => {
+                let label = table.name;
+                if (showComments && table.comment) {
+                    label += `\n(${table.comment})`;
+                }
+                
+                if (showFields && table.fields.length > 0) {
+                    label += '\n\n';
+                    const fieldLabels = table.fields.map(field => {
+                        const isPK = table.primaryKeys.includes(field.name);
+                        const isFK = table.foreignKeys.some(fk => fk.field === field.name);
+                        const icon = isPK ? '🔑' : (isFK ? '🔗' : '○');
+                        
+                        let fieldLabel = `${icon} ${field.name}: ${field.type}`;
+                        if (showComments && field.comment) {
+                            fieldLabel += ` // ${field.comment}`;
+                        }
+                        return fieldLabel;
+                    });
+                    label += fieldLabels.join('\n');
+                }
+                
+                return {
+                    id: table.name,
+                    label: label,
+                    color: {
+                        background: theme === 'dark' ? '#2d3748' : '#ffffff',
+                        border: theme === 'dark' ? '#4a5568' : '#cbd5e0'
+                    },
+                    font: {
+                        color: theme === 'dark' ? '#f7fafc' : '#2d3748',
+                        size: 12,
+                        multi: true
+                    },
+                    shape: 'box',
+                    margin: 15,
+                    borderWidth: 2
+                };
+            });
+            
+            // 生成边
+            const edgeData = relations.map((rel, index) => ({
+                id: index,
+                from: rel.from,
+                to: rel.to,
+                label: `${rel.fromField} → ${rel.toField}`,
+                arrows: { to: { enabled: true, scaleFactor: 1.2 } },
+                color: {
+                    color: rel.explicit ? '#3182ce' : '#718096'
+                },
+                dashes: !rel.explicit,
+                font: {
+                    size: 10,
+                    color: theme === 'dark' ? '#a0aec0' : '#4a5568'
+                },
+                width: rel.explicit ? 2 : 1
+            }));
+            
+            nodes = new vis.DataSet(nodeData);
+            edges = new vis.DataSet(edgeData);
+            
+            const data = { nodes: nodes, edges: edges };
+            
+            const options = {
+                layout: {
+                    hierarchical: layout === 'hierarchical' ? {
+                        direction: 'UD',
+                        sortMethod: 'directed',
+                        nodeSpacing: 200,
+                        levelSeparation: 200
+                    } : false
+                },
+                physics: {
+                    enabled: layout !== 'hierarchical',
+                    stabilization: { iterations: 100 },
+                    barnesHut: {
+                        gravitationalConstant: -8000,
+                        springLength: 200,
+                        springConstant: 0.05
+                    }
+                },
+                nodes: {
+                    shape: 'box',
+                    margin: 15,
+                    font: {
+                        multi: true,
+                        bold: { color: theme === 'dark' ? '#f7fafc' : '#2d3748' }
+                    },
+                    borderWidth: 2,
+                    borderWidthSelected: 3
+                },
+                edges: {
+                    arrows: { to: { enabled: true, scaleFactor: 1.2 } },
+                    smooth: { type: 'curvedCW', roundness: 0.2 },
+                    width: 2
+                },
+                interaction: {
+                    dragNodes: true,
+                    dragView: true,
+                    zoomView: true,
+                    selectConnectedEdges: false
+                },
+                configure: {
+                    enabled: false
+                }
+            };
+            
+            // 特殊布局处理
+            if (layout === 'circular') {
+                options.layout = {
+                    randomSeed: 2
+                };
+                options.physics.enabled = true;
+            }
+            
+            network = new vis.Network(container, data, options);
+            physicsEnabled = layout !== 'hierarchical';
+            
+            // 添加事件监听
+            network.on('click', function(params) {
+                if (params.nodes.length > 0) {
+                    const nodeId = params.nodes[0];
+                    console.log('点击了表:', nodeId);
+                    
+                    // 高亮相关的边
+                    const connectedEdges = network.getConnectedEdges(nodeId);
+                    network.selectEdges(connectedEdges);
+                }
+            });
+            
+            // 初始化完成后适应画布
+            setTimeout(() => {
+                network.fit({
+                    animation: {
+                        duration: 1000,
+                        easingFunction: 'easeInOutCubic'
+                    }
+                });
+            }, 500);
+        }
+        
+        // 更新统计信息
+        function updateStats(tables, relations) {
+            const totalFields = tables.reduce((sum, table) => sum + table.fields.length, 0);
+            
+            document.getElementById('tableCount').textContent = `表数量: ${tables.length}`;
+            document.getElementById('relationCount').textContent = `关系数量: ${relations.length}`;
+            document.getElementById('fieldCount').textContent = `字段数量: ${totalFields}`;
+            document.getElementById('stats').style.display = 'flex';
+        }
+        
+        // 控制功能
+        function fitNetwork() {
+            if (network) {
+                network.fit({
+                    animation: {
+                        duration: 1000,
+                        easingFunction: 'easeInOutCubic'
+                    }
+                });
+            }
+        }
+        
+        function exportPNG() {
+            if (network) {
+                const canvas = network.getCanvas();
+                const link = document.createElement('a');
+                link.download = 'er-diagram.png';
+                link.href = canvas.toDataURL('image/png', 1.0);
+                link.click();
+                showMessage('图片已导出！', 'success');
+            }
+        }
+        
+        function togglePhysics() {
+            if (network) {
+                physicsEnabled = !physicsEnabled;
+                network.setOptions({ physics: { enabled: physicsEnabled } });
+                showMessage(`物理效果已${physicsEnabled ? '开启' : '关闭'}！`, 'success');
+            }
+        }
+        
+        function exportJSON() {
+            if (currentData) {
+                const dataStr = JSON.stringify(currentData, null, 2);
+                const blob = new Blob([dataStr], { type: 'application/json' });
+                const link = document.createElement('a');
+                link.download = 'er-diagram-data.json';
+                link.href = URL.createObjectURL(blob);
+                link.click();
+                showMessage('数据已导出为JSON！', 'success');
+            }
+        }
+        
+        // 键盘快捷键
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'Enter':
+                        e.preventDefault();
+                        generateERDiagram();
+                        break;
+                    case 's':
+                        e.preventDefault();
+                        exportPNG();
+                        break;
+                }
+            }
+        });
+        
+        // 初始化提示
+        console.log('SQL ER图生成器已加载');
+        console.log('快捷键: Ctrl+Enter 生成图表, Ctrl+S 导出图片');
+    </script>
+</body>
+</html>

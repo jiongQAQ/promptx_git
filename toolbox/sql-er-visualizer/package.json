@@ -1,0 +1,9 @@
+{
+  "name": "toolbox-sql-er-visualizer",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: sql-er-visualizer",
+  "private": true,
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}

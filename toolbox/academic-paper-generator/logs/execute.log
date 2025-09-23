@@ -1,0 +1,12 @@
+2025-09-22T16:33:53.515Z [INFO] [academic-paper-generator] 开始生成学术论文 { title: '基于人工智能的智能推荐系统研究', contentLength: 1417 }
+2025-09-22T16:33:53.526Z [ERROR] [academic-paper-generator] 学术论文生成失败 { error: ReferenceError: TabStopType is not defined
+       at academic-paper-generator.js:454:21
+       at Array.forEach (<anonymous>)
+       at Object.createTableOfContents (academic-paper-generator.js:432:16)
+       at Object.execute (academic-paper-generator.js:133:28)
+       at async _ToolSandbox.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:12620:26)
+       at async ToolCommand.executeNormalMode (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17578:26)
+       at async ToolCommand.executeToolInternal (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17547:22)
+       at async ToolCommand.getContent (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17430:26)
+       at async ToolCommand.assembleAreas (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14108:27)
+       at async ToolCommand.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14186:11) }

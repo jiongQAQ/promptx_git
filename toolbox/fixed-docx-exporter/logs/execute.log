@@ -1,0 +1,4 @@
+2025-09-22T16:24:48.429Z [INFO] [fixed-docx-exporter] 开始生成DOCX文档 { font: '微软雅黑', fontSize: 12, contentLength: 151 }
+2025-09-22T16:24:48.534Z [INFO] [fixed-docx-exporter] 文档生成成功 { filePath: '/Users/jiongjiong/Downloads/测试文档.docx' }
+2025-09-22T16:26:58.799Z [INFO] [fixed-docx-exporter] 开始生成DOCX文档 { font: '宋体', fontSize: 12, contentLength: 2176 }
+2025-09-22T16:26:58.812Z [INFO] [fixed-docx-exporter] 文档生成成功 { filePath: '/Users/jiongjiong/Downloads/计算机论文_代码生成研究.docx' }

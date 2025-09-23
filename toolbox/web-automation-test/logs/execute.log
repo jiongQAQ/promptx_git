@@ -1,0 +1,140 @@
+2025-09-22T13:32:27.807Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'https://github.com', actions: 3, headless: true }
+2025-09-22T13:32:27.994Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: undefined, height: undefined }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage' ] } }
+2025-09-22T13:32:29.455Z [ERROR] [web-automation-test] 测试执行失败 { error: { error: 'Protocol error (Emulation.setDeviceMetricsOverride): Invalid parameters Failed to deserialize params.height - BINDINGS: mandatory field missing at position 90' } }
+2025-09-22T13:32:29.485Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:32:53.471Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'https://example.com', actions: 2, headless: true }
+2025-09-22T13:32:53.474Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:32:53.674Z [INFO] [web-automation-test] 导航到页面 { url: 'https://example.com' }
+2025-09-22T13:32:58.766Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:32:58.767Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '1000' }
+2025-09-22T13:32:59.768Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 1000ms' }
+2025-09-22T13:33:00.271Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'screenshot' }
+2025-09-22T13:33:00.375Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '截图完成' }
+2025-09-22T13:33:00.989Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 7517, consoleErrors: 0, networkRequests: 0, screenshots: 2 }
+2025-09-22T13:33:01.007Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:33:07.082Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'https://example.com', actions: 1, headless: true }
+2025-09-22T13:33:07.083Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:33:07.196Z [INFO] [web-automation-test] 导航到页面 { url: 'https://example.com' }
+2025-09-22T13:33:12.045Z [INFO] [web-automation-test] 开始执行测试动作 { count: 1 }
+2025-09-22T13:33:12.046Z [INFO] [web-automation-test] 执行动作 1/1 { type: 'wait', value: '1000' }
+2025-09-22T13:33:13.048Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 1000ms' }
+2025-09-22T13:33:13.666Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 6584, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:33:13.680Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:49:56.004Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 8, headless: true }
+2025-09-22T13:49:56.008Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:49:56.408Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:50:00.088Z [INFO] [web-automation-test] 开始执行测试动作 { count: 8 }
+2025-09-22T13:50:00.088Z [INFO] [web-automation-test] 执行动作 1/8 { type: 'wait', value: '3000' }
+2025-09-22T13:50:03.090Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:50:03.591Z [INFO] [web-automation-test] 执行动作 2/8 { type: 'screenshot' }
+2025-09-22T13:50:03.821Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '截图完成' }
+2025-09-22T13:50:04.323Z [INFO] [web-automation-test] 执行动作 3/8 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:50:04.350Z [INFO] [web-automation-test] 动作 3 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:50:04.852Z [INFO] [web-automation-test] 执行动作 4/8 { type: 'click', selector: '.example-btn' }
+2025-09-22T13:50:04.901Z [ERROR] [web-automation-test] 动作 4 执行失败 { error: { error: 'Protocol error (Input.dispatchMouseEvent): Target closed' } }
+2025-09-22T13:50:05.403Z [INFO] [web-automation-test] 执行动作 5/8 { type: 'wait', value: '2000' }
+2025-09-22T13:50:05.404Z [ERROR] [web-automation-test] 动作 5 执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:50:05.404Z [ERROR] [web-automation-test] 测试执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:50:05.405Z [WARN] [web-automation-test] 清理资源失败 { error: 'Protocol error: Connection closed. Most likely the page has been closed.' }
+2025-09-22T13:50:20.506Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 3, headless: true }
+2025-09-22T13:50:20.508Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:50:20.700Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:50:23.974Z [INFO] [web-automation-test] 开始执行测试动作 { count: 3 }
+2025-09-22T13:50:23.974Z [INFO] [web-automation-test] 执行动作 1/3 { type: 'wait', value: '5000' }
+2025-09-22T13:50:28.976Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 5000ms' }
+2025-09-22T13:50:29.478Z [INFO] [web-automation-test] 执行动作 2/3 { type: 'screenshot' }
+2025-09-22T13:50:29.701Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '截图完成' }
+2025-09-22T13:50:30.202Z [INFO] [web-automation-test] 执行动作 3/3 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:50:30.215Z [INFO] [web-automation-test] 动作 3 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:50:30.935Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 10429, consoleErrors: 0, networkRequests: 0, screenshots: 2 }
+2025-09-22T13:50:30.955Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:50:38.380Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 2, headless: true }
+2025-09-22T13:50:38.382Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:50:38.498Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:50:41.766Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:50:41.768Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '3000' }
+2025-09-22T13:50:44.770Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:50:45.272Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:50:45.289Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:50:46.022Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 7641, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:50:46.037Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:51:03.060Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 5, headless: true }
+2025-09-22T13:51:03.061Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:51:03.264Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:51:06.526Z [INFO] [web-automation-test] 开始执行测试动作 { count: 5 }
+2025-09-22T13:51:06.527Z [INFO] [web-automation-test] 执行动作 1/5 { type: 'wait', value: '3000' }
+2025-09-22T13:51:09.528Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:51:10.029Z [INFO] [web-automation-test] 执行动作 2/5 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:51:10.048Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:51:10.550Z [INFO] [web-automation-test] 执行动作 3/5 { type: 'click', selector: '.example-btn' }
+2025-09-22T13:51:10.595Z [ERROR] [web-automation-test] 动作 3 执行失败 { error: { error: 'Protocol error (Input.dispatchMouseEvent): Target closed' } }
+2025-09-22T13:51:11.097Z [INFO] [web-automation-test] 执行动作 4/5 { type: 'wait', value: '2000' }
+2025-09-22T13:51:11.098Z [ERROR] [web-automation-test] 动作 4 执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:51:11.099Z [ERROR] [web-automation-test] 测试执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:51:11.099Z [WARN] [web-automation-test] 清理资源失败 { error: 'Protocol error: Connection closed. Most likely the page has been closed.' }
+2025-09-22T13:51:36.634Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 2, headless: true }
+2025-09-22T13:51:36.635Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:51:36.822Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:51:40.194Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:51:40.195Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '3000' }
+2025-09-22T13:51:43.197Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:51:43.699Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:51:43.710Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:51:44.411Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 7777, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:51:44.425Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:51:50.665Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator-fixed.html', actions: 6, headless: true }
+2025-09-22T13:51:50.666Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:51:50.781Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator-fixed.html' }
+2025-09-22T13:51:54.131Z [INFO] [web-automation-test] 开始执行测试动作 { count: 6 }
+2025-09-22T13:51:54.132Z [INFO] [web-automation-test] 执行动作 1/6 { type: 'wait', value: '3000' }
+2025-09-22T13:51:57.135Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:51:57.637Z [INFO] [web-automation-test] 执行动作 2/6 { type: 'click', selector: '.example-btn' }
+2025-09-22T13:51:57.677Z [ERROR] [web-automation-test] 动作 2 执行失败 { error: { error: 'Protocol error (Input.dispatchMouseEvent): Target closed' } }
+2025-09-22T13:51:58.178Z [INFO] [web-automation-test] 执行动作 3/6 { type: 'wait', value: '2000' }
+2025-09-22T13:51:58.179Z [ERROR] [web-automation-test] 动作 3 执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:51:58.180Z [ERROR] [web-automation-test] 测试执行失败 { error: { error: 'Requesting main frame too early!' } }
+2025-09-22T13:51:58.180Z [WARN] [web-automation-test] 清理资源失败 { error: 'Protocol error: Connection closed. Most likely the page has been closed.' }
+2025-09-22T13:52:04.262Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/er-diagram.html', actions: 4, headless: true }
+2025-09-22T13:52:04.264Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:52:04.387Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/er-diagram.html' }
+2025-09-22T13:52:07.704Z [INFO] [web-automation-test] 开始执行测试动作 { count: 4 }
+2025-09-22T13:52:07.704Z [INFO] [web-automation-test] 执行动作 1/4 { type: 'wait', value: '3000' }
+2025-09-22T13:52:10.706Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:52:11.208Z [INFO] [web-automation-test] 执行动作 2/4 { type: 'assert', selector: 'h1', expected: '交互式ER图生成器' }
+2025-09-22T13:52:11.216Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: 🏗️ 交互式ER图生成器' }
+2025-09-22T13:52:11.717Z [INFO] [web-automation-test] 执行动作 3/4 { type: 'click', selector: '.example-btn' }
+2025-09-22T13:52:11.841Z [INFO] [web-automation-test] 动作 3 执行成功 { result: '点击成功' }
+2025-09-22T13:52:12.342Z [INFO] [web-automation-test] 执行动作 4/4 { type: 'wait', value: '2000' }
+2025-09-22T13:52:14.344Z [INFO] [web-automation-test] 动作 4 执行成功 { result: '等待: 2000ms' }
+2025-09-22T13:52:14.978Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 10715, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:52:14.981Z [WARN] [web-automation-test] 清理资源失败 { error: 'Protocol error (Target.closeTarget): Target closed' }
+2025-09-22T13:52:25.073Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/test-vis.html', actions: 2, headless: true }
+2025-09-22T13:52:25.074Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:52:25.222Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/test-vis.html' }
+2025-09-22T13:52:28.626Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:52:28.626Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '3000' }
+2025-09-22T13:52:31.628Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:52:32.130Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'assert', selector: 'h1', expected: 'Vis.js 测试' }
+2025-09-22T13:52:32.142Z [ERROR] [web-automation-test] 动作 2 执行失败 { error: { error: '断言失败: 期望包含 "Vis.js 测试", 实际为 "Vis.js æµ‹è¯•"' } }
+2025-09-22T13:52:32.742Z [INFO] [web-automation-test] 测试完成 { success: false, duration: 7669, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:52:32.755Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:52:59.328Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/debug-er.html', actions: 2, headless: true }
+2025-09-22T13:52:59.330Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:52:59.663Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/debug-er.html' }
+2025-09-22T13:53:02.995Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:53:02.996Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '3000' }
+2025-09-22T13:53:05.997Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:53:06.498Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'assert', selector: 'h1', expected: 'ER图调试版' }
+2025-09-22T13:53:06.509Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: ER图调试版' }
+2025-09-22T13:53:07.096Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 7768, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:53:07.111Z [INFO] [web-automation-test] 浏览器资源已清理
+2025-09-22T13:53:12.918Z [INFO] [web-automation-test] 开始Web自动化测试 { url: 'http://localhost:8080/sql-er-generator.html', actions: 2, headless: true }
+2025-09-22T13:53:12.919Z [INFO] [web-automation-test] 启动浏览器 { options: { headless: true, defaultViewport: { width: 1920, height: 1080, deviceScaleFactor: 1, isMobile: false, hasTouch: false, isLandscape: false }, args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-features=VizDisplayCompositor' ] } }
+2025-09-22T13:53:13.034Z [INFO] [web-automation-test] 导航到页面 { url: 'http://localhost:8080/sql-er-generator.html' }
+2025-09-22T13:53:16.601Z [INFO] [web-automation-test] 开始执行测试动作 { count: 2 }
+2025-09-22T13:53:16.602Z [INFO] [web-automation-test] 执行动作 1/2 { type: 'wait', value: '3000' }
+2025-09-22T13:53:19.603Z [INFO] [web-automation-test] 动作 1 执行成功 { result: '等待: 3000ms' }
+2025-09-22T13:53:20.105Z [INFO] [web-automation-test] 执行动作 2/2 { type: 'assert', selector: 'h1', expected: 'SQL ER图生成器' }
+2025-09-22T13:53:20.114Z [INFO] [web-automation-test] 动作 2 执行成功 { result: '断言成功: 🗂️ SQL ER图生成器' }
+2025-09-22T13:53:20.862Z [INFO] [web-automation-test] 测试完成 { success: true, duration: 7944, consoleErrors: 0, networkRequests: 0, screenshots: 1 }
+2025-09-22T13:53:20.878Z [INFO] [web-automation-test] 浏览器资源已清理

@@ -1,0 +1,14 @@
+2025-09-22T17:12:22.818Z [INFO] [json-docx-generator] 开始生成JSON DOCX文档 { configSize: 2744 }
+2025-09-22T17:12:22.830Z [ERROR] [json-docx-generator] JSON DOCX文档生成失败 { error: TypeError: Cannot read properties of undefined (reading 'sections')
+       at Object.validateConfig (json-docx-generator.js:181:17)
+       at Object.execute (json-docx-generator.js:97:12)
+       at async _ToolSandbox.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:12620:26)
+       at async ToolCommand.executeNormalMode (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17578:26)
+       at async ToolCommand.executeToolInternal (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17547:22)
+       at async ToolCommand.getContent (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:17430:26)
+       at async ToolCommand.assembleAreas (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14108:27)
+       at async ToolCommand.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:14186:11)
+       at async PouchStateMachine.transition (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:13564:24)
+       at async PouchCLI.execute (/Users/jiongjiong/.nvm/versions/node/v24.2.0/lib/node_modules/@promptx/mcp-server/node_modules/@promptx/core/dist/index.js:18074:26) }
+2025-09-22T17:15:24.930Z [INFO] [json-docx-generator] 开始生成JSON DOCX文档 { configSize: 2744 }
+2025-09-22T17:15:24.947Z [INFO] [json-docx-generator] JSON DOCX文档生成成功 { outputFile: '/Users/jiongjiong/Documents/a_git_project/praAiTool/ai-education-research.docx', sectionsCount: 6 }

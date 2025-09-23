@@ -1,0 +1,9 @@
+{
+  "name": "toolbox-json-docx-generator",
+  "version": "1.0.0",
+  "description": "Sandbox for tool: json-docx-generator",
+  "private": true,
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}
