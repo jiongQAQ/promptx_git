@@ -1,0 +1,693 @@
+{
+  "docId": "paper-001-chapter-4",
+  "meta": {
+    "title": "健身房预约管理系统设计与实现",
+    "theme": "健身房预约管理系统",
+    "chapter": 4,
+    "originalDocId": "paper-001",
+    "splitDate": "2025-09-24T09:47:23.212Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕“{{论文主题}}”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "_templates": {
+    "sectionSingle": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "{{defaults.textPromptTemplate}}",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "sectionList": {
+      "mode": "list",
+      "itemType": "custom",
+      "subNumbering": "numeric",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "textPrompt": "{{defaults.textPromptTemplate}}",
+      "text": "",
+      "items": [],
+      "figures": [],
+      "tables": []
+    },
+    "item.actorUseCase": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 300
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "{{itemTitle}}用例图",
+            "figureFocus": "{{itemTitle}}的核心用例与交互关系",
+            "promptTemplate": "{{defaults.figurePromptTemplate}}"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的用例说明：目标、主要用例、边界与约束。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {
+        "role": ""
+      }
+    },
+    "item.entity": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 400
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "{{itemTitle}}局部结构图",
+            "figureFocus": "字段、约束及与其他实体的关系",
+            "promptTemplate": "{{defaults.figurePromptTemplate}}"
+          }
+        ],
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "{{itemTitle}}字段三线表",
+            "schema": [
+              "字段名",
+              "类型",
+              "约束",
+              "说明"
+            ],
+            "promptTemplate": "{{defaults.tablePromptTemplate}}"
+          }
+        ]
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的实体说明：业务定位、关键字段、约束与关系。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {
+        "entityName": ""
+      }
+    },
+    "item.custom": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 300
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的说明文本。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {}
+    }
+  },
+  "promptSnippets": {
+    "techIntro": "填写‘相关技术介绍’的小节标题占位符（如 {{jishu1}}/{{jishu2}}/{{jishu3}}）为真实技术名。严格基于 ./source/ 与 ./CLAUDE.md 的证据，自行判断，不得臆造。输出候选并自动采纳最佳项。",
+    "figure.arch": "系统架构/功能框图：强调分层结构、依赖关系、接口边界或模块调用关系。",
+    "figure.usecase": "UML 用例图：突出参与者、用例、关系（extend/include）、系统边界。",
+    "figure.er": "ER/类图：实体、主外键、关系基数与约束。",
+    "table.testcases": "测试用例三线表 JSON：字段= ['用例ID','测试点','输入','预期输出','结果']",
+    "table.entity": "实体字段三线表 JSON：字段= ['字段名','类型','约束','说明']"
+  },
+  "autoApply": [],
+  "contents": {
+    "4": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《第4章 系统详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《系统功能详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "用户与权限管理的详细设计结构图",
+            "figureFocus": "展示模块内部流程、接口调用与数据流",
+            "promptTemplate": "为《用户与权限管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：展示模块内部流程、接口调用与数据流。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《用户与权限管理的详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.2": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "课程管理的详细设计结构图",
+            "figureFocus": "展示模块内部流程、接口调用与数据流",
+            "promptTemplate": "为《课程管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：展示模块内部流程、接口调用与数据流。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《课程管理的详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.3": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "场地管理的详细设计结构图",
+            "figureFocus": "展示模块内部流程、接口调用与数据流",
+            "promptTemplate": "为《场地管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：展示模块内部流程、接口调用与数据流。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《场地管理的详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.4": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "预约管理的详细设计结构图",
+            "figureFocus": "展示模块内部流程、接口调用与数据流",
+            "promptTemplate": "为《预约管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：展示模块内部流程、接口调用与数据流。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《预约管理的详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.5": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "签到管理的详细设计结构图",
+            "figureFocus": "展示模块内部流程、接口调用与数据流",
+            "promptTemplate": "为《签到管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：展示模块内部流程、接口调用与数据流。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《签到管理的详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.2": {
+      "mode": "list",
+      "itemType": "entity",
+      "subNumbering": "numeric",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "textPrompt": "撰写《数据库详细设计》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "items": [
+        {
+          "order": 1,
+          "title": "User（用户）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "User（用户）局部结构图",
+                "figureFocus": "突出User（用户）的用户基础资料、角色权限以及账号状态",
+                "promptTemplate": "为《数据库详细设计—User（用户）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出User（用户）的用户基础资料、角色权限以及账号状态。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "User（用户）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—User（用户）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—User（用户）实体》：交代实体业务定位、关键字段（如id, username, phone, role_id）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "User"
+          }
+        },
+        {
+          "order": 2,
+          "title": "Venue（场地）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "Venue（场地）局部结构图",
+                "figureFocus": "突出Venue（场地）的场地类型、容量与可预约状态及软删除标记",
+                "promptTemplate": "为《数据库详细设计—Venue（场地）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出Venue（场地）的场地类型、容量与可预约状态及软删除标记。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "Venue（场地）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—Venue（场地）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—Venue（场地）实体》：交代实体业务定位、关键字段（如id, name, type, capacity）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "Venue"
+          }
+        },
+        {
+          "order": 3,
+          "title": "Course（课程）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "Course（课程）局部结构图",
+                "figureFocus": "突出Course（课程）的课程排班、教练安排与容量控制",
+                "promptTemplate": "为《数据库详细设计—Course（课程）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出Course（课程）的课程排班、教练安排与容量控制。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "Course（课程）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—Course（课程）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—Course（课程）实体》：交代实体业务定位、关键字段（如id, name, coach_id, venue_id）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "Course"
+          }
+        },
+        {
+          "order": 4,
+          "title": "Reservation（预约）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "Reservation（预约）局部结构图",
+                "figureFocus": "突出Reservation（预约）的预约时间段、冲突校验与状态流转",
+                "promptTemplate": "为《数据库详细设计—Reservation（预约）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出Reservation（预约）的预约时间段、冲突校验与状态流转。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "Reservation（预约）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—Reservation（预约）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—Reservation（预约）实体》：交代实体业务定位、关键字段（如id, user_id, venue_id, course_id）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "Reservation"
+          }
+        },
+        {
+          "order": 5,
+          "title": "MembershipCard（会员卡）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "MembershipCard（会员卡）局部结构图",
+                "figureFocus": "突出MembershipCard（会员卡）的会员卡类型、有效期与余额管理",
+                "promptTemplate": "为《数据库详细设计—MembershipCard（会员卡）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出MembershipCard（会员卡）的会员卡类型、有效期与余额管理。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "MembershipCard（会员卡）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—MembershipCard（会员卡）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—MembershipCard（会员卡）实体》：交代实体业务定位、关键字段（如id, user_id, type, balance）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "MembershipCard"
+          }
+        },
+        {
+          "order": 6,
+          "title": "CheckIn（签到）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "CheckIn（签到）局部结构图",
+                "figureFocus": "突出CheckIn（签到）的签到时间、二维码与缺席统计流程",
+                "promptTemplate": "为《数据库详细设计—CheckIn（签到）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出CheckIn（签到）的签到时间、二维码与缺席统计流程。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "CheckIn（签到）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—CheckIn（签到）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—CheckIn（签到）实体》：交代实体业务定位、关键字段（如id, reservation_id, user_id, check_in_time）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "CheckIn"
+          }
+        },
+        {
+          "order": 7,
+          "title": "QRCode（二维码）实体",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "QRCode（二维码）局部结构图",
+                "figureFocus": "突出QRCode（二维码）的二维码业务类型、有效期与状态管理",
+                "promptTemplate": "为《数据库详细设计—QRCode（二维码）实体》生成 PlantUML 代码，仅输出合法完整代码。重点：突出QRCode（二维码）的二维码业务类型、有效期与状态管理。"
+              }
+            ],
+            "wantTable": true,
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "QRCode（二维码）字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库详细设计—QRCode（二维码）实体》生成三线表 JSON 数据。字段：[字段名,类型,约束,说明]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "说明《数据库详细设计—QRCode（二维码）实体》：交代实体业务定位、关键字段（如id, biz_type, biz_id, content）、约束以及与其他实体的关系。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "entityName": "QRCode"
+          }
+        }
+      ],
+      "figures": [],
+      "tables": [],
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "数据库整体ER图",
+            "figureFocus": "ER/类图：实体、主外键、关系基数与约束。",
+            "promptTemplate": "为《数据库详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：ER/类图：实体、主外键、关系基数与约束。。"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      }
+    },
+    "4.3": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《本章小结》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

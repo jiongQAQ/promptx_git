@@ -1,0 +1,977 @@
+{
+  "tables": [
+    {
+      "fileName": "Tab-check_in.json",
+      "tableName": "check_in",
+      "tableCnName": "签到表",
+      "columns": [
+        [
+          "id",
+          "签到编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "签到记录主键ID"
+        ],
+        [
+          "reservation_id",
+          "预约编号",
+          "BIGINT",
+          "FK",
+          "关联预约ID"
+        ],
+        [
+          "user_id",
+          "用户编号",
+          "BIGINT",
+          "FK, NOT NULL",
+          "签到用户ID，关联用户表"
+        ],
+        [
+          "venue_id",
+          "场地编号",
+          "BIGINT",
+          "FK",
+          "签到场地ID，关联场地表"
+        ],
+        [
+          "course_id",
+          "课程编号",
+          "BIGINT",
+          "FK",
+          "签到课程ID，关联课程表"
+        ],
+        [
+          "check_in_time",
+          "签到时间",
+          "DATETIME",
+          "",
+          "实际签到时间"
+        ],
+        [
+          "check_out_time",
+          "签退时间",
+          "DATETIME",
+          "",
+          "实际签退时间"
+        ],
+        [
+          "qr_code",
+          "签到二维码",
+          "VARCHAR(500)",
+          "",
+          "用于签到的二维码内容"
+        ],
+        [
+          "check_method",
+          "签到方式",
+          "INT",
+          "DEFAULT 1",
+          "签到方式：1-二维码扫码 2-手动签到"
+        ],
+        [
+          "location",
+          "签到位置",
+          "VARCHAR(255)",
+          "",
+          "签到地理位置或区域"
+        ],
+        [
+          "remark",
+          "备注",
+          "TEXT",
+          "",
+          "签到相关备注信息"
+        ],
+        [
+          "status",
+          "签到状态",
+          "INT",
+          "DEFAULT 1",
+          "签到状态：1-正常签到 2-迟到签到 0-异常签到"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "签到记录创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "签到记录最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "field": "用户编号",
+          "fieldEn": "user_id",
+          "targetTable": "用户表",
+          "description": "签到用户ID，关联用户表"
+        },
+        {
+          "field": "场地编号",
+          "fieldEn": "venue_id",
+          "targetTable": "场地表",
+          "description": "签到场地ID，关联场地表"
+        },
+        {
+          "field": "课程编号",
+          "fieldEn": "course_id",
+          "targetTable": "课程表",
+          "description": "签到课程ID，关联课程表"
+        }
+      ]
+    },
+    {
+      "fileName": "Tab-course.json",
+      "tableName": "course",
+      "tableCnName": "课程表",
+      "columns": [
+        [
+          "id",
+          "课程编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "课程主键ID"
+        ],
+        [
+          "name",
+          "课程名称",
+          "VARCHAR(100)",
+          "NOT NULL",
+          "课程的显示名称"
+        ],
+        [
+          "description",
+          "课程描述",
+          "TEXT",
+          "",
+          "课程内容和特色介绍"
+        ],
+        [
+          "coach_id",
+          "教练编号",
+          "BIGINT",
+          "FK, NOT NULL",
+          "授课教练ID，关联用户表"
+        ],
+        [
+          "venue_id",
+          "场地编号",
+          "BIGINT",
+          "FK, NOT NULL",
+          "上课场地ID，关联场地表"
+        ],
+        [
+          "start_time",
+          "开始时间",
+          "DATETIME",
+          "NOT NULL",
+          "课程开始时间"
+        ],
+        [
+          "end_time",
+          "结束时间",
+          "DATETIME",
+          "NOT NULL",
+          "课程结束时间"
+        ],
+        [
+          "capacity",
+          "最大人数",
+          "INT",
+          "NOT NULL",
+          "课程最大容纳学员数"
+        ],
+        [
+          "enrolled_count",
+          "已报名人数",
+          "INT",
+          "DEFAULT 0",
+          "当前已报名学员数量"
+        ],
+        [
+          "price",
+          "课程价格",
+          "DECIMAL(10,2)",
+          "DEFAULT 0.00",
+          "单次课程费用"
+        ],
+        [
+          "status",
+          "课程状态",
+          "INT",
+          "DEFAULT 1",
+          "课程状态：1-开放报名 2-报名满员 3-已开始 4-已结束 0-已取消"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "课程信息创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "课程信息最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "field": "教练编号",
+          "fieldEn": "coach_id",
+          "targetTable": "用户表",
+          "description": "授课教练ID，关联用户表"
+        },
+        {
+          "field": "场地编号",
+          "fieldEn": "venue_id",
+          "targetTable": "场地表",
+          "description": "上课场地ID，关联场地表"
+        }
+      ]
+    },
+    {
+      "fileName": "Tab-membership_card.json",
+      "tableName": "membership_card",
+      "tableCnName": "会员卡表",
+      "columns": [
+        [
+          "id",
+          "会员卡编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "会员卡主键ID"
+        ],
+        [
+          "user_id",
+          "用户编号",
+          "BIGINT",
+          "FK, NOT NULL",
+          "持卡用户ID，关联用户表"
+        ],
+        [
+          "type",
+          "卡类型",
+          "INT",
+          "",
+          "会员卡类型：1-次卡 2-月卡 3-年卡"
+        ],
+        [
+          "name",
+          "卡名称",
+          "VARCHAR(100)",
+          "",
+          "会员卡产品名称"
+        ],
+        [
+          "total_times",
+          "总次数",
+          "INT",
+          "",
+          "次卡总使用次数（仅次卡有效）"
+        ],
+        [
+          "remaining_times",
+          "剩余次数",
+          "INT",
+          "",
+          "次卡剩余使用次数（仅次卡有效）"
+        ],
+        [
+          "start_date",
+          "生效日期",
+          "DATE",
+          "",
+          "会员卡开始生效日期"
+        ],
+        [
+          "end_date",
+          "到期日期",
+          "DATE",
+          "",
+          "会员卡失效日期"
+        ],
+        [
+          "price",
+          "购买价格",
+          "DECIMAL(10,2)",
+          "",
+          "会员卡购买时的价格"
+        ],
+        [
+          "status",
+          "卡状态",
+          "INT",
+          "",
+          "会员卡状态：1-正常 2-即将到期 3-已到期 0-已禁用"
+        ],
+        [
+          "purchase_time",
+          "购买时间",
+          "DATETIME",
+          "",
+          "会员卡购买时间"
+        ],
+        [
+          "remark",
+          "备注",
+          "TEXT",
+          "",
+          "会员卡相关备注信息"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "会员卡记录创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "会员卡记录最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "field": "用户编号",
+          "fieldEn": "user_id",
+          "targetTable": "用户表",
+          "description": "持卡用户ID，关联用户表"
+        }
+      ]
+    },
+    {
+      "fileName": "Tab-qr_code.json",
+      "tableName": "qr_code",
+      "tableCnName": "二维码表",
+      "columns": [
+        [
+          "id",
+          "二维码编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "二维码记录主键ID"
+        ],
+        [
+          "qr_id",
+          "二维码标识",
+          "VARCHAR(100)",
+          "",
+          "二维码唯一标识符"
+        ],
+        [
+          "venue_id",
+          "场地编号",
+          "BIGINT",
+          "FK",
+          "关联场地ID"
+        ],
+        [
+          "qr_content",
+          "二维码内容",
+          "TEXT",
+          "",
+          "二维码承载的信息内容"
+        ],
+        [
+          "qr_code_data",
+          "二维码数据",
+          "TEXT",
+          "",
+          "二维码生成的原始数据"
+        ],
+        [
+          "valid_hours",
+          "有效小时数",
+          "INT",
+          "",
+          "二维码有效期时长（小时）"
+        ],
+        [
+          "size",
+          "二维码尺寸",
+          "INT",
+          "",
+          "生成二维码图片的尺寸像素"
+        ],
+        [
+          "format",
+          "图片格式",
+          "VARCHAR(20)",
+          "",
+          "二维码图片的文件格式"
+        ],
+        [
+          "background_color",
+          "背景颜色",
+          "VARCHAR(20)",
+          "",
+          "二维码背景颜色"
+        ],
+        [
+          "foreground_color",
+          "前景颜色",
+          "VARCHAR(20)",
+          "",
+          "二维码前景颜色"
+        ],
+        [
+          "with_logo",
+          "是否含Logo",
+          "INT",
+          "",
+          "是否在二维码中包含Logo：1-是 0-否"
+        ],
+        [
+          "valid_start_time",
+          "生效开始时间",
+          "DATETIME",
+          "",
+          "二维码开始生效的时间"
+        ],
+        [
+          "valid_end_time",
+          "生效结束时间",
+          "DATETIME",
+          "",
+          "二维码失效的时间"
+        ],
+        [
+          "usage_count",
+          "使用次数",
+          "INT",
+          "DEFAULT 0",
+          "二维码被扫描使用的次数"
+        ],
+        [
+          "status",
+          "二维码状态",
+          "INT",
+          "DEFAULT 1",
+          "二维码状态：1-有效 2-已失效 0-已撤销"
+        ],
+        [
+          "created_by",
+          "创建者编号",
+          "BIGINT",
+          "FK",
+          "创建二维码的用户ID"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "二维码记录创建时间"
+        ],
+        [
+          "expire_time",
+          "过期时间",
+          "DATETIME",
+          "",
+          "二维码自动过期时间"
+        ],
+        [
+          "is_active",
+          "是否激活",
+          "INT",
+          "DEFAULT 1",
+          "二维码是否激活：1-激活，0-未激活"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": []
+    },
+    {
+      "fileName": "Tab-reservation.json",
+      "tableName": "reservation",
+      "tableCnName": "预约表",
+      "columns": [
+        [
+          "id",
+          "预约编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "预约记录主键ID"
+        ],
+        [
+          "user_id",
+          "用户编号",
+          "BIGINT",
+          "FK, NOT NULL",
+          "预约用户ID，关联用户表"
+        ],
+        [
+          "course_id",
+          "课程编号",
+          "BIGINT",
+          "FK",
+          "预约课程ID，关联课程表"
+        ],
+        [
+          "venue_id",
+          "场地编号",
+          "BIGINT",
+          "FK",
+          "预约场地ID，关联场地表"
+        ],
+        [
+          "membership_card_id",
+          "会员卡编号",
+          "BIGINT",
+          "FK",
+          "使用的会员卡ID，关联会员卡表"
+        ],
+        [
+          "start_time",
+          "开始时间",
+          "DATETIME",
+          "NOT NULL",
+          "预约时间段开始时间"
+        ],
+        [
+          "end_time",
+          "结束时间",
+          "DATETIME",
+          "NOT NULL",
+          "预约时间段结束时间"
+        ],
+        [
+          "status",
+          "预约状态",
+          "INT",
+          "",
+          "预约状态：0-待确认，1-已确认，2-已取消，3-已完成，4-未到场"
+        ],
+        [
+          "qr_code",
+          "预约二维码",
+          "VARCHAR(255)",
+          "",
+          "预约签到用二维码"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "预约记录创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "预约记录最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "field": "用户编号",
+          "fieldEn": "user_id",
+          "targetTable": "用户表",
+          "description": "预约用户ID，关联用户表"
+        },
+        {
+          "field": "课程编号",
+          "fieldEn": "course_id",
+          "targetTable": "课程表",
+          "description": "预约课程ID，关联课程表"
+        },
+        {
+          "field": "场地编号",
+          "fieldEn": "venue_id",
+          "targetTable": "场地表",
+          "description": "预约场地ID，关联场地表"
+        },
+        {
+          "field": "会员卡编号",
+          "fieldEn": "membership_card_id",
+          "targetTable": "会员卡表",
+          "description": "使用的会员卡ID，关联会员卡表"
+        }
+      ]
+    },
+    {
+      "fileName": "Tab-role.json",
+      "tableName": "role",
+      "tableCnName": "角色表",
+      "columns": [
+        [
+          "id",
+          "角色编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "角色主键ID"
+        ],
+        [
+          "name",
+          "角色名称",
+          "VARCHAR(50)",
+          "NOT NULL",
+          "角色名称（普通用户/教练/管理员）"
+        ],
+        [
+          "description",
+          "角色描述",
+          "VARCHAR(255)",
+          "",
+          "角色功能和权限描述"
+        ],
+        [
+          "permissions",
+          "权限列表",
+          "TEXT",
+          "",
+          "权限配置（JSON格式存储）"
+        ],
+        [
+          "status",
+          "角色状态",
+          "TINYINT",
+          "DEFAULT 1",
+          "角色状态：1-启用 0-禁用"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "角色创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "角色最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除 1-已删除"
+        ]
+      ],
+      "foreignKeys": []
+    },
+    {
+      "fileName": "Tab-user.json",
+      "tableName": "user",
+      "tableCnName": "用户表",
+      "columns": [
+        [
+          "id",
+          "用户编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "主键ID"
+        ],
+        [
+          "username",
+          "用户名",
+          "VARCHAR(50)",
+          "NOT NULL",
+          "登录用户名"
+        ],
+        [
+          "password",
+          "密码",
+          "VARCHAR(255)",
+          "NOT NULL",
+          "加密存储的用户密码"
+        ],
+        [
+          "real_name",
+          "真实姓名",
+          "VARCHAR(50)",
+          "",
+          "用户的真实姓名"
+        ],
+        [
+          "phone",
+          "手机号",
+          "VARCHAR(20)",
+          "",
+          "联系电话号码"
+        ],
+        [
+          "email",
+          "邮箱",
+          "VARCHAR(100)",
+          "",
+          "电子邮件地址"
+        ],
+        [
+          "gender",
+          "性别",
+          "INT",
+          "",
+          "性别：0-未知 1-男 2-女"
+        ],
+        [
+          "birthday",
+          "生日",
+          "DATE",
+          "",
+          "出生日期"
+        ],
+        [
+          "role_id",
+          "角色编号",
+          "BIGINT",
+          "FK",
+          "用户角色ID，关联角色表"
+        ],
+        [
+          "status",
+          "用户状态",
+          "INT",
+          "",
+          "账号状态：0-禁用，1-正常"
+        ],
+        [
+          "avatar",
+          "头像",
+          "VARCHAR(255)",
+          "",
+          "头像图片URL"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "记录创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "记录最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "field": "角色编号",
+          "fieldEn": "role_id",
+          "targetTable": "角色表",
+          "description": "用户角色ID，关联角色表"
+        }
+      ]
+    },
+    {
+      "fileName": "Tab-venue.json",
+      "tableName": "venue",
+      "tableCnName": "场地表",
+      "columns": [
+        [
+          "id",
+          "场地编号",
+          "BIGINT",
+          "PK, AUTO_INCREMENT, NOT NULL",
+          "场地主键ID"
+        ],
+        [
+          "name",
+          "场地名称",
+          "VARCHAR(100)",
+          "NOT NULL",
+          "场地的显示名称"
+        ],
+        [
+          "type",
+          "场地类型",
+          "VARCHAR(50)",
+          "",
+          "场地分类（泳池/器械区/团课教室）"
+        ],
+        [
+          "capacity",
+          "容纳人数",
+          "INT",
+          "",
+          "场地最大容纳人数"
+        ],
+        [
+          "description",
+          "场地描述",
+          "TEXT",
+          "",
+          "场地详细介绍和特色"
+        ],
+        [
+          "images",
+          "场地图片",
+          "TEXT",
+          "",
+          "场地照片（JSON数组格式）"
+        ],
+        [
+          "price",
+          "单价",
+          "DECIMAL(10,2)",
+          "",
+          "场地每小时租赁价格"
+        ],
+        [
+          "status",
+          "场地状态",
+          "INT",
+          "",
+          "运营状态：1-开放 0-维护 2-关闭"
+        ],
+        [
+          "create_time",
+          "创建时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP",
+          "场地信息创建时间"
+        ],
+        [
+          "update_time",
+          "更新时间",
+          "DATETIME",
+          "DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+          "场地信息最后更新时间"
+        ],
+        [
+          "is_delete",
+          "删除标记",
+          "TINYINT",
+          "DEFAULT 0",
+          "逻辑删除：0-未删除，1-已删除"
+        ]
+      ],
+      "foreignKeys": []
+    }
+  ],
+  "relations": [
+    {
+      "from": "签到表",
+      "fromField": "用户编号",
+      "to": "用户表",
+      "description": "签到用户ID，关联用户表"
+    },
+    {
+      "from": "签到表",
+      "fromField": "场地编号",
+      "to": "场地表",
+      "description": "签到场地ID，关联场地表"
+    },
+    {
+      "from": "签到表",
+      "fromField": "课程编号",
+      "to": "课程表",
+      "description": "签到课程ID，关联课程表"
+    },
+    {
+      "from": "课程表",
+      "fromField": "教练编号",
+      "to": "用户表",
+      "description": "授课教练ID，关联用户表"
+    },
+    {
+      "from": "课程表",
+      "fromField": "场地编号",
+      "to": "场地表",
+      "description": "上课场地ID，关联场地表"
+    },
+    {
+      "from": "会员卡表",
+      "fromField": "用户编号",
+      "to": "用户表",
+      "description": "持卡用户ID，关联用户表"
+    },
+    {
+      "from": "预约表",
+      "fromField": "用户编号",
+      "to": "用户表",
+      "description": "预约用户ID，关联用户表"
+    },
+    {
+      "from": "预约表",
+      "fromField": "课程编号",
+      "to": "课程表",
+      "description": "预约课程ID，关联课程表"
+    },
+    {
+      "from": "预约表",
+      "fromField": "场地编号",
+      "to": "场地表",
+      "description": "预约场地ID，关联场地表"
+    },
+    {
+      "from": "预约表",
+      "fromField": "会员卡编号",
+      "to": "会员卡表",
+      "description": "使用的会员卡ID，关联会员卡表"
+    },
+    {
+      "from": "用户表",
+      "fromField": "角色编号",
+      "to": "角色表",
+      "description": "用户角色ID，关联角色表"
+    }
+  ],
+  "tableCounts": {
+    "用户表": 4,
+    "场地表": 3,
+    "课程表": 2,
+    "会员卡表": 1,
+    "角色表": 1
+  }
+}

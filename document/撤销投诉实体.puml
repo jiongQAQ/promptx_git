@@ -1,0 +1,67 @@
+@startuml
+' --- 样式（可按需微调） ---
+skinparam shadowing false
+skinparam usecase {
+  BorderColor #222
+  BackgroundColor White
+}
+skinparam rectangle {
+  BorderColor #222
+  BackgroundColor White
+}
+left to right direction
+
+' --- 中心实体（矩形） ---
+rectangle "撤销投诉实体" as E
+
+' --- 属性（椭圆，用 usecase 造型） ---
+' 左侧
+(撤销ID)       as A_id
+(创建时间)     as A_ct
+(是否审核)     as A_check
+(图片)         as A_img
+
+' 上方
+(账号)         as A_acc
+(姓名)         as A_name
+(年龄)         as A_age
+
+' 右侧
+(手机)         as A_phone
+(服务名称)     as A_srvname
+(服务员)       as A_staff
+(服务时间)     as A_srvtime
+
+' 下方
+(审核回复)     as A_reply
+(评价)         as A_rate
+
+' --- 实体与属性连线 ---
+E -- A_id
+E -- A_ct
+E -- A_check
+E -- A_img
+E -- A_acc
+E -- A_name
+E -- A_age
+E -- A_phone
+E -- A_srvname
+E -- A_staff
+E -- A_srvtime
+E -- A_reply
+E -- A_rate
+
+' --- 布局暗示（隐藏连线，只用于排版分组） ---
+A_id -[hidden]- A_ct
+A_ct -[hidden]- A_check
+A_check -[hidden]- A_img
+
+A_acc -[hidden]- A_name
+A_name -[hidden]- A_age
+
+A_phone -[hidden]- A_srvname
+A_srvname -[hidden]- A_staff
+A_staff -[hidden]- A_srvtime
+
+A_reply -[hidden]- A_rate
+@enduml

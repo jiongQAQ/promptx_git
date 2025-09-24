@@ -1,0 +1,87 @@
+{
+  "title": "服务管理系统ER图",
+  "entities": [
+    { "name": "管理", "type": "entity" },
+    { "name": "视频", "type": "entity" },
+    { "name": "产品评论", "type": "entity" },
+    { "name": "评论", "type": "entity" },
+    { "name": "服务状态", "type": "entity" },
+    { "name": "服务产品", "type": "entity" },
+    { "name": "服务人员", "type": "entity" },
+    { "name": "管理员", "type": "entity" },
+    { "name": "老人", "type": "entity" },
+    { "name": "活动", "type": "entity" }
+  ],
+  "relationships": [
+    {
+      "name": "包含",
+      "entity1": "管理",
+      "entity2": "视频",
+      "cardinality1": "n",
+      "cardinality2": "1"
+    },
+    {
+      "name": "关联",
+      "entity1": "产品评论",
+      "entity2": "评论",
+      "cardinality1": "n",
+      "cardinality2": "n"
+    },
+    {
+      "name": "关联",
+      "entity1": "产品评论",
+      "entity2": "服务状态",
+      "cardinality1": "1",
+      "cardinality2": "1"
+    },
+    {
+      "name": "发布",
+      "entity1": "服务人员",
+      "entity2": "服务产品",
+      "cardinality1": "1",
+      "cardinality2": "n"
+    },
+    {
+      "name": "预约",
+      "entity1": "老人",
+      "entity2": "服务产品",
+      "cardinality1": "n",
+      "cardinality2": "n"
+    },
+    {
+      "name": "审核",
+      "entity1": "管理员",
+      "entity2": "服务产品",
+      "cardinality1": "1",
+      "cardinality2": "n"
+    },
+    {
+      "name": "管理",
+      "entity1": "服务人员",
+      "entity2": "管理员",
+      "cardinality1": "n",
+      "cardinality2": "1"
+    },
+    {
+      "name": "管理",
+      "entity1": "管理员",
+      "entity2": "老人",
+      "cardinality1": "1",
+      "cardinality2": "n"
+    },
+    {
+      "name": "管理",
+      "entity1": "管理员",
+      "entity2": "活动",
+      "cardinality1": "1",
+      "cardinality2": "n"
+    },
+    {
+      "name": "参加",
+      "entity1": "老人",
+      "entity2": "活动",
+      "cardinality1": "n",
+      "cardinality2": "n"
+    }
+  ]
+}

@@ -4,261 +4,79 @@
   "metadata": {
     "version": "2.0.0",
     "description": "user 级资源注册表",
-    "createdAt": "2025-09-23T08:36:33.889Z",
-    "updatedAt": "2025-09-23T08:36:33.911Z",
-    "resourceCount": 27
+    "createdAt": "2025-09-24T14:55:50.975Z",
+    "updatedAt": "2025-09-24T14:55:50.980Z",
+    "resourceCount": 6
   },
   "resources": [
     {
-      "id": "academic-paper-generator-fixed",
+      "id": "thesis-writing-workflow",
+      "source": "user",
+      "protocol": "execution",
+      "name": "Thesis Writing Workflow 执行模式",
+      "description": "执行模式，定义具体的行为模式",
+      "reference": "@user://.promptx/resource/role/pra/execution/thesis-writing-workflow.execution.md",
+      "metadata": {
+        "createdAt": "2025-09-24T14:55:50.976Z",
+        "updatedAt": "2025-09-24T14:55:50.976Z",
+        "scannedAt": "2025-09-24T14:55:50.976Z",
+        "path": "role/pra/execution/thesis-writing-workflow.execution.md"
+      }
+    },
+    {
+      "id": "pra",
+      "source": "user",
+      "protocol": "role",
+      "name": "Pra 角色",
+      "description": "专业角色，提供特定领域的专业能力",
+      "reference": "@user://.promptx/resource/role/pra/pra.role.md",
+      "metadata": {
+        "createdAt": "2025-09-24T14:55:50.977Z",
+        "updatedAt": "2025-09-24T14:55:50.977Z",
+        "scannedAt": "2025-09-24T14:55:50.977Z",
+        "path": "role/pra/pra.role.md"
+      }
+    },
+    {
+      "id": "academic-thinking",
+      "source": "user",
+      "protocol": "thought",
+      "name": "Academic Thinking 思维模式",
+      "description": "思维模式，指导AI的思考方式",
+      "reference": "@user://.promptx/resource/role/pra/thought/academic-thinking.thought.md",
+      "metadata": {
+        "createdAt": "2025-09-24T14:55:50.977Z",
+        "updatedAt": "2025-09-24T14:55:50.977Z",
+        "scannedAt": "2025-09-24T14:55:50.977Z",
+        "path": "role/pra/thought/academic-thinking.thought.md"
+      }
+    },
+    {
+      "id": "1-1-single-er",
       "source": "user",
       "protocol": "tool",
-      "name": "Academic Paper Generator Fixed tool",
+      "name": "1 1 Single Er tool",
       "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/academic-paper-generator/academic-paper-generator-fixed.tool.js",
+      "reference": "@user://.promptx/resource/tool/1-1-single-er/1-1-single-er.tool.js",
       "metadata": {
-        "createdAt": "2025-09-22T17:14:14.482Z",
-        "updatedAt": "2025-09-22T17:14:14.482Z",
-        "scannedAt": "2025-09-22T17:14:14.482Z",
-        "path": "tool/academic-paper-generator/academic-paper-generator-fixed.tool.js"
+        "createdAt": "2025-09-24T14:55:50.978Z",
+        "updatedAt": "2025-09-24T14:55:50.978Z",
+        "scannedAt": "2025-09-24T14:55:50.978Z",
+        "path": "tool/1-1-single-er/1-1-single-er.tool.js"
       }
     },
     {
-      "id": "academic-paper-generator",
+      "id": "json-chapter-splitter",
       "source": "user",
       "protocol": "tool",
-      "name": "Academic Paper Generator tool",
+      "name": "Json Chapter Splitter tool",
       "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/academic-paper-generator/academic-paper-generator.tool.js",
+      "reference": "@user://.promptx/resource/tool/json-chapter-splitter/json-chapter-splitter.tool.js",
       "metadata": {
-        "createdAt": "2025-09-22T17:14:14.482Z",
-        "updatedAt": "2025-09-22T17:14:14.482Z",
-        "scannedAt": "2025-09-22T17:14:14.482Z",
-        "path": "tool/academic-paper-generator/academic-paper-generator.tool.js"
-      }
-    },
-    {
-      "id": "academic-expression-optimizer",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Academic Expression Optimizer manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/academic-expression-optimizer/academic-expression-optimizer.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.895Z",
-        "updatedAt": "2025-09-23T08:36:33.895Z",
-        "scannedAt": "2025-09-23T08:36:33.895Z",
-        "path": "tool/academic-expression-optimizer/academic-expression-optimizer.manual.md"
-      }
-    },
-    {
-      "id": "academic-expression-optimizer",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Academic Expression Optimizer tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/academic-expression-optimizer/academic-expression-optimizer.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.897Z",
-        "updatedAt": "2025-09-23T08:36:33.897Z",
-        "scannedAt": "2025-09-23T08:36:33.897Z",
-        "path": "tool/academic-expression-optimizer/academic-expression-optimizer.tool.js"
-      }
-    },
-    {
-      "id": "docx-editor-fixed",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Docx Editor Fixed tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-fixed.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.483Z",
-        "updatedAt": "2025-09-22T17:14:14.483Z",
-        "scannedAt": "2025-09-22T17:14:14.483Z",
-        "path": "tool/docx-editor/docx-editor-fixed.tool.js"
-      }
-    },
-    {
-      "id": "docx-editor-perfect",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Docx Editor Perfect tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-perfect.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.483Z",
-        "updatedAt": "2025-09-22T17:14:14.483Z",
-        "scannedAt": "2025-09-22T17:14:14.483Z",
-        "path": "tool/docx-editor/docx-editor-perfect.tool.js"
-      }
-    },
-    {
-      "id": "docx-editor-ultimate",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Docx Editor Ultimate tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/docx-editor/docx-editor-ultimate.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.484Z",
-        "updatedAt": "2025-09-22T17:14:14.484Z",
-        "scannedAt": "2025-09-22T17:14:14.484Z",
-        "path": "tool/docx-editor/docx-editor-ultimate.tool.js"
-      }
-    },
-    {
-      "id": "docx-toc-extractor",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Docx Toc Extractor manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/docx-toc-extractor/docx-toc-extractor.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.899Z",
-        "updatedAt": "2025-09-23T08:36:33.899Z",
-        "scannedAt": "2025-09-23T08:36:33.899Z",
-        "path": "tool/docx-toc-extractor/docx-toc-extractor.manual.md"
-      }
-    },
-    {
-      "id": "docx-toc-extractor",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Docx Toc Extractor tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/docx-toc-extractor/docx-toc-extractor.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.900Z",
-        "updatedAt": "2025-09-23T08:36:33.900Z",
-        "scannedAt": "2025-09-23T08:36:33.900Z",
-        "path": "tool/docx-toc-extractor/docx-toc-extractor.tool.js"
-      }
-    },
-    {
-      "id": "fixed-docx-exporter",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Fixed Docx Exporter tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/fixed-docx-exporter/fixed-docx-exporter.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.485Z",
-        "updatedAt": "2025-09-22T17:14:14.485Z",
-        "scannedAt": "2025-09-22T17:14:14.485Z",
-        "path": "tool/fixed-docx-exporter/fixed-docx-exporter.tool.js"
-      }
-    },
-    {
-      "id": "frontend-api-generator",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Frontend Api Generator tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/frontend-api-generator/frontend-api-generator.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.486Z",
-        "updatedAt": "2025-09-22T17:14:14.486Z",
-        "scannedAt": "2025-09-22T17:14:14.486Z",
-        "path": "tool/frontend-api-generator/frontend-api-generator.tool.js"
-      }
-    },
-    {
-      "id": "json-docx-generator",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Json Docx Generator manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/json-docx-generator/json-docx-generator.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.903Z",
-        "updatedAt": "2025-09-23T08:36:33.903Z",
-        "scannedAt": "2025-09-23T08:36:33.903Z",
-        "path": "tool/json-docx-generator/json-docx-generator.manual.md"
-      }
-    },
-    {
-      "id": "json-docx-generator",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Json Docx Generator tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/json-docx-generator/json-docx-generator.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.903Z",
-        "updatedAt": "2025-09-23T08:36:33.903Z",
-        "scannedAt": "2025-09-23T08:36:33.903Z",
-        "path": "tool/json-docx-generator/json-docx-generator.tool.js"
-      }
-    },
-    {
-      "id": "luban-sql",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Luban Sql manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-sql/luban-sql.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.904Z",
-        "updatedAt": "2025-09-23T08:36:33.904Z",
-        "scannedAt": "2025-09-23T08:36:33.904Z",
-        "path": "tool/luban-sql/luban-sql.manual.md"
-      }
-    },
-    {
-      "id": "luban-sql",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Luban Sql tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-sql/luban-sql.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.905Z",
-        "updatedAt": "2025-09-23T08:36:33.905Z",
-        "scannedAt": "2025-09-23T08:36:33.905Z",
-        "path": "tool/luban-sql/luban-sql.tool.js"
-      }
-    },
-    {
-      "id": "luban-table",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Luban Table manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-table/luban-table.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.905Z",
-        "updatedAt": "2025-09-23T08:36:33.905Z",
-        "scannedAt": "2025-09-23T08:36:33.905Z",
-        "path": "tool/luban-table/luban-table.manual.md"
-      }
-    },
-    {
-      "id": "luban-table",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Luban Table tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-table/luban-table.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.906Z",
-        "updatedAt": "2025-09-23T08:36:33.906Z",
-        "scannedAt": "2025-09-23T08:36:33.906Z",
-        "path": "tool/luban-table/luban-table.tool.js"
-      }
-    },
-    {
-      "id": "luban-uml",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Luban Uml manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.907Z",
-        "updatedAt": "2025-09-23T08:36:33.907Z",
-        "scannedAt": "2025-09-23T08:36:33.907Z",
-        "path": "tool/luban-uml/luban-uml.manual.md"
+        "createdAt": "2025-09-24T14:55:50.979Z",
+        "updatedAt": "2025-09-24T14:55:50.979Z",
+        "scannedAt": "2025-09-24T14:55:50.979Z",
+        "path": "tool/json-chapter-splitter/json-chapter-splitter.tool.js"
       }
     },
     {
@@ -269,119 +87,23 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.tool.js",
       "metadata": {
-        "createdAt": "2025-09-23T08:36:33.907Z",
-        "updatedAt": "2025-09-23T08:36:33.907Z",
-        "scannedAt": "2025-09-23T08:36:33.907Z",
+        "createdAt": "2025-09-24T14:55:50.980Z",
+        "updatedAt": "2025-09-24T14:55:50.980Z",
+        "scannedAt": "2025-09-24T14:55:50.980Z",
         "path": "tool/luban-uml/luban-uml.tool.js"
-      }
-    },
-    {
-      "id": "luban-word",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Luban Word manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-word/luban-word.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.908Z",
-        "updatedAt": "2025-09-23T08:36:33.908Z",
-        "scannedAt": "2025-09-23T08:36:33.908Z",
-        "path": "tool/luban-word/luban-word.manual.md"
-      }
-    },
-    {
-      "id": "luban-word",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Luban Word tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/luban-word/luban-word.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.909Z",
-        "updatedAt": "2025-09-23T08:36:33.909Z",
-        "scannedAt": "2025-09-23T08:36:33.909Z",
-        "path": "tool/luban-word/luban-word.tool.js"
-      }
-    },
-    {
-      "id": "sql-er-visualizer",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Sql Er Visualizer tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/sql-er-visualizer/sql-er-visualizer.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.487Z",
-        "updatedAt": "2025-09-22T17:14:14.487Z",
-        "scannedAt": "2025-09-22T17:14:14.487Z",
-        "path": "tool/sql-er-visualizer/sql-er-visualizer.tool.js"
-      }
-    },
-    {
-      "id": "sql-table-parser",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Sql Table Parser tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/sql-table-parser/sql-table-parser.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.488Z",
-        "updatedAt": "2025-09-22T17:14:14.488Z",
-        "scannedAt": "2025-09-22T17:14:14.488Z",
-        "path": "tool/sql-table-parser/sql-table-parser.tool.js"
-      }
-    },
-    {
-      "id": "txt-creator",
-      "source": "user",
-      "protocol": "manual",
-      "name": "Txt Creator manual",
-      "description": "manual类型的资源",
-      "reference": "@user://.promptx/resource/tool/txt-creator/txt-creator.manual.md",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.910Z",
-        "updatedAt": "2025-09-23T08:36:33.910Z",
-        "scannedAt": "2025-09-23T08:36:33.910Z",
-        "path": "tool/txt-creator/txt-creator.manual.md"
-      }
-    },
-    {
-      "id": "txt-creator",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Txt Creator tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/txt-creator/txt-creator.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-23T08:36:33.910Z",
-        "updatedAt": "2025-09-23T08:36:33.910Z",
-        "scannedAt": "2025-09-23T08:36:33.910Z",
-        "path": "tool/txt-creator/txt-creator.tool.js"
-      }
-    },
-    {
-      "id": "web-automation-test",
-      "source": "user",
-      "protocol": "tool",
-      "name": "Web Automation Test tool",
-      "description": "tool类型的资源",
-      "reference": "@user://.promptx/resource/tool/web-automation-test/web-automation-test.tool.js",
-      "metadata": {
-        "createdAt": "2025-09-22T17:14:14.488Z",
-        "updatedAt": "2025-09-22T17:14:14.488Z",
-        "scannedAt": "2025-09-22T17:14:14.488Z",
-        "path": "tool/web-automation-test/web-automation-test.tool.js"
       }
     }
   ],
   "stats": {
-    "totalResources": 27,
+    "totalResources": 6,
     "byProtocol": {
-      "manual": 8,
-      "tool": 19
+      "execution": 1,
+      "role": 1,
+      "thought": 1,
+      "tool": 3
     },
     "bySource": {
-      "user": 27
+      "user": 6
     }
   }
 }

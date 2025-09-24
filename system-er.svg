@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .entity { fill: #ffffff; stroke: #333333; stroke-width: 2; }
+      .relationship { fill: #ffffff; stroke: #333333; stroke-width: 2; }
+      .attribute { fill: #ffffff; stroke: #333333; stroke-width: 1.5; }
+      .connection { stroke: #333333; stroke-width: 1.5; fill: none; }
+      .entity-text { font-family: "Microsoft YaHei", SimHei, Arial; font-size: 14px; font-weight: bold; text-anchor: middle; fill: #333; }
+      .relationship-text { font-family: "Microsoft YaHei", SimHei, Arial; font-size: 12px; font-weight: bold; text-anchor: middle; fill: #333; }
+      .attribute-text { font-family: "Microsoft YaHei", SimHei, Arial; font-size: 11px; text-anchor: middle; fill: #333; }
+      .cardinality { font-family: Arial; font-size: 12px; text-anchor: middle; fill: #666; font-weight: bold; }
+      .title-text { font-family: "Microsoft YaHei", SimHei, Arial; font-size: 18px; font-weight: bold; text-anchor: middle; fill: #333; }
+    </style>
+  </defs>
+  <rect width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="30" class="title-text">健身房管理系统总体E-R图</text>
+  <rect x="226.66666666666663" y="233.33333333333331" width="120" height="60" class="entity"/>
+  <text x="286.66666666666663" y="268.3333333333333" class="entity-text">用户</text>
+  <rect x="640" y="233.33333333333331" width="120" height="60" class="entity"/>
+  <text x="700" y="268.3333333333333" class="entity-text">角色</text>
+  <rect x="1053.3333333333333" y="233.33333333333331" width="120" height="60" class="entity"/>
+  <text x="1113.3333333333333" y="268.3333333333333" class="entity-text">课程</text>
+  <rect x="226.66666666666663" y="479.99999999999994" width="120" height="60" class="entity"/>
+  <text x="286.66666666666663" y="515" class="entity-text">场地</text>
+  <rect x="640" y="479.99999999999994" width="120" height="60" class="entity"/>
+  <text x="700" y="515" class="entity-text">预约</text>
+  <rect x="1053.3333333333333" y="479.99999999999994" width="120" height="60" class="entity"/>
+  <text x="1113.3333333333333" y="515" class="entity-text">签到</text>
+  <rect x="226.66666666666663" y="726.6666666666666" width="120" height="60" class="entity"/>
+  <text x="286.66666666666663" y="761.6666666666666" class="entity-text">会员卡</text>
+  <rect x="640" y="726.6666666666666" width="120" height="60" class="entity"/>
+  <text x="700" y="761.6666666666666" class="entity-text">二维码</text>
+  <polygon points="493.3333333333333,233.33333333333331 543.3333333333333,263.3333333333333 493.3333333333333,293.3333333333333 443.3333333333333,263.3333333333333" class="relationship"/>
+  <text x="493.3333333333333" y="267.3333333333333" class="relationship-text">分配</text>
+  <polygon points="700,233.33333333333331 750,263.3333333333333 700,293.3333333333333 650,263.3333333333333" class="relationship"/>
+  <text x="700" y="267.3333333333333" class="relationship-text">授课</text>
+  <polygon points="700,356.66666666666663 750,386.66666666666663 700,416.66666666666663 650,386.66666666666663" class="relationship"/>
+  <text x="700" y="390.66666666666663" class="relationship-text">使用</text>
+  <polygon points="700,233.33333333333331 750,263.3333333333333 700,293.3333333333333 650,263.3333333333333" class="relationship"/>
+  <text x="700" y="267.3333333333333" class="relationship-text">预约</text>
+  <polygon points="700,233.33333333333331 750,263.3333333333333 700,293.3333333333333 650,263.3333333333333" class="relationship"/>
+  <text x="700" y="267.3333333333333" class="relationship-text">签到</text>
+  <polygon points="286.66666666666663,480 336.66666666666663,510 286.66666666666663,540 236.66666666666663,510" class="relationship"/>
+  <text x="286.66666666666663" y="514" class="relationship-text">持有</text>
+  <polygon points="700,603.3333333333333 750,633.3333333333333 700,663.3333333333333 650,633.3333333333333" class="relationship"/>
+  <text x="700" y="637.3333333333333" class="relationship-text">生成</text>
+</svg>

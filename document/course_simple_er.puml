@@ -1,0 +1,32 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+
+rectangle course {
+}
+
+ellipse "课程ID" as id
+ellipse "课程名称" as name
+ellipse "课程描述" as description
+ellipse "教师ID" as teacher_id
+ellipse "课程分类ID" as category_id
+ellipse "课程价格" as price
+ellipse "课程时长" as duration
+ellipse "课程难度" as level
+ellipse "课程状态" as status
+ellipse "创建时间" as created_at
+ellipse "更新时间" as updated_at
+
+course -- id
+course -- name
+course -- description
+course -- teacher_id
+course -- category_id
+course -- price
+course -- duration
+course -- level
+course -- status
+course -- created_at
+course -- updated_at
+
+@enduml

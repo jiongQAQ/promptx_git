@@ -1,0 +1,385 @@
+{
+  "docId": "paper-001-chapter-1",
+  "meta": {
+    "title": "健身房预约管理系统设计与实现",
+    "theme": "健身房预约管理系统",
+    "chapter": 1,
+    "originalDocId": "paper-001",
+    "splitDate": "2025-09-24T09:47:23.211Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕“{{论文主题}}”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "_templates": {
+    "sectionSingle": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "{{defaults.textPromptTemplate}}",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "sectionList": {
+      "mode": "list",
+      "itemType": "custom",
+      "subNumbering": "numeric",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "textPrompt": "{{defaults.textPromptTemplate}}",
+      "text": "",
+      "items": [],
+      "figures": [],
+      "tables": []
+    },
+    "item.actorUseCase": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 300
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "{{itemTitle}}用例图",
+            "figureFocus": "{{itemTitle}}的核心用例与交互关系",
+            "promptTemplate": "{{defaults.figurePromptTemplate}}"
+          }
+        ],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的用例说明：目标、主要用例、边界与约束。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {
+        "role": ""
+      }
+    },
+    "item.entity": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 400
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "{{itemTitle}}局部结构图",
+            "figureFocus": "字段、约束及与其他实体的关系",
+            "promptTemplate": "{{defaults.figurePromptTemplate}}"
+          }
+        ],
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "{{itemTitle}}字段三线表",
+            "schema": [
+              "字段名",
+              "类型",
+              "约束",
+              "说明"
+            ],
+            "promptTemplate": "{{defaults.tablePromptTemplate}}"
+          }
+        ]
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的实体说明：业务定位、关键字段、约束与关系。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {
+        "entityName": ""
+      }
+    },
+    "item.custom": {
+      "order": 1,
+      "title": "",
+      "render": {
+        "as": "numbered"
+      },
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 300
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《{{sectionTitle}}—{{itemTitle}}》的说明文本。",
+      "text": "",
+      "figures": [],
+      "tables": [],
+      "meta": {}
+    }
+  },
+  "promptSnippets": {
+    "techIntro": "填写‘相关技术介绍’的小节标题占位符（如 {{jishu1}}/{{jishu2}}/{{jishu3}}）为真实技术名。严格基于 ./source/ 与 ./CLAUDE.md 的证据，自行判断，不得臆造。输出候选并自动采纳最佳项。",
+    "figure.arch": "系统架构/功能框图：强调分层结构、依赖关系、接口边界或模块调用关系。",
+    "figure.usecase": "UML 用例图：突出参与者、用例、关系（extend/include）、系统边界。",
+    "figure.er": "ER/类图：实体、主外键、关系基数与约束。",
+    "table.testcases": "测试用例三线表 JSON：字段= ['用例ID','测试点','输入','预期输出','结果']",
+    "table.entity": "实体字段三线表 JSON：字段= ['字段名','类型','约束','说明']"
+  },
+  "autoApply": [],
+  "contents": {
+    "1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《第1章 绪论》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《研究背景与意义》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.1.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《研究背景》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.1.2": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《研究意义》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.2": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《国内外研究现状》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.2.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《国内研究现状》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.2.2": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《国外研究现状》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.3": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《研究内容和方法》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.4": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《相关技术介绍》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.4.1": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《Spring Boot 框架》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.4.2": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《MyBatis-Plus 数据访问》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "1.4.3": {
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": false,
+        "tablePlan": []
+      },
+      "textPrompt": "撰写《Redis 缓存与分布式能力》，围绕“健身房预约管理系统”，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}
