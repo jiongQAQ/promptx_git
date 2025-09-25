@@ -1,18 +1,18 @@
 {
   "docId": "canteen-rating-thesis-chapter-5",
   "meta": {
-    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
-    "theme": "校园食堂评价系",
+    "title": "基于Spring Boot的食堂评价系统设计与实现",
+    "theme": "食堂评价系统",
     "chapter": 5,
     "originalDocId": "canteen-rating-thesis",
-    "splitDate": "2025-09-25T01:37:02.805Z"
+    "splitDate": "2025-09-25T08:26:29.052Z"
   },
   "defaults": {
     "length": {
       "unit": "char",
       "target": 900
     },
-    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕\"食堂评价系统\"，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
     "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
     "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
     "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
@@ -22,145 +22,32 @@
   "autoApply": [],
   "contents": {
     "5": {
-      "id": "5",
       "title": "第5章 系统实现",
       "status": "planning",
       "length": {
         "unit": "char",
-        "target": 600
+        "target": 1500
       },
       "plan": {
-        "wantText": true
+        "wantText": true,
+        "wantFigure": false,
+        "figurePlan": [],
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "系统开发环境配置表",
+            "schema": [
+              "组件类型",
+              "软件名称",
+              "版本",
+              "说明"
+            ],
+            "promptTemplate": "为开发环境配置生成三线表 JSON 数据。字段= ['组件类型','软件名称','版本','说明']。仅输出 JSON。"
+          }
+        ]
       },
-      "textPrompt": "撰写《第5章 系统实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.1": {
-      "id": "5.1",
-      "title": "系统开发环境和工具",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《系统开发环境和工具》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2": {
-      "id": "5.2",
-      "title": "系统功能实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 600
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《系统功能实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2.1": {
-      "id": "5.2.1",
-      "title": "用户认证与权限管理的实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《用户认证与权限管理的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2.2": {
-      "id": "5.2.2",
-      "title": "菜品信息管理的实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《菜品信息管理的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2.3": {
-      "id": "5.2.3",
-      "title": "评价与评论系统的实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《评价与评论系统的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2.4": {
-      "id": "5.2.4",
-      "title": "投诉建议系统的实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《投诉建议系统的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.2.5": {
-      "id": "5.2.5",
-      "title": "数据统计分析的实现",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《数据统计分析的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
-      "text": "",
-      "figures": [],
-      "tables": []
-    },
-    "5.3": {
-      "id": "5.3",
-      "title": "本章小结",
-      "status": "planning",
-      "length": {
-        "unit": "char",
-        "target": 900
-      },
-      "plan": {
-        "wantText": true
-      },
-      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "textPrompt": "撰写《第5章 系统实现》，介绍开发环境和功能实现。",
       "text": "",
       "figures": [],
       "tables": []

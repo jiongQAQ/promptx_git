@@ -28,7 +28,7 @@ module.exports = {
       id: 'json-chapter-splitter',
       name: 'JSON章节拆分工具',
       description: '将论文content.json按大章节拆分为多个独立文件，保持结构完整性',
-      version: '1.0.0',
+      version: '1.1.0',
       author: '鲁班'
     };
   },
@@ -40,12 +40,11 @@ module.exports = {
         properties: {
           inputFile: {
             type: 'string',
-            description: '输入的content.json文件路径',
+            description: '输入的content.json文件路径（必须是绝对路径）',
           },
           outputDir: {
             type: 'string',
-            description: '输出目录路径（相对于~/.promptx/）',
-            default: 'chapters'
+            description: '输出目录路径（必须是绝对路径）'
           },
           preserveStructure: {
             type: 'boolean',
@@ -53,7 +52,7 @@ module.exports = {
             default: true
           }
         },
-        required: ['inputFile']
+        required: ['inputFile', 'outputDir']
       }
     };
   },
@@ -68,7 +67,15 @@ module.exports = {
     try {
       const path = await importx('path');
       const fs = await importx('fs');
-      
+
+      // 路径验证：必须使用绝对路径
+      if (!path.isAbsolute(params.inputFile)) {
+        throw new Error(`输入文件必须是绝对路径：${params.inputFile}`);
+      }
+      if (!path.isAbsolute(params.outputDir)) {
+        throw new Error(`输出目录必须是绝对路径：${params.outputDir}`);
+      }
+
       // 读取原始JSON文件
       const content = await fs.promises.readFile(params.inputFile, 'utf8');
       const originalData = JSON.parse(content);
@@ -78,16 +85,8 @@ module.exports = {
         throw new Error('JSON文件中未找到contents字段');
       }
       
-      // 处理输出目录路径
-      let outputPath;
-      if (params.outputDir.startsWith('./')) {
-        // 相对路径，直接使用
-        outputPath = params.outputDir;
-      } else {
-        // 默认路径或其他，处理为~/.promptx下的路径
-        const outputDir = params.outputDir || 'chapters';
-        outputPath = path.join(process.env.HOME, '.promptx', outputDir);
-      }
+      // 使用绝对路径创建输出目录
+      const outputPath = params.outputDir;
       await fs.promises.mkdir(outputPath, { recursive: true });
       
       // 分析章节结构，找出所有大章节（纯数字编号）

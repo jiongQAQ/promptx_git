@@ -21,7 +21,7 @@ module.exports = {
     return {
       name: 'thesis-to-docx',
       description: '论文章节JSON到DOCX文档转换工具，支持完整的学术论文格式生成',
-      version: '1.0.0',
+      version: '1.1.0',
       category: 'document',
       author: '鲁班',
       tags: ['thesis', 'docx', 'document', 'academic'],
@@ -70,19 +70,24 @@ module.exports = {
 
   validate(params) {
     const errors = [];
-    
+    const path = require('path');
+
     if (!params.sourceDir || typeof params.sourceDir !== 'string') {
       errors.push('sourceDir 参数必须是有效的字符串');
+    } else if (!path.isAbsolute(params.sourceDir)) {
+      errors.push('sourceDir 必须是绝对路径');
     }
-    
+
     if (!params.outputPath || typeof params.outputPath !== 'string') {
       errors.push('outputPath 参数必须是有效的字符串');
+    } else if (!path.isAbsolute(params.outputPath)) {
+      errors.push('outputPath 必须是绝对路径');
     }
-    
+
     if (!params.thesisTitle || typeof params.thesisTitle !== 'string') {
       errors.push('thesisTitle 参数必须是有效的字符串');
     }
-    
+
     return {
       valid: errors.length === 0,
       errors: errors
@@ -99,11 +104,19 @@ module.exports = {
       const fs = await importx('fs-extra');
       
       const startTime = Date.now();
-      
-      // 设置默认值
+
+      // 路径验证：必须使用绝对路径
+      if (!path.isAbsolute(params.sourceDir)) {
+        throw new Error(`源目录必须是绝对路径：${params.sourceDir}`);
+      }
+      if (!path.isAbsolute(params.outputPath)) {
+        throw new Error(`输出路径必须是绝对路径：${params.outputPath}`);
+      }
+
+      // 设置配置参数
       const config = {
-        sourceDir: params.sourceDir || 'paper/splits',
-        outputPath: params.outputPath || 'paper/thesis.docx',
+        sourceDir: params.sourceDir,
+        outputPath: params.outputPath,
         thesisTitle: params.thesisTitle || '基于Spring Boot的校园食堂评价系统设计与实现',
         author: params.author || '',
         includeTableOfContents: params.includeTableOfContents !== false,
@@ -384,8 +397,11 @@ module.exports = {
       const fs = await importx('fs');
       const fsPromises = fs.promises;
 
-      // 确保目录存在
-      const absoluteDir = path.resolve(sourceDir);
+      // 验证目录必须是绝对路径
+      if (!path.isAbsolute(sourceDir)) {
+        throw new Error(`源目录必须是绝对路径：${sourceDir}`);
+      }
+      const absoluteDir = sourceDir;
       console.log(`📂 绝对路径: ${absoluteDir}`);
 
       try {

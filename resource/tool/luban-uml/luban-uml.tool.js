@@ -11,9 +11,10 @@
  * 接口封装，提供类似PlantUML CLI的使用体验，支持多种输出格式和语法验证。
  * 专注于开发者友好的参数设计，让复杂的PlantUML渲染变得简单易用。
  * 
- * 为什么重要：
- * 在软件开发中，可视化文档是沟通的桥梁。这个工具让AI能够快速生成和验证
- * PlantUML图表，提升技术文档的质量和开发团队的协作效率。
+ * 重要更新：
+ * - 使用绝对路径参数，不再依赖沙箱环境
+ * - 直接操作用户指定的项目文件系统
+ * - 支持任意绝对路径的输入和输出
  */
 
 module.exports = {
@@ -25,8 +26,8 @@ module.exports = {
     return {
       id: 'luban-uml',
       name: 'PlantUML渲染工具',
-      description: '将PlantUML源码渲染为PNG/SVG图片，支持语法验证',
-      version: '1.0.0',
+      description: '将PlantUML源码渲染为PNG/SVG图片，支持语法验证，使用绝对路径',
+      version: '1.1.0',
       author: '鲁班'
     };
   },
@@ -44,18 +45,18 @@ module.exports = {
           },
           input: {
             type: 'string',
-            description: 'PlantUML源文件路径(.puml)或PlantUML源码内容',
+            description: 'PlantUML源文件绝对路径(.puml)或PlantUML源码内容',
             minLength: 1
           },
           output: {
             type: 'string',
-            description: '输出文件路径，仅render操作需要'
+            description: '输出文件的绝对路径，仅render操作需要'
           },
           format: {
             type: 'string',
             enum: ['png', 'svg'],
             description: '输出格式：png或svg',
-            default: 'png'
+            default: 'svg'
           }
         },
         required: ['input']
@@ -78,9 +79,7 @@ module.exports = {
   },
 
   async execute(params) {
-    // const { api } = this; // 已移除api依赖
-    
-    console.log('PlantUML工具开始执行', { operation: params.operation });
+    console.log('PlantUML工具开始执行', { operation: params.operation, input: params.input, output: params.output });
 
     try {
       // 检查Java环境
@@ -92,6 +91,10 @@ module.exports = {
       if (params.operation === 'validate') {
         return await this.validatePlantUML(params.input, jarPath);
       } else {
+        // render操作需要输出路径
+        if (!params.output) {
+          throw new Error('渲染操作必须指定output参数（绝对路径）');
+        }
         return await this.renderPlantUML(params.input, params.output, params.format, jarPath);
       }
 
@@ -103,7 +106,6 @@ module.exports = {
 
   // 检查Java环境
   async checkJavaEnvironment() {
-    const { api } = this;
     const javaPath = process.env.JAVA_PATH || 'java';
     
     try {
@@ -118,7 +120,6 @@ module.exports = {
 
   // 确保PlantUML JAR文件存在
   async ensurePlantUMLJar() {
-    const { api } = this;
     let jarPath = process.env.PLANTUML_JAR_PATH;
     
     if (jarPath) {
@@ -134,9 +135,8 @@ module.exports = {
 
   // 验证PlantUML语法
   async validatePlantUML(input, jarPath) {
-    const { api } = this;
-    const { execSync } = await api.importx('child_process');
-    const fs = await api.importx('fs');
+    const { execSync } = await importx('child_process');
+    const fs = await importx('fs');
     const path = await importx('path');
     
     // 判断input是文件路径还是内容
@@ -145,9 +145,13 @@ module.exports = {
     
     if (fs.existsSync(input)) {
       inputPath = input;
+      // 验证是绝对路径
+      if (!path.isAbsolute(input)) {
+        throw new Error(`输入文件路径必须是绝对路径：${input}`);
+      }
     } else {
-      // 创建临时文件
-      const tempDir = path.join(process.env.HOME || process.env.USERPROFILE, '.promptx', 'temp');
+      // 作为内容处理，创建临时文件
+      const tempDir = path.join(process.cwd(), 'temp');
       fs.mkdirSync(tempDir, { recursive: true });
       inputPath = path.join(tempDir, `temp_${Date.now()}.puml`);
       fs.writeFileSync(inputPath, input, 'utf8');
@@ -185,16 +189,29 @@ module.exports = {
       // 清理临时文件
       if (isTemporaryFile && fs.existsSync(inputPath)) {
         fs.unlinkSync(inputPath);
+        // 清理临时目录（如果为空）
+        try {
+          const tempDir = path.dirname(inputPath);
+          if (tempDir.endsWith('temp') && fs.readdirSync(tempDir).length === 0) {
+            fs.rmdirSync(tempDir);
+          }
+        } catch (e) {
+          // 忽略清理错误
+        }
       }
     }
   },
 
   // 渲染PlantUML图片
   async renderPlantUML(input, output, format, jarPath) {
-    const { api } = this;
-    const { execSync } = await api.importx('child_process');
-    const fs = await api.importx('fs');
-    const path = await api.importx('path');
+    const { execSync } = await importx('child_process');
+    const fs = await importx('fs');
+    const path = await importx('path');
+    
+    // 验证输出路径是绝对路径
+    if (!path.isAbsolute(output)) {
+      throw new Error(`输出路径必须是绝对路径：${output}`);
+    }
     
     // 判断input是文件路径还是内容
     let inputPath;
@@ -202,19 +219,17 @@ module.exports = {
     
     if (fs.existsSync(input)) {
       inputPath = input;
+      // 验证是绝对路径
+      if (!path.isAbsolute(input)) {
+        throw new Error(`输入文件路径必须是绝对路径：${input}`);
+      }
     } else {
-      // 创建临时文件
-      const tempDir = path.join(process.env.HOME || process.env.USERPROFILE, '.promptx', 'temp');
+      // 作为内容处理，创建临时文件
+      const tempDir = path.join(process.cwd(), 'temp');
       fs.mkdirSync(tempDir, { recursive: true });
       inputPath = path.join(tempDir, `temp_${Date.now()}.puml`);
       fs.writeFileSync(inputPath, input, 'utf8');
       isTemporaryFile = true;
-    }
-    
-    if (!output) {
-      const baseName = path.basename(inputPath, '.puml');
-      const inputDir = path.dirname(inputPath);
-      output = path.join(inputDir, `${baseName}.${format}`);
     }
     
     try {
@@ -238,6 +253,7 @@ module.exports = {
         const generatedFile = path.join(outputDir, `${baseName}.${format}`);
         if (fs.existsSync(generatedFile) && generatedFile !== output) {
           fs.renameSync(generatedFile, output);
+          console.log(`重命名输出文件：${generatedFile} → ${output}`);
         } else {
           throw new Error('渲染完成但未找到输出文件');
         }
@@ -275,12 +291,28 @@ module.exports = {
       // 清理临时文件
       if (isTemporaryFile && fs.existsSync(inputPath)) {
         fs.unlinkSync(inputPath);
+        // 清理临时目录（如果为空）
+        try {
+          const tempDir = path.dirname(inputPath);
+          if (tempDir.endsWith('temp') && fs.readdirSync(tempDir).length === 0) {
+            fs.rmdirSync(tempDir);
+          }
+        } catch (e) {
+          // 忽略清理错误
+        }
       }
     }
   },
 
   getBusinessErrors() {
     return [
+      {
+        code: 'INVALID_ABSOLUTE_PATH',
+        description: '路径必须是绝对路径',
+        match: /路径必须是绝对路径/i,
+        solution: '请提供完整的绝对路径，以/开头（Linux/Mac）或C:\\\\开头（Windows）',
+        retryable: false
+      },
       {
         code: 'JAVA_NOT_FOUND',
         description: 'Java环境未安装或不可用',
