@@ -1,0 +1,656 @@
+{
+  "docId": "canteen-rating-thesis-chapter-3",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 3,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.804Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "3": {
+      "id": "3",
+      "title": "第3章 系统概要设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《第3章 系统概要设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.1": {
+      "id": "3.1",
+      "title": "系统设计原则",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统设计原则》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.2": {
+      "id": "3.2",
+      "title": "系统软件逻辑架构",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "系统软件逻辑架构图",
+            "figureFocus": "WBS（工作分解结构），层次清晰，样式简洁整洁",
+            "promptTemplate": "为《系统软件逻辑架构》生成 PlantUML 代码，仅输出合法完整代码。重点：WBS（工作分解结构），层次清晰，样式简洁整洁。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《系统软件逻辑架构》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.3": {
+      "id": "3.3",
+      "title": "系统功能框图",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "系统功能框图",
+            "figureFocus": "WBS（工作分解结构），层次清晰，样式简洁整洁",
+            "promptTemplate": "为《系统功能框图》生成 PlantUML 代码，仅输出合法完整代码。重点：WBS（工作分解结构），层次清晰，样式简洁整洁。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《系统功能框图》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.4": {
+      "id": "3.4",
+      "title": "系统数据库设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统数据库设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.4.1": {
+      "id": "3.4.1",
+      "title": "数据库概念设计",
+      "mode": "list",
+      "itemType": "entity",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《数据库概念设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "items": [
+        {
+          "order": 1,
+          "title": "users 实体（用户表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "用户表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—users 实体（用户表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "用户表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—users 实体（用户表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—users 实体（用户表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-users",
+              "label": "图3-1 用户表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-users.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-users",
+              "label": "表3-1 用户表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-users.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "users"
+          }
+        },
+        {
+          "order": 2,
+          "title": "canteens 实体（食堂表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "食堂表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—canteens 实体（食堂表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "食堂表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—canteens 实体（食堂表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—canteens 实体（食堂表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-canteens",
+              "label": "图3-2 食堂表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-canteens.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-canteens",
+              "label": "表3-2 食堂表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-canteens.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "canteens"
+          }
+        },
+        {
+          "order": 3,
+          "title": "stalls 实体（档口表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "档口表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—stalls 实体（档口表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "档口表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—stalls 实体（档口表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—stalls 实体（档口表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-stalls",
+              "label": "图3-3 档口表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-stalls.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-stalls",
+              "label": "表3-3 档口表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-stalls.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "stalls"
+          }
+        },
+        {
+          "order": 4,
+          "title": "dishes 实体（菜品表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "菜品表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—dishes 实体（菜品表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "菜品表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—dishes 实体（菜品表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—dishes 实体（菜品表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-dishes",
+              "label": "图3-4 菜品表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-dishes.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-dishes",
+              "label": "表3-4 菜品表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-dishes.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "dishes"
+          }
+        },
+        {
+          "order": 5,
+          "title": "ratings 实体（评价表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "评价表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—ratings 实体（评价表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "评价表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—ratings 实体（评价表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—ratings 实体（评价表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-ratings",
+              "label": "图3-5 评价表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-ratings.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-ratings",
+              "label": "表3-5 评价表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-ratings.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "ratings"
+          }
+        },
+        {
+          "order": 6,
+          "title": "complaints 实体（投诉建议表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "投诉建议表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—complaints 实体（投诉建议表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "投诉建议表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—complaints 实体（投诉建议表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—complaints 实体（投诉建议表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-complaints",
+              "label": "图3-6 投诉建议表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-complaints.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-complaints",
+              "label": "表3-6 投诉建议表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-complaints.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "complaints"
+          }
+        },
+        {
+          "order": 7,
+          "title": "sensitive_words 实体（敏感词表）",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 400
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "wantTable": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "敏感词表局部结构图",
+                "figureFocus": "字段、约束及与其他实体的关系",
+                "promptTemplate": "为《数据库概念设计—sensitive_words 实体（敏感词表）》生成 PlantUML 代码，仅输出合法完整代码。重点：字段、约束及与其他实体的关系。"
+              }
+            ],
+            "tablePlan": [
+              {
+                "enabled": true,
+                "tableTitle": "敏感词表字段三线表",
+                "schema": [
+                  "字段名",
+                  "类型",
+                  "约束",
+                  "说明"
+                ],
+                "promptTemplate": "为《数据库概念设计—sensitive_words 实体（敏感词表）》生成三线表 JSON 数据。字段：[\"字段名\",\"类型\",\"约束\",\"说明\"]。仅输出 JSON。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《数据库概念设计—sensitive_words 实体（敏感词表）》的实体说明：业务定位、关键字段、约束与关系。",
+          "text": "",
+          "figures": [
+            {
+              "id": "Fig-sensitive_words",
+              "label": "图3-7 敏感词表实体局部结构图",
+              "type": "uml",
+              "imagePath": "./paper/exports/tables/Tab-sensitive_words.svg",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.2"
+              }
+            }
+          ],
+          "tables": [
+            {
+              "id": "Tab-sensitive_words",
+              "label": "表3-7 敏感词表字段三线表",
+              "type": "table",
+              "dataPath": "./paper/exports/tables/Tab-sensitive_words.json",
+              "status": "ready",
+              "meta": {
+                "source": "step-1.1"
+              }
+            }
+          ],
+          "meta": {
+            "entityName": "sensitive_words"
+          }
+        }
+      ],
+      "figures": [
+        {
+          "id": "Fig-ER-Overview",
+          "label": "图3-8 数据库总体ER图",
+          "type": "uml",
+          "umlCodePath": "./paper/exports/tables/ER-overview.puml",
+          "imagePath": "./paper/exports/tables/ER-overview.svg",
+          "status": "ready",
+          "meta": {
+            "source": "step-1.2-auto"
+          }
+        }
+      ],
+      "tables": []
+    },
+    "3.4.2": {
+      "id": "3.4.2",
+      "title": "数据库逻辑设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《数据库逻辑设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "3.5": {
+      "id": "3.5",
+      "title": "本章小结",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

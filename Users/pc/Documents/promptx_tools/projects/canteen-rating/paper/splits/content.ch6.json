@@ -1,0 +1,321 @@
+{
+  "docId": "canteen-rating-thesis-chapter-6",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 6,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.806Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "6": {
+      "id": "6",
+      "title": "第6章 系统测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《第6章 系统测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.1": {
+      "id": "6.1",
+      "title": "系统测试环境",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统测试环境》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.2": {
+      "id": "6.2",
+      "title": "系统测试方法",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统测试方法》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3": {
+      "id": "6.3",
+      "title": "系统功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "功能测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《系统功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《系统功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3.1": {
+      "id": "6.3.1",
+      "title": "用户认证与权限管理功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "用户认证与权限管理测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《用户认证与权限管理功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《用户认证与权限管理功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3.2": {
+      "id": "6.3.2",
+      "title": "菜品信息管理功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "菜品信息管理测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《菜品信息管理功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《菜品信息管理功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3.3": {
+      "id": "6.3.3",
+      "title": "评价与评论系统功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "评价与评论系统测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《评价与评论系统功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《评价与评论系统功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3.4": {
+      "id": "6.3.4",
+      "title": "投诉建议系统功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "投诉建议系统测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《投诉建议系统功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《投诉建议系统功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.3.5": {
+      "id": "6.3.5",
+      "title": "数据统计分析功能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "数据统计分析测试用例表",
+            "schema": [
+              "用例ID",
+              "测试点",
+              "输入",
+              "预期输出",
+              "结果"
+            ],
+            "promptTemplate": "为《数据统计分析功能测试》生成三线表 JSON 数据。字段：[\"用例ID\",\"测试点\",\"输入\",\"预期输出\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《数据统计分析功能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.4": {
+      "id": "6.4",
+      "title": "系统性能测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantTable": true,
+        "tablePlan": [
+          {
+            "enabled": true,
+            "tableTitle": "系统性能指标表",
+            "schema": [
+              "指标项",
+              "测试条件",
+              "数值/范围",
+              "结果"
+            ],
+            "promptTemplate": "为《系统性能测试》生成三线表 JSON 数据。字段：[\"指标项\",\"测试条件\",\"数值/范围\",\"结果\"]。仅输出 JSON。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《系统性能测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.5": {
+      "id": "6.5",
+      "title": "系统兼容性测试",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统兼容性测试》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "6.6": {
+      "id": "6.6",
+      "title": "本章小结",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

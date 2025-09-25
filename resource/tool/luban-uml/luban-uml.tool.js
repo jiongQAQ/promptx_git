@@ -78,9 +78,9 @@ module.exports = {
   },
 
   async execute(params) {
-    const { api } = this;
+    // const { api } = this; // 已移除api依赖
     
-    api.logger.info('PlantUML工具开始执行', { operation: params.operation });
+    console.log('PlantUML工具开始执行', { operation: params.operation });
 
     try {
       // 检查Java环境
@@ -96,7 +96,7 @@ module.exports = {
       }
 
     } catch (error) {
-      api.logger.error('PlantUML处理失败', error);
+      console.error('PlantUML处理失败', error);
       throw error;
     }
   },
@@ -104,12 +104,12 @@ module.exports = {
   // 检查Java环境
   async checkJavaEnvironment() {
     const { api } = this;
-    const javaPath = await api.environment.get('JAVA_PATH') || 'java';
+    const javaPath = process.env.JAVA_PATH || 'java';
     
     try {
-      const { execSync } = await api.importx('child_process');
+      const { execSync } = await importx('child_process');
       const result = execSync(`"${javaPath}" -version`, { encoding: 'utf8', stdio: 'pipe' });
-      api.logger.info('Java环境检查通过');
+      console.log('Java环境检查通过');
       return true;
     } catch (error) {
       throw new Error('Java环境不可用，请确保已安装Java并配置PATH环境变量');
@@ -119,12 +119,12 @@ module.exports = {
   // 确保PlantUML JAR文件存在
   async ensurePlantUMLJar() {
     const { api } = this;
-    let jarPath = await api.environment.get('PLANTUML_JAR_PATH');
+    let jarPath = process.env.PLANTUML_JAR_PATH;
     
     if (jarPath) {
-      const fs = await api.importx('fs');
+      const fs = await importx('fs');
       if (fs.existsSync(jarPath)) {
-        api.logger.info('使用配置的PlantUML JAR路径', { jarPath });
+        console.log('使用配置的PlantUML JAR路径', { jarPath });
         return jarPath;
       }
     }
@@ -137,7 +137,7 @@ module.exports = {
     const { api } = this;
     const { execSync } = await api.importx('child_process');
     const fs = await api.importx('fs');
-    const path = await api.importx('path');
+    const path = await importx('path');
     
     // 判断input是文件路径还是内容
     let inputPath;
@@ -155,14 +155,14 @@ module.exports = {
     }
     
     try {
-      const javaPath = await api.environment.get('JAVA_PATH') || 'java';
+      const javaPath = process.env.JAVA_PATH || 'java';
       const command = `"${javaPath}" -jar "${jarPath}" -checkonly "${inputPath}"`;
       
-      api.logger.info('执行PlantUML语法检查', { command });
+      console.log('执行PlantUML语法检查', { command });
       
       const result = execSync(command, { encoding: 'utf8', stdio: 'pipe' });
       
-      api.logger.info('PlantUML语法验证通过');
+      console.log('PlantUML语法验证通过');
       
       return {
         success: true,
@@ -172,7 +172,7 @@ module.exports = {
       };
       
     } catch (error) {
-      api.logger.warn('PlantUML语法验证失败', { error: error.message });
+      console.warn('PlantUML语法验证失败', { error: error.message });
       
       return {
         success: true,
@@ -218,7 +218,7 @@ module.exports = {
     }
     
     try {
-      const javaPath = await api.environment.get('JAVA_PATH') || 'java';
+      const javaPath = process.env.JAVA_PATH || 'java';
       const formatArg = format === 'svg' ? '-tsvg' : '-tpng';
       const outputDir = path.dirname(output);
       
@@ -227,7 +227,7 @@ module.exports = {
       
       const command = `"${javaPath}" -jar "${jarPath}" ${formatArg} -o "${outputDir}" "${inputPath}"`;
       
-      api.logger.info('执行PlantUML渲染', { command });
+      console.log('执行PlantUML渲染', { command });
       
       execSync(command, { encoding: 'utf8' });
       
@@ -243,7 +243,7 @@ module.exports = {
         }
       }
       
-      api.logger.info('PlantUML渲染成功', { output });
+      console.log('PlantUML渲染成功', { output });
       
       return {
         success: true,
@@ -254,7 +254,7 @@ module.exports = {
       };
       
     } catch (error) {
-      api.logger.error('PlantUML渲染失败', error);
+      console.error('PlantUML渲染失败', error);
       
       if (error.status === 2) {
         return {

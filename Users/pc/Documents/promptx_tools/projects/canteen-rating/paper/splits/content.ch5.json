@@ -1,0 +1,169 @@
+{
+  "docId": "canteen-rating-thesis-chapter-5",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 5,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.805Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "5": {
+      "id": "5",
+      "title": "第5章 系统实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《第5章 系统实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.1": {
+      "id": "5.1",
+      "title": "系统开发环境和工具",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统开发环境和工具》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2": {
+      "id": "5.2",
+      "title": "系统功能实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统功能实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2.1": {
+      "id": "5.2.1",
+      "title": "用户认证与权限管理的实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《用户认证与权限管理的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2.2": {
+      "id": "5.2.2",
+      "title": "菜品信息管理的实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《菜品信息管理的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2.3": {
+      "id": "5.2.3",
+      "title": "评价与评论系统的实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《评价与评论系统的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2.4": {
+      "id": "5.2.4",
+      "title": "投诉建议系统的实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《投诉建议系统的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.2.5": {
+      "id": "5.2.5",
+      "title": "数据统计分析的实现",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《数据统计分析的实现》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "5.3": {
+      "id": "5.3",
+      "title": "本章小结",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

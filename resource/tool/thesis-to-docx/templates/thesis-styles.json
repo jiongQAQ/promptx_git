@@ -1,0 +1,314 @@
+{
+  "name": "academic-thesis-styles",
+  "description": "学术论文标准样式模板",
+  "version": "1.0.0",
+  "styles": {
+    "document": {
+      "pageMargin": {
+        "top": 1440,
+        "right": 1800,
+        "bottom": 1440,
+        "left": 1800
+      },
+      "pageSize": "A4",
+      "orientation": "portrait",
+      "defaultFont": "SimSun",
+      "lineSpacing": 1.5
+    },
+    "title": {
+      "fontSize": 32,
+      "font": "SimHei",
+      "bold": true,
+      "alignment": "center",
+      "spacingBefore": 0,
+      "spacingAfter": 400,
+      "description": "论文主标题（黑体二号）"
+    },
+    "author": {
+      "fontSize": 24,
+      "font": "SimSun",
+      "bold": false,
+      "alignment": "center",
+      "spacingBefore": 0,
+      "spacingAfter": 400,
+      "description": "作者信息（宋体小三号）"
+    },
+    "tableOfContents": {
+      "fontSize": 28,
+      "font": "SimHei",
+      "bold": true,
+      "alignment": "center",
+      "spacingBefore": 0,
+      "spacingAfter": 300,
+      "description": "目录标题（黑体三号）"
+    },
+    "headings": {
+      "heading1": {
+        "fontSize": 28,
+        "font": "SimHei",
+        "bold": true,
+        "alignment": "center",
+        "spacingBefore": 400,
+        "spacingAfter": 300,
+        "pageBreakBefore": true,
+        "description": "一级标题/章标题（黑体三号）"
+      },
+      "heading2": {
+        "fontSize": 24,
+        "font": "SimHei",
+        "bold": true,
+        "alignment": "left",
+        "spacingBefore": 300,
+        "spacingAfter": 200,
+        "description": "二级标题/节标题（黑体小三号）"
+      },
+      "heading3": {
+        "fontSize": 22,
+        "font": "SimHei",
+        "bold": true,
+        "alignment": "left",
+        "spacingBefore": 200,
+        "spacingAfter": 200,
+        "description": "三级标题/子节标题（黑体四号）"
+      },
+      "heading4": {
+        "fontSize": 20,
+        "font": "SimHei",
+        "bold": true,
+        "alignment": "left",
+        "spacingBefore": 200,
+        "spacingAfter": 150,
+        "description": "四级标题/小节标题（黑体小四号）"
+      },
+      "heading5": {
+        "fontSize": 20,
+        "font": "SimHei",
+        "bold": true,
+        "alignment": "left",
+        "spacingBefore": 150,
+        "spacingAfter": 120,
+        "description": "五级标题（黑体小四号）"
+      }
+    },
+    "paragraph": {
+      "normal": {
+        "fontSize": 22,
+        "font": "SimSun",
+        "bold": false,
+        "alignment": "justified",
+        "firstLineIndent": 480,
+        "lineSpacing": 360,
+        "spacingBefore": 0,
+        "spacingAfter": 120,
+        "description": "正文段落（宋体小四号，首行缩进2字符，1.5倍行距）"
+      },
+      "noIndent": {
+        "fontSize": 22,
+        "font": "SimSun",
+        "bold": false,
+        "alignment": "justified",
+        "firstLineIndent": 0,
+        "lineSpacing": 360,
+        "spacingBefore": 0,
+        "spacingAfter": 120,
+        "description": "不缩进段落（宋体小四号，1.5倍行距）"
+      }
+    },
+    "figure": {
+      "image": {
+        "alignment": "center",
+        "spacingBefore": 200,
+        "spacingAfter": 100,
+        "defaultWidth": 400,
+        "defaultHeight": 300,
+        "description": "图片显示样式"
+      },
+      "caption": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "bold": false,
+        "alignment": "center",
+        "spacingBefore": 0,
+        "spacingAfter": 200,
+        "description": "图片标题（宋体五号）"
+      },
+      "placeholder": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "italic": true,
+        "color": "red",
+        "alignment": "center",
+        "spacingBefore": 200,
+        "spacingAfter": 200,
+        "description": "图片缺失占位符"
+      }
+    },
+    "table": {
+      "style": {
+        "width": {
+          "size": 100,
+          "type": "pct"
+        },
+        "borders": {
+          "top": {
+            "style": "single",
+            "size": 1,
+            "color": "000000"
+          },
+          "bottom": {
+            "style": "single",
+            "size": 1,
+            "color": "000000"
+          },
+          "left": {
+            "style": "none"
+          },
+          "right": {
+            "style": "none"
+          },
+          "insideHorizontal": {
+            "style": "none"
+          },
+          "insideVertical": {
+            "style": "none"
+          }
+        },
+        "description": "三线表样式"
+      },
+      "cell": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "bold": false,
+        "alignment": "center",
+        "verticalAlignment": "center",
+        "padding": {
+          "top": 60,
+          "bottom": 60,
+          "left": 120,
+          "right": 120
+        },
+        "description": "表格单元格样式（宋体五号）"
+      },
+      "headerCell": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "center",
+        "padding": {
+          "top": 60,
+          "bottom": 60,
+          "left": 120,
+          "right": 120
+        },
+        "description": "表头单元格样式（宋体五号加粗）"
+      },
+      "caption": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "bold": false,
+        "alignment": "center",
+        "spacingBefore": 100,
+        "spacingAfter": 200,
+        "description": "表格标题（宋体五号）"
+      },
+      "placeholder": {
+        "fontSize": 20,
+        "font": "SimSun",
+        "italic": true,
+        "color": "red",
+        "alignment": "center",
+        "spacingBefore": 200,
+        "spacingAfter": 200,
+        "description": "表格缺失占位符"
+      }
+    }
+  },
+  "fontMapping": {
+    "SimSun": {
+      "english": "Times New Roman",
+      "chinese": "SimSun",
+      "description": "宋体（中文）/ Times New Roman（英文）"
+    },
+    "SimHei": {
+      "english": "Arial Black",
+      "chinese": "SimHei",
+      "description": "黑体（中文）/ Arial Black（英文）"
+    }
+  },
+  "sizeMapping": {
+    "description": "字体大小对应表（单位：磅）",
+    "sizes": {
+      "42": "初号",
+      "36": "小初", 
+      "32": "二号",
+      "28": "三号",
+      "24": "小三",
+      "22": "四号", 
+      "20": "小四",
+      "18": "五号",
+      "16": "小五",
+      "14": "六号",
+      "12": "小六",
+      "10": "七号"
+    }
+  },
+  "pageSettings": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": "2.54cm",
+      "bottom": "2.54cm", 
+      "left": "3.18cm",
+      "right": "3.18cm"
+    },
+    "header": {
+      "distance": "1.5cm"
+    },
+    "footer": {
+      "distance": "1.75cm"
+    },
+    "pageNumbers": {
+      "format": "arabic",
+      "alignment": "center",
+      "startFrom": 1
+    }
+  },
+  "academicStandards": {
+    "citation": {
+      "style": "GB/T 7714-2015",
+      "description": "信息与文献 参考文献著录规则"
+    },
+    "figures": {
+      "numbering": "sequential",
+      "format": "图{chapter}-{index} {title}",
+      "placement": "center",
+      "captionPosition": "below"
+    },
+    "tables": {
+      "numbering": "sequential", 
+      "format": "表{chapter}-{index} {title}",
+      "style": "three-line",
+      "captionPosition": "above"
+    },
+    "headings": {
+      "numbering": "hierarchical",
+      "format": "{chapter}.{section}.{subsection}",
+      "maxLevels": 4
+    }
+  },
+  "qualityChecks": {
+    "fonts": [
+      "SimSun",
+      "SimHei", 
+      "Times New Roman",
+      "Arial"
+    ],
+    "minFontSize": 12,
+    "maxFontSize": 42,
+    "lineSpacingRange": [1.0, 3.0],
+    "marginRange": [720, 2880],
+    "maxImageSize": "10MB",
+    "supportedImageFormats": ["png", "jpg", "jpeg", "svg", "gif"]
+  }
+}

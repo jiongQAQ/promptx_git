@@ -1,0 +1,244 @@
+{
+  "docId": "canteen-rating-thesis-chapter-4",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 4,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.805Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "4": {
+      "id": "4",
+      "title": "第4章 系统详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《第4章 系统详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1": {
+      "id": "4.1",
+      "title": "系统功能详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统功能详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.1": {
+      "id": "4.1.1",
+      "title": "用户认证与权限管理的详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "用户认证与权限管理活动图",
+            "figureFocus": "业务流程泳道，关键决策与异常路径",
+            "promptTemplate": "为《用户认证与权限管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：业务流程泳道，关键决策与异常路径。"
+          },
+          {
+            "enabled": true,
+            "figureTitle": "用户认证与权限管理时序图",
+            "figureFocus": "参与对象、消息交互、时序约束",
+            "promptTemplate": "为《用户认证与权限管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：参与对象、消息交互、时序约束。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《用户认证与权限管理的详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.2": {
+      "id": "4.1.2",
+      "title": "菜品信息管理的详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "菜品信息管理活动图",
+            "figureFocus": "业务流程泳道，关键决策与异常路径",
+            "promptTemplate": "为《菜品信息管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：业务流程泳道，关键决策与异常路径。"
+          },
+          {
+            "enabled": true,
+            "figureTitle": "菜品信息管理时序图",
+            "figureFocus": "参与对象、消息交互、时序约束",
+            "promptTemplate": "为《菜品信息管理的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：参与对象、消息交互、时序约束。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《菜品信息管理的详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.3": {
+      "id": "4.1.3",
+      "title": "评价与评论系统的详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "评价与评论系统活动图",
+            "figureFocus": "业务流程泳道，关键决策与异常路径",
+            "promptTemplate": "为《评价与评论系统的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：业务流程泳道，关键决策与异常路径。"
+          },
+          {
+            "enabled": true,
+            "figureTitle": "评价与评论系统时序图",
+            "figureFocus": "参与对象、消息交互、时序约束",
+            "promptTemplate": "为《评价与评论系统的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：参与对象、消息交互、时序约束。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《评价与评论系统的详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.4": {
+      "id": "4.1.4",
+      "title": "投诉建议系统的详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "投诉建议系统活动图",
+            "figureFocus": "业务流程泳道，关键决策与异常路径",
+            "promptTemplate": "为《投诉建议系统的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：业务流程泳道，关键决策与异常路径。"
+          },
+          {
+            "enabled": true,
+            "figureTitle": "投诉建议系统时序图",
+            "figureFocus": "参与对象、消息交互、时序约束",
+            "promptTemplate": "为《投诉建议系统的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：参与对象、消息交互、时序约束。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《投诉建议系统的详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.1.5": {
+      "id": "4.1.5",
+      "title": "数据统计分析的详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true,
+        "wantFigure": true,
+        "figurePlan": [
+          {
+            "enabled": true,
+            "figureTitle": "数据统计分析活动图",
+            "figureFocus": "业务流程泳道，关键决策与异常路径",
+            "promptTemplate": "为《数据统计分析的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：业务流程泳道，关键决策与异常路径。"
+          },
+          {
+            "enabled": true,
+            "figureTitle": "数据统计分析时序图",
+            "figureFocus": "参与对象、消息交互、时序约束",
+            "promptTemplate": "为《数据统计分析的详细设计》生成 PlantUML 代码，仅输出合法完整代码。重点：参与对象、消息交互、时序约束。"
+          }
+        ]
+      },
+      "textPrompt": "撰写《数据统计分析的详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.2": {
+      "id": "4.2",
+      "title": "数据库详细设计",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《数据库详细设计》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "4.3": {
+      "id": "4.3",
+      "title": "本章小结",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

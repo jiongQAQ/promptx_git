@@ -59,16 +59,15 @@ module.exports = {
   },
 
   async execute(params) {
-    const { api } = this;
     
-    api.logger.info('开始拆分JSON章节', {
+    console.log('开始拆分JSON章节', {
       inputFile: params.inputFile,
       outputDir: params.outputDir
     });
 
     try {
-      const path = await api.importx('path');
-      const fs = await api.importx('fs');
+      const path = await importx('path');
+      const fs = await importx('fs');
       
       // 读取原始JSON文件
       const content = await fs.promises.readFile(params.inputFile, 'utf8');
@@ -79,15 +78,22 @@ module.exports = {
         throw new Error('JSON文件中未找到contents字段');
       }
       
-      // 创建输出目录（在~/.promptx/下）
-      const outputDir = params.outputDir || 'chapters';
-      const outputPath = path.join(process.env.HOME, '.promptx', outputDir);
+      // 处理输出目录路径
+      let outputPath;
+      if (params.outputDir.startsWith('./')) {
+        // 相对路径，直接使用
+        outputPath = params.outputDir;
+      } else {
+        // 默认路径或其他，处理为~/.promptx下的路径
+        const outputDir = params.outputDir || 'chapters';
+        outputPath = path.join(process.env.HOME, '.promptx', outputDir);
+      }
       await fs.promises.mkdir(outputPath, { recursive: true });
       
       // 分析章节结构，找出所有大章节（纯数字编号）
       const chapters = this.extractChapters(contents);
       
-      api.logger.info(`发现 ${chapters.length} 个大章节`, { chapters: chapters.map(c => c.number) });
+      console.log(`发现 ${chapters.length} 个大章节`, { chapters: chapters.map(c => c.number) });
       
       // 为每个章节创建独立文件
       const createdFiles = [];
@@ -97,7 +103,7 @@ module.exports = {
           this.createChapterFile(originalData, chapter) :
           { contents: chapter.content };
         
-        const fileName = `chapter_${chapter.number}.json`;
+        const fileName = `content.ch${chapter.number}.json`;
         const filePath = path.join(outputPath, fileName);
         
         await fs.promises.writeFile(filePath, JSON.stringify(chapterData, null, 2), 'utf8');
@@ -110,7 +116,7 @@ module.exports = {
         });
       }
       
-      api.logger.info('章节拆分完成', {
+      console.log('章节拆分完成', {
         totalChapters: chapters.length,
         outputDir: outputPath
       });
@@ -124,7 +130,7 @@ module.exports = {
       };
       
     } catch (error) {
-      api.logger.error('章节拆分失败', { error: error.toString() });
+      console.error('章节拆分失败', { error: error.toString() });
       
       return {
         success: false,

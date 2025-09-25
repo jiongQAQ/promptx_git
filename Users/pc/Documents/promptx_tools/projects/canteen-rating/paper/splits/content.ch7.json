@@ -1,0 +1,41 @@
+{
+  "docId": "canteen-rating-thesis-chapter-7",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 7,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.806Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "7": {
+      "id": "7",
+      "title": "结论",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《结论》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DOCX样式配置模板",
+  "description": "用于thesis-to-docx工具的样式配置，支持字体、颜色、对齐、间距等格式设置",
+  "version": "1.0.0",
+
+  "styles": {
+    "default": {
+      "font": {
+        "name": "SimSun",
+        "size": 24,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "left",
+      "spacing": {
+        "before": 0,
+        "after": 0,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "title": {
+      "font": {
+        "name": "SimHei",
+        "size": 44,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 600,
+        "after": 400,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "author": {
+      "font": {
+        "name": "SimSun",
+        "size": 28,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 200,
+        "after": 600,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "chapter_title": {
+      "font": {
+        "name": "SimHei",
+        "size": 36,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 400,
+        "after": 300,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      },
+      "headingLevel": 1
+    },
+
+    "section_title": {
+      "font": {
+        "name": "SimHei",
+        "size": 32,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "left",
+      "spacing": {
+        "before": 300,
+        "after": 200,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      },
+      "headingLevel": 2
+    },
+
+    "subsection_title": {
+      "font": {
+        "name": "SimHei",
+        "size": 28,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "left",
+      "spacing": {
+        "before": 200,
+        "after": 150,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      },
+      "headingLevel": 3
+    },
+
+    "sub_subsection_title": {
+      "font": {
+        "name": "SimHei",
+        "size": 26,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "left",
+      "spacing": {
+        "before": 150,
+        "after": 100,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      },
+      "headingLevel": 4
+    },
+
+    "body_text": {
+      "font": {
+        "name": "SimSun",
+        "size": 24,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "justified",
+      "spacing": {
+        "before": 0,
+        "after": 0,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 480,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "figure_caption": {
+      "font": {
+        "name": "SimSun",
+        "size": 22,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 100,
+        "after": 200,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "table_caption": {
+      "font": {
+        "name": "SimSun",
+        "size": 22,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 200,
+        "after": 100,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "table_header": {
+      "font": {
+        "name": "SimSun",
+        "size": 22,
+        "color": "000000",
+        "bold": true,
+        "italic": false
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 0,
+        "after": 0,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      },
+      "background": "F0F0F0"
+    },
+
+    "table_cell": {
+      "font": {
+        "name": "SimSun",
+        "size": 20,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "left",
+      "spacing": {
+        "before": 0,
+        "after": 0,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 60,
+        "right": 60
+      },
+      "background": "FFFFFF"
+    },
+
+    "error_text": {
+      "font": {
+        "name": "SimSun",
+        "size": 22,
+        "color": "FF0000",
+        "bold": false,
+        "italic": true
+      },
+      "alignment": "center",
+      "spacing": {
+        "before": 100,
+        "after": 100,
+        "line": 1.15
+      },
+      "indent": {
+        "firstLine": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+
+    "list_item": {
+      "font": {
+        "name": "SimSun",
+        "size": 24,
+        "color": "000000",
+        "bold": false,
+        "italic": false
+      },
+      "alignment": "justified",
+      "spacing": {
+        "before": 0,
+        "after": 100,
+        "line": 1.5
+      },
+      "indent": {
+        "firstLine": 240,
+        "left": 480,
+        "right": 0
+      }
+    }
+  },
+
+  "presets": {
+    "academic": {
+      "description": "学术论文标准格式",
+      "page": {
+        "margin": {
+          "top": 1440,
+          "bottom": 1440,
+          "left": 1800,
+          "right": 1800
+        },
+        "size": "A4"
+      },
+      "defaultStyles": {
+        "title": "title",
+        "author": "author",
+        "chapter": "chapter_title",
+        "section": "section_title",
+        "subsection": "subsection_title",
+        "text": "body_text",
+        "figure": "figure_caption",
+        "table": "table_caption",
+        "tableHeader": "table_header",
+        "tableCell": "table_cell",
+        "error": "error_text"
+      }
+    },
+
+    "simple": {
+      "description": "简单格式，较小字体和间距",
+      "page": {
+        "margin": {
+          "top": 1440,
+          "bottom": 1440,
+          "left": 1440,
+          "right": 1440
+        },
+        "size": "A4"
+      },
+      "defaultStyles": {
+        "title": "title",
+        "author": "author",
+        "chapter": "section_title",
+        "section": "subsection_title",
+        "subsection": "sub_subsection_title",
+        "text": "default",
+        "figure": "figure_caption",
+        "table": "table_caption",
+        "tableHeader": "table_header",
+        "tableCell": "table_cell",
+        "error": "error_text"
+      }
+    }
+  },
+
+  "usage": {
+    "description": "在content.run文件中，可以在节点上添加docx_type字段来指定样式",
+    "examples": {
+      "title_with_custom_style": {
+        "title": "第一章 系统概述",
+        "docx_type": "chapter_title",
+        "text": "本章介绍系统的整体架构..."
+      },
+      "text_with_custom_style": {
+        "title": "1.1 系统需求分析",
+        "docx_type": "section_title",
+        "text": "通过调研分析，确定系统需求如下...",
+        "docx_type_text": "body_text"
+      },
+      "figure_with_custom_style": {
+        "figures": [{
+          "label": "图 1-1 系统架构图",
+          "docx_type": "figure_caption",
+          "imagePath": "./paper/exports/uml/Fig-1-1__system-architecture.png"
+        }]
+      },
+      "table_with_custom_style": {
+        "tables": [{
+          "label": "表 1-1 功能需求汇总",
+          "docx_type": "table_caption",
+          "docx_type_header": "table_header",
+          "docx_type_cell": "table_cell",
+          "dataPath": "./paper/exports/tables/Tab-1-1__requirements.json"
+        }]
+      }
+    }
+  }
+}

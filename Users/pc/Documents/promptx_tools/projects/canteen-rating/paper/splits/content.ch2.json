@@ -1,0 +1,283 @@
+{
+  "docId": "canteen-rating-thesis-chapter-2",
+  "meta": {
+    "title": "基于Spring Boot的校园食堂评价系统设计与实现",
+    "theme": "校园食堂评价系",
+    "chapter": 2,
+    "originalDocId": "canteen-rating-thesis",
+    "splitDate": "2025-09-25T01:37:02.803Z"
+  },
+  "defaults": {
+    "length": {
+      "unit": "char",
+      "target": 900
+    },
+    "textPromptTemplate": "撰写《{{sectionTitle}}》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+    "figurePromptTemplate": "为《{{sectionTitle}}》生成 PlantUML 代码，仅输出合法完整代码。重点：{{figureFocus}}。",
+    "tablePromptTemplate": "为《{{sectionTitle}}》生成三线表 JSON 数据。字段：{{schema}}。仅输出 JSON。",
+    "figureLabelTemplate": "图{{chapter}}-{{index}} {{figureTitle}}",
+    "tableLabelTemplate": "表{{chapter}}-{{index}} {{tableTitle}}"
+  },
+  "promptSnippets": {},
+  "autoApply": [],
+  "contents": {
+    "2": {
+      "id": "2",
+      "title": "第2章 系统分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《第2章 系统分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.1": {
+      "id": "2.1",
+      "title": "系统的目标",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统的目标》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.2": {
+      "id": "2.2",
+      "title": "功能需求分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《功能需求分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.2.1": {
+      "id": "2.2.1",
+      "title": "系统需求概述",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统需求概述》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.2.2": {
+      "id": "2.2.2",
+      "title": "用户角色和权限",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《用户角色和权限》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.2.3": {
+      "id": "2.2.3",
+      "title": "系统用例图",
+      "mode": "list",
+      "itemType": "actorUseCase",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统用例图》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "items": [
+        {
+          "order": 1,
+          "title": "用户角色",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 300
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "用户角色用例图",
+                "figureFocus": "UML 用例图，强调参与者、用例、关系（extend/include）、系统边界",
+                "promptTemplate": "为《系统用例图—用户角色》生成 PlantUML 代码，仅输出合法完整代码。重点：UML 用例图，强调参与者、用例、关系（extend/include）、系统边界。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《系统用例图—用户角色》的用例说明：目标、主要用例、边界与约束。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "role": "普通用户"
+          }
+        },
+        {
+          "order": 2,
+          "title": "管理员角色",
+          "render": {
+            "as": "numbered"
+          },
+          "status": "planning",
+          "length": {
+            "unit": "char",
+            "target": 300
+          },
+          "plan": {
+            "wantText": true,
+            "wantFigure": true,
+            "figurePlan": [
+              {
+                "enabled": true,
+                "figureTitle": "管理员角色用例图",
+                "figureFocus": "UML 用例图，强调参与者、用例、关系（extend/include）、系统边界",
+                "promptTemplate": "为《系统用例图—管理员角色》生成 PlantUML 代码，仅输出合法完整代码。重点：UML 用例图，强调参与者、用例、关系（extend/include）、系统边界。"
+              }
+            ]
+          },
+          "textPrompt": "撰写《系统用例图—管理员角色》的用例说明：目标、主要用例、边界与约束。",
+          "text": "",
+          "figures": [],
+          "tables": [],
+          "meta": {
+            "role": "系统管理员"
+          }
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    "2.3": {
+      "id": "2.3",
+      "title": "系统的非功能性需求分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统的非功能性需求分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.4": {
+      "id": "2.4",
+      "title": "系统可行性分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 600
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《系统可行性分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.4.1": {
+      "id": "2.4.1",
+      "title": "技术可行性分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《技术可行性分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.4.2": {
+      "id": "2.4.2",
+      "title": "经济可行性分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《经济可行性分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.4.3": {
+      "id": "2.4.3",
+      "title": "操作可行性分析",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《操作可行性分析》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    },
+    "2.5": {
+      "id": "2.5",
+      "title": "本章小结",
+      "status": "planning",
+      "length": {
+        "unit": "char",
+        "target": 900
+      },
+      "plan": {
+        "wantText": true
+      },
+      "textPrompt": "撰写《本章小结》，围绕'校园食堂评价系'，结合源码结构、关键模块与数据流，语言学术化，避免口语化。",
+      "text": "",
+      "figures": [],
+      "tables": []
+    }
+  }
+}
