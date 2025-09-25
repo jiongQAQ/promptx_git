@@ -4,8 +4,8 @@
   "metadata": {
     "version": "2.0.0",
     "description": "user 级资源注册表",
-    "createdAt": "2025-09-25T08:44:50.154Z",
-    "updatedAt": "2025-09-25T08:44:50.171Z",
+    "createdAt": "2025-09-25T10:31:00.919Z",
+    "updatedAt": "2025-09-25T10:31:00.940Z",
     "resourceCount": 8
   },
   "resources": [
@@ -17,9 +17,9 @@
       "description": "执行模式，定义具体的行为模式",
       "reference": "@user://.promptx/resource/role/pra/execution/thesis-writing-workflow.execution.md",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.158Z",
-        "updatedAt": "2025-09-25T08:44:50.158Z",
-        "scannedAt": "2025-09-25T08:44:50.158Z",
+        "createdAt": "2025-09-25T10:31:00.922Z",
+        "updatedAt": "2025-09-25T10:31:00.922Z",
+        "scannedAt": "2025-09-25T10:31:00.922Z",
         "path": "role/pra/execution/thesis-writing-workflow.execution.md"
       }
     },
@@ -31,9 +31,9 @@
       "description": "专业角色，提供特定领域的专业能力",
       "reference": "@user://.promptx/resource/role/pra/pra.role.md",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.159Z",
-        "updatedAt": "2025-09-25T08:44:50.159Z",
-        "scannedAt": "2025-09-25T08:44:50.159Z",
+        "createdAt": "2025-09-25T10:31:00.923Z",
+        "updatedAt": "2025-09-25T10:31:00.923Z",
+        "scannedAt": "2025-09-25T10:31:00.923Z",
         "path": "role/pra/pra.role.md"
       }
     },
@@ -45,9 +45,9 @@
       "description": "思维模式，指导AI的思考方式",
       "reference": "@user://.promptx/resource/role/pra/thought/academic-thinking.thought.md",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.160Z",
-        "updatedAt": "2025-09-25T08:44:50.160Z",
-        "scannedAt": "2025-09-25T08:44:50.160Z",
+        "createdAt": "2025-09-25T10:31:00.924Z",
+        "updatedAt": "2025-09-25T10:31:00.924Z",
+        "scannedAt": "2025-09-25T10:31:00.924Z",
         "path": "role/pra/thought/academic-thinking.thought.md"
       }
     },
@@ -59,9 +59,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/1-1-single-er/1-1-single-er.tool.js",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.164Z",
-        "updatedAt": "2025-09-25T08:44:50.164Z",
-        "scannedAt": "2025-09-25T08:44:50.164Z",
+        "createdAt": "2025-09-25T10:31:00.928Z",
+        "updatedAt": "2025-09-25T10:31:00.928Z",
+        "scannedAt": "2025-09-25T10:31:00.928Z",
         "path": "tool/1-1-single-er/1-1-single-er.tool.js"
       }
     },
@@ -73,9 +73,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/json-chapter-splitter/json-chapter-splitter.tool.js",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.165Z",
-        "updatedAt": "2025-09-25T08:44:50.165Z",
-        "scannedAt": "2025-09-25T08:44:50.165Z",
+        "createdAt": "2025-09-25T10:31:00.933Z",
+        "updatedAt": "2025-09-25T10:31:00.933Z",
+        "scannedAt": "2025-09-25T10:31:00.933Z",
         "path": "tool/json-chapter-splitter/json-chapter-splitter.tool.js"
       }
     },
@@ -87,9 +87,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.tool.js",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.167Z",
-        "updatedAt": "2025-09-25T08:44:50.167Z",
-        "scannedAt": "2025-09-25T08:44:50.167Z",
+        "createdAt": "2025-09-25T10:31:00.935Z",
+        "updatedAt": "2025-09-25T10:31:00.935Z",
+        "scannedAt": "2025-09-25T10:31:00.935Z",
         "path": "tool/luban-uml/luban-uml.tool.js"
       }
     },
@@ -101,9 +101,9 @@
       "description": "manual类型的资源",
       "reference": "@user://.promptx/resource/tool/thesis-to-docx/thesis-to-docx.manual.md",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.169Z",
-        "updatedAt": "2025-09-25T08:44:50.169Z",
-        "scannedAt": "2025-09-25T08:44:50.169Z",
+        "createdAt": "2025-09-25T10:31:00.938Z",
+        "updatedAt": "2025-09-25T10:31:00.938Z",
+        "scannedAt": "2025-09-25T10:31:00.938Z",
         "path": "tool/thesis-to-docx/thesis-to-docx.manual.md"
       }
     },
@@ -115,9 +115,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/thesis-to-docx/thesis-to-docx.tool.js",
       "metadata": {
-        "createdAt": "2025-09-25T08:44:50.171Z",
-        "updatedAt": "2025-09-25T08:44:50.171Z",
-        "scannedAt": "2025-09-25T08:44:50.171Z",
+        "createdAt": "2025-09-25T10:31:00.940Z",
+        "updatedAt": "2025-09-25T10:31:00.940Z",
+        "scannedAt": "2025-09-25T10:31:00.940Z",
         "path": "tool/thesis-to-docx/thesis-to-docx.tool.js"
       }
     }

@@ -27,7 +27,7 @@ module.exports = {
       id: '1-1-single-er',
       name: '单体ER图生成器',
       description: '根据JSON表结构生成单体ER图，支持中文表名和字段名，边到边精确连线，使用绝对路径',
-      version: '1.1.0',
+      version: '1.1.1',
       author: '鲁班'
     };
   },
@@ -215,7 +215,19 @@ module.exports = {
     svg += `  <text x="${tableX}" y="${tableY + 6}" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="18" font-weight="bold" fill="#333">${safeTableName}</text>\n`;
 
     // 绘制字段椭圆和连线
-    const validColumns = columns.filter(col => col && col.length >= 2);
+    // 支持两种格式：二维数组格式和对象数组格式
+    let validColumns = [];
+
+    if (Array.isArray(columns) && columns.length > 0) {
+      if (Array.isArray(columns[0])) {
+        // 二维数组格式：[[字段名, 字段中文名, ...], ...]
+        validColumns = columns.filter(col => col && col.length >= 2);
+      } else if (typeof columns[0] === 'object') {
+        // 对象数组格式：[{fieldName, fieldCnName, ...}, ...]
+        validColumns = columns.filter(col => col && (col.fieldName || col.fieldCnName));
+      }
+    }
+
     if (validColumns.length === 0) {
       console.warn(`表 ${tableName} 没有有效的列定义`);
       // 仍然生成基本的表格矩形
@@ -244,12 +256,21 @@ module.exports = {
         // 更大的椭圆
         svg += `  <ellipse cx="${fieldX}" cy="${fieldY}" rx="${ellipseRx}" ry="${ellipseRy}" fill="#fff" stroke="#666" stroke-width="2"/>\n`;
 
-        // 字段名 - 增大字体并优化位置，XML转义
-        const fieldName = (col[1] || col[0] || '').replace(/[<>&"']/g, (char) => {
+        // 字段名 - 支持两种格式，XML转义
+        let fieldName = '';
+        if (Array.isArray(col)) {
+          // 二维数组格式：使用第二列（中文名）或第一列（英文名）
+          fieldName = col[1] || col[0] || '';
+        } else {
+          // 对象格式：优先使用中文名，否则使用英文名
+          fieldName = col.fieldCnName || col.fieldName || '';
+        }
+
+        const safeFieldName = fieldName.replace(/[<>&"']/g, (char) => {
           const escapeMap = { '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' };
           return escapeMap[char];
         });
-        svg += `  <text x="${fieldX}" y="${fieldY + 6}" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="14" fill="#333">${fieldName}</text>\n`;
+        svg += `  <text x="${fieldX}" y="${fieldY + 6}" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="14" fill="#333">${safeFieldName}</text>\n`;
       });
     }
 
