@@ -1,0 +1,385 @@
+{
+  "version": "1.0",
+  "timestamp": 1758810584766,
+  "cues": {
+    "论文处理": {
+      "word": "论文处理",
+      "connections": [
+        {
+          "target": "矛盾分析",
+          "weight": 1582926761475
+        }
+      ],
+      "recallFrequency": 6
+    },
+    "矛盾分析": {
+      "word": "矛盾分析",
+      "connections": [
+        {
+          "target": "AI执行偏差",
+          "weight": 1424634085327.5
+        }
+      ],
+      "recallFrequency": 6
+    },
+    "AI执行偏差": {
+      "word": "AI执行偏差",
+      "connections": [
+        {
+          "target": "流程编排",
+          "weight": 1282170676794.75
+        },
+        {
+          "target": "论文生成",
+          "weight": 1282170749400.9631
+        }
+      ],
+      "recallFrequency": 6
+    },
+    "流程编排": {
+      "word": "流程编排",
+      "connections": [
+        {
+          "target": "用户选择",
+          "weight": 1153953609115.2751
+        }
+      ],
+      "recallFrequency": 6
+    },
+    "用户选择": {
+      "word": "用户选择",
+      "connections": [],
+      "recallFrequency": 6
+    },
+    "workflows目录": {
+      "word": "workflows目录",
+      "connections": [
+        {
+          "target": "工作流设计",
+          "weight": 1582926851112.3
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "工作流设计": {
+      "word": "工作流设计",
+      "connections": [
+        {
+          "target": "AI执行偏差",
+          "weight": 1424634166001.07
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "论文生成": {
+      "word": "论文生成",
+      "connections": [
+        {
+          "target": "用户期望",
+          "weight": 1153953674460.867
+        }
+      ],
+      "recallFrequency": 5
+    },
+    "用户期望": {
+      "word": "用户期望",
+      "connections": [
+        {
+          "target": "执行不符",
+          "weight": 1038558307014.78
+        }
+      ],
+      "recallFrequency": 5
+    },
+    "执行不符": {
+      "word": "执行不符",
+      "connections": [],
+      "recallFrequency": 5
+    },
+    "workflows详细设计": {
+      "word": "workflows详细设计",
+      "connections": [
+        {
+          "target": "阶段划分",
+          "weight": 1582926905943
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "阶段划分": {
+      "word": "阶段划分",
+      "connections": [
+        {
+          "target": "执行步骤",
+          "weight": 1424634215348.7
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "执行步骤": {
+      "word": "执行步骤",
+      "connections": [
+        {
+          "target": "约束条件",
+          "weight": 1282170793813.8303
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "约束条件": {
+      "word": "约束条件",
+      "connections": [
+        {
+          "target": "AI不按流程执行",
+          "weight": 1153953714432.447
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "AI不按流程执行": {
+      "word": "AI不按流程执行",
+      "connections": [
+        {
+          "target": "输入输出要求",
+          "weight": 1038558342989.2024
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "输入输出要求": {
+      "word": "输入输出要求",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "论文自动化生成": {
+      "word": "论文自动化生成",
+      "connections": [
+        {
+          "target": "目录大纲生成",
+          "weight": 1582927230252.6
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "目录大纲生成": {
+      "word": "目录大纲生成",
+      "connections": [
+        {
+          "target": "内容生成",
+          "weight": 1424634507227.34
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "内容生成": {
+      "word": "内容生成",
+      "connections": [
+        {
+          "target": "UML图表处理",
+          "weight": 1282171056504.6062
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "UML图表处理": {
+      "word": "UML图表处理",
+      "connections": [
+        {
+          "target": "Word排版样式",
+          "weight": 1153953950854.1455
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Word排版样式": {
+      "word": "Word排版样式",
+      "connections": [
+        {
+          "target": "模板化定制",
+          "weight": 1038558555768.731
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "模板化定制": {
+      "word": "模板化定制",
+      "connections": [
+        {
+          "target": "系统需求",
+          "weight": 934702700191.8579
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "系统需求": {
+      "word": "系统需求",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "智能判断逻辑": {
+      "word": "智能判断逻辑",
+      "connections": [
+        {
+          "target": "UML图需求识别",
+          "weight": 1582927854786.9001
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "UML图需求识别": {
+      "word": "UML图需求识别",
+      "connections": [
+        {
+          "target": "三线表需求识别",
+          "weight": 1424635069308.2102
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "三线表需求识别": {
+      "word": "三线表需求识别",
+      "connections": [
+        {
+          "target": "内容语义分析",
+          "weight": 1282171562377.3892
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "内容语义分析": {
+      "word": "内容语义分析",
+      "connections": [
+        {
+          "target": "源码分析",
+          "weight": 1153954406139.6504
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "源码分析": {
+      "word": "源码分析",
+      "connections": [
+        {
+          "target": "自动识别机制",
+          "weight": 1038558965525.6852
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "自动识别机制": {
+      "word": "自动识别机制",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "论文模板结构": {
+      "word": "论文模板结构",
+      "connections": [
+        {
+          "target": "工作流重设计",
+          "weight": 1582929282765.6
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "工作流重设计": {
+      "word": "工作流重设计",
+      "connections": [
+        {
+          "target": "完整内容生成",
+          "weight": 1424636354489.04
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "完整内容生成": {
+      "word": "完整内容生成",
+      "connections": [
+        {
+          "target": "图表要求",
+          "weight": 1282172719040.136
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "图表要求": {
+      "word": "图表要求",
+      "connections": [
+        {
+          "target": "表格要求",
+          "weight": 1153955447136.1226
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "表格要求": {
+      "word": "表格要求",
+      "connections": [
+        {
+          "target": "UML图表类型",
+          "weight": 1038559902422.5101
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "UML图表类型": {
+      "word": "UML图表类型",
+      "connections": [
+        {
+          "target": "章节内容规范",
+          "weight": 934703912180.2593
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "章节内容规范": {
+      "word": "章节内容规范",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "通用工作流模板": {
+      "word": "通用工作流模板",
+      "connections": [
+        {
+          "target": "可复用性",
+          "weight": 1582929526288.5
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "可复用性": {
+      "word": "可复用性",
+      "connections": [
+        {
+          "target": "不是具体内容",
+          "weight": 1424636573659.6501
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "不是具体内容": {
+      "word": "不是具体内容",
+      "connections": [
+        {
+          "target": "模板化设计",
+          "weight": 1282172916293.685
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "模板化设计": {
+      "word": "模板化设计",
+      "connections": [
+        {
+          "target": "项目适配",
+          "weight": 1153955624664.3167
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "项目适配": {
+      "word": "项目适配",
+      "connections": [],
+      "recallFrequency": 0
+    }
+  }
+}

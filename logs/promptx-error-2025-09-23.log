@@ -162,3 +162,7 @@
 {"level":50,"time":1758714514963,"pid":64430,"package":"@promptx/mcp-server","file":"index.js","line":9985,"msg":"[ToolLogger:filesystem] Filesystem operation failed"}
 {"level":50,"time":1758714514963,"pid":64430,"package":"@promptx/mcp-server","file":"index.js","line":12628,"msg":"[ToolSandbox] Execution failed:"}
 {"level":50,"time":1758714514963,"pid":64430,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Cannot read properties of undefined (reading 'replace')"}
+{"level":50,"time":1758817256635,"pid":97433,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758817256642,"pid":97433,"package":"@promptx/mcp-server","file":"index.js","line":2589,"msg":"[ProjectManager DEBUG]  项目未初始化，将抛出错误"}
+{"level":50,"time":1758817256642,"pid":97433,"package":"@promptx/mcp-server","file":"index.js","line":5269,"msg":"[ProjectDiscovery] 获取注册表数据失败: 解析@project://路径失败: 项目未初始化，请先调用 init 命令"}
+{"level":50,"time":1758817397190,"pid":97433,"package":"@promptx/mcp-server","file":"index.js","line":17560,"msg":"[PromptXTool] 工具执行失败: Parameters must be an object for execute/rebuild mode"}
