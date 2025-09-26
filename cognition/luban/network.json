@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "timestamp": 1758589897240,
+  "timestamp": 1758873889203,
   "cues": {
     "JSON DOCX生成器": {
       "word": "JSON DOCX生成器",
@@ -10,7 +10,7 @@
           "weight": 1582730907513.3
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "工具注册": {
       "word": "工具注册",
@@ -20,7 +20,7 @@
           "weight": 1424457816761.97
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "PromptX体系": {
       "word": "PromptX体系",
@@ -30,7 +30,7 @@
           "weight": 1282012035085.7732
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "Word文档": {
       "word": "Word文档",
@@ -40,7 +40,7 @@
           "weight": 1153810831577.1958
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "程序化生成": {
       "word": "程序化生成",
@@ -50,7 +50,7 @@
           "weight": 1038429748419.4762
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "JSON配置": {
       "word": "JSON配置",
@@ -60,7 +60,7 @@
           "weight": 934586773577.5286
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "DOCX文件": {
       "word": "DOCX文件",
@@ -70,7 +70,7 @@
           "weight": 841128096219.7758
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "Downloads目录": {
       "word": "Downloads目录",
@@ -80,12 +80,12 @@
           "weight": 757015286597.7982
         }
       ],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "测试成功": {
       "word": "测试成功",
       "connections": [],
-      "recallFrequency": 0
+      "recallFrequency": 20
     },
     "样式引用系统": {
       "word": "样式引用系统",
@@ -354,6 +354,190 @@
     },
     "DOCX": {
       "word": "DOCX",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "Claude Code": {
+      "word": "Claude Code",
+      "connections": [
+        {
+          "target": "Hook机制",
+          "weight": 1582986500272.8
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Hook机制": {
+      "word": "Hook机制",
+      "connections": [
+        {
+          "target": "UserPromptSubmit",
+          "weight": 1424687850245.52
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "UserPromptSubmit": {
+      "word": "UserPromptSubmit",
+      "connections": [
+        {
+          "target": "shell命令",
+          "weight": 1282219065220.968
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "shell命令": {
+      "word": "shell命令",
+      "connections": [
+        {
+          "target": "生命周期",
+          "weight": 1153997158698.8716
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "生命周期": {
+      "word": "生命周期",
+      "connections": [
+        {
+          "target": "上下文注入",
+          "weight": 1038597442828.9843
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "上下文注入": {
+      "word": "上下文注入",
+      "connections": [
+        {
+          "target": "additionalContext",
+          "weight": 934737698546.0858
+        },
+        {
+          "target": "质量标准",
+          "weight": 1038597442834.8892
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "additionalContext": {
+      "word": "additionalContext",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "05流程": {
+      "word": "05流程",
+      "connections": [
+        {
+          "target": "Hook设计",
+          "weight": 1582986500280.9001
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Hook设计": {
+      "word": "Hook设计",
+      "connections": [
+        {
+          "target": "Python脚本",
+          "weight": 1424687850252.81
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Python脚本": {
+      "word": "Python脚本",
+      "connections": [
+        {
+          "target": "批次处理",
+          "weight": 1282219065227.529
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "批次处理": {
+      "word": "批次处理",
+      "connections": [
+        {
+          "target": "状态管理",
+          "weight": 1153997158704.7761
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "状态管理": {
+      "word": "状态管理",
+      "connections": [
+        {
+          "target": ".chapter-progress.json",
+          "weight": 1038597442834.2987
+        }
+      ],
+      "recallFrequency": 0
+    },
+    ".chapter-progress.json": {
+      "word": ".chapter-progress.json",
+      "connections": [
+        {
+          "target": "质量标准",
+          "weight": 934737698550.8688
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "质量标准": {
+      "word": "质量标准",
+      "connections": [
+        {
+          "target": "内容生成原则",
+          "weight": 934737698551.4003
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "Hook": {
+      "word": "Hook",
+      "connections": [
+        {
+          "target": "工作流程文档",
+          "weight": 1582986500281.8
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "工作流程文档": {
+      "word": "工作流程文档",
+      "connections": [
+        {
+          "target": "协作关系",
+          "weight": 1424687850253.62
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "协作关系": {
+      "word": "协作关系",
+      "connections": [
+        {
+          "target": "任务驱动",
+          "weight": 1282219065228.258
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "任务驱动": {
+      "word": "任务驱动",
+      "connections": [
+        {
+          "target": "上下文注入",
+          "weight": 1153997158705.4324
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "内容生成原则": {
+      "word": "内容生成原则",
       "connections": [],
       "recallFrequency": 0
     }
