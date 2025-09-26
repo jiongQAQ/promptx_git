@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "timestamp": 1758797337091,
+  "cues": {
+    "工作流程03": {
+      "word": "工作流程03",
+      "connections": [
+        {
+          "target": "第1章",
+          "weight": 1582917603368.4001
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "第1章": {
+      "word": "第1章",
+      "connections": [
+        {
+          "target": "文本生成",
+          "weight": 1424625843031.56
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "文本生成": {
+      "word": "文本生成",
+      "connections": [
+        {
+          "target": "餐厅评分系统",
+          "weight": 1282163258728.404
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "餐厅评分系统": {
+      "word": "餐厅评分系统",
+      "connections": [
+        {
+          "target": "学术论文",
+          "weight": 1153946932855.5637
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "学术论文": {
+      "word": "学术论文",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "第1章结构": {
+      "word": "第1章结构",
+      "connections": [
+        {
+          "target": "12个小节",
+          "weight": 1407037869672
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "12个小节": {
+      "word": "12个小节",
+      "connections": [
+        {
+          "target": "字数要求",
+          "weight": 1266334082704.8
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "字数要求": {
+      "word": "字数要求",
+      "connections": [
+        {
+          "target": "容差范围",
+          "weight": 1139700674434.32
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "容差范围": {
+      "word": "容差范围",
+      "connections": [
+        {
+          "target": "学术标准",
+          "weight": 1025730606990.8882
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "学术标准": {
+      "word": "学术标准",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "进度跟踪": {
+      "word": "进度跟踪",
+      "connections": [
+        {
+          "target": "已完成小节",
+          "weight": 1231158135963.7
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "已完成小节": {
+      "word": "已完成小节",
+      "connections": [
+        {
+          "target": "待完成小节",
+          "weight": 1108042322367.33
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "待完成小节": {
+      "word": "待完成小节",
+      "connections": [
+        {
+          "target": "文本生成",
+          "weight": 997238090130.597
+        }
+      ],
+      "recallFrequency": 0
+    }
+  }
+}
