@@ -1,8 +1,8 @@
 /**
- * JSON章节拆分工具 - 将论文content.json按大章节拆分为多个独立文件
+ * JSON章节拆分工具 - 基于id字段拆分论文内容，仅对有text模块的内容拆分
  * 
  * 战略意义：
- * 1. 内容管理革命：将大型JSON文档拆分为可管理的章节文件，提升编辑效率
+ * 1. 内容管理革命：将大型JSON文档按id拆分为可管理的章节文件，提升编辑效率
  * 2. 协作友好性：不同章节可以并行编辑，避免合并冲突，支持团队协作
  * 3. 版本控制优化：Git等版本控制系统能更精确地跟踪章节级别的变更
  * 
@@ -13,6 +13,12 @@
  * 为什么重要：
  * 解决了大型学术文档难以管理、协作困难的痛点，让复杂论文的
  * 编写变得模块化和可控制。
+ * 
+ * 更新说明（v2.0.0）：
+ * - 支持基于id的数组结构拆分
+ * - 仅拆分包含text或items字段的条目
+ * - 保持items数组的完整性
+ * - 支持复杂嵌套结构的完整保留
  */
 
 module.exports = {
@@ -27,8 +33,8 @@ module.exports = {
     return {
       id: 'json-chapter-splitter',
       name: 'JSON章节拆分工具',
-      description: '将论文content.json按大章节拆分为多个独立文件，保持结构完整性',
-      version: '1.1.0',
+      description: '基于id字段拆分论文内容JSON，仅对有text模块的内容拆分，保持结构完整性',
+      version: '2.0.0',
       author: '鲁班'
     };
   },
@@ -40,15 +46,15 @@ module.exports = {
         properties: {
           inputFile: {
             type: 'string',
-            description: '输入的content.json文件路径（必须是绝对路径）',
+            description: '输入的JSON文件路径（必须是绝对路径）',
           },
           outputDir: {
             type: 'string',
             description: '输出目录路径（必须是绝对路径）'
           },
-          preserveStructure: {
+          onlyWithContent: {
             type: 'boolean',
-            description: '是否保持完整的文档结构（包含元信息和配置）',
+            description: '是否仅拆分包含text或items字段的条目',
             default: true
           }
         },
@@ -61,7 +67,8 @@ module.exports = {
     
     console.log('开始拆分JSON章节', {
       inputFile: params.inputFile,
-      outputDir: params.outputDir
+      outputDir: params.outputDir,
+      onlyWithContent: params.onlyWithContent
     });
 
     try {
@@ -79,51 +86,59 @@ module.exports = {
       // 读取原始JSON文件
       const content = await fs.promises.readFile(params.inputFile, 'utf8');
       const originalData = JSON.parse(content);
-      const contents = originalData.contents;
       
-      if (!contents) {
-        throw new Error('JSON文件中未找到contents字段');
+      // 检查数据格式 - 应该是数组
+      if (!Array.isArray(originalData)) {
+        throw new Error('输入的JSON文件应该包含一个数组结构');
       }
       
       // 使用绝对路径创建输出目录
       const outputPath = params.outputDir;
       await fs.promises.mkdir(outputPath, { recursive: true });
       
-      // 分析章节结构，找出所有大章节（纯数字编号）
-      const chapters = this.extractChapters(contents);
+      // 筛选需要拆分的条目
+      const itemsToSplit = this.filterItemsForSplitting(originalData, params.onlyWithContent);
       
-      console.log(`发现 ${chapters.length} 个大章节`, { chapters: chapters.map(c => c.number) });
+      console.log(`发现 ${itemsToSplit.length} 个需要拆分的条目`, { 
+        total: originalData.length,
+        filtered: itemsToSplit.length,
+        ids: itemsToSplit.map(item => item.id)
+      });
       
-      // 为每个章节创建独立文件
+      // 为每个条目创建独立文件
       const createdFiles = [];
       
-      for (const chapter of chapters) {
-        const chapterData = params.preserveStructure ? 
-          this.createChapterFile(originalData, chapter) :
-          { contents: chapter.content };
-        
-        const fileName = `content.ch${chapter.number}.json`;
+      for (const item of itemsToSplit) {
+        // 生成文件名，使用id作为标识，统一命名为chapter格式
+        const safeId = item.id.replace(/[^a-zA-Z0-9.-]/g, '_'); // 替换特殊字符为下划线
+        const fileName = `chapter.${safeId}.json`;
         const filePath = path.join(outputPath, fileName);
         
-        await fs.promises.writeFile(filePath, JSON.stringify(chapterData, null, 2), 'utf8');
+        // 创建单个条目的完整文档
+        const itemData = this.createItemFile(item);
+        
+        await fs.promises.writeFile(filePath, JSON.stringify(itemData, null, 2), 'utf8');
         
         createdFiles.push({
-          chapter: chapter.number,
+          id: item.id,
+          title: item.title,
           file: fileName,
-          sections: chapter.sectionCount,
-          fullPath: filePath
+          fullPath: filePath,
+          hasText: !!item.text,
+          hasItems: !!item.items,
+          itemsCount: item.items ? item.items.length : 0
         });
       }
       
       console.log('章节拆分完成', {
-        totalChapters: chapters.length,
+        totalItems: itemsToSplit.length,
         outputDir: outputPath
       });
       
       return {
         success: true,
         message: '章节拆分完成',
-        totalChapters: chapters.length,
+        totalItems: itemsToSplit.length,
         outputDirectory: outputPath,
         createdFiles
       };
@@ -134,62 +149,27 @@ module.exports = {
       return {
         success: false,
         error: error.message,
-        suggestion: '请检查输入文件路径是否正确，确保JSON格式有效'
+        suggestion: '请检查输入文件路径是否正确，确保JSON格式有效且为数组结构'
       };
     }
   },
   
-  // 提取大章节及其所有子内容
-  extractChapters(contents) {
-    const chapters = [];
-    const chapterNumbers = new Set();
-    
-    // 首先找出所有大章节编号（纯数字）
-    for (const key of Object.keys(contents)) {
-      if (/^\d+$/.test(key)) {
-        chapterNumbers.add(parseInt(key));
-      }
+  // 筛选需要拆分的条目
+  filterItemsForSplitting(data, onlyWithContent) {
+    if (!onlyWithContent) {
+      // 如果不限制内容，返回所有条目
+      return data;
     }
     
-    // 为每个大章节收集所有相关内容
-    for (const chapterNum of Array.from(chapterNumbers).sort((a, b) => a - b)) {
-      const chapterContent = {};
-      const chapterKey = chapterNum.toString();
-      let sectionCount = 0;
-      
-      // 收集该章节的所有内容（包括子章节）
-      for (const [key, value] of Object.entries(contents)) {
-        if (key === chapterKey || key.startsWith(chapterKey + '.')) {
-          chapterContent[key] = value;
-          sectionCount++;
-        }
-      }
-      
-      chapters.push({
-        number: chapterNum,
-        content: chapterContent,
-        sectionCount
-      });
-    }
-    
-    return chapters;
+    // 仅返回包含text或items字段的条目
+    return data.filter(item => {
+      return item.text || item.items;
+    });
   },
   
-  // 创建包含完整结构的章节文件
-  createChapterFile(originalData, chapter) {
-    return {
-      docId: `${originalData.docId}-chapter-${chapter.number}`,
-      meta: {
-        ...originalData.meta,
-        chapter: chapter.number,
-        originalDocId: originalData.docId,
-        splitDate: new Date().toISOString()
-      },
-      defaults: originalData.defaults,
-      _templates: originalData._templates,
-      promptSnippets: originalData.promptSnippets || {},
-      autoApply: originalData.autoApply || [],
-      contents: chapter.content
-    };
+  // 创建单个条目的文件
+  createItemFile(item) {
+    // 直接返回原始条目，不添加任何额外信息
+    return item;
   }
 };
