@@ -4,9 +4,9 @@
   "metadata": {
     "version": "2.0.0",
     "description": "user 级资源注册表",
-    "createdAt": "2025-09-26T10:00:33.675Z",
-    "updatedAt": "2025-09-26T10:00:33.778Z",
-    "resourceCount": 13
+    "createdAt": "2025-09-27T16:11:42.294Z",
+    "updatedAt": "2025-09-27T16:11:42.303Z",
+    "resourceCount": 16
   },
   "resources": [
     {
@@ -17,9 +17,9 @@
       "description": "执行模式，定义具体的行为模式",
       "reference": "@user://.promptx/resource/role/pra/execution/thesis-writing-workflow.execution.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.682Z",
-        "updatedAt": "2025-09-26T10:00:33.682Z",
-        "scannedAt": "2025-09-26T10:00:33.682Z",
+        "createdAt": "2025-09-27T16:11:42.295Z",
+        "updatedAt": "2025-09-27T16:11:42.295Z",
+        "scannedAt": "2025-09-27T16:11:42.295Z",
         "path": "role/pra/execution/thesis-writing-workflow.execution.md"
       }
     },
@@ -31,9 +31,9 @@
       "description": "专业角色，提供特定领域的专业能力",
       "reference": "@user://.promptx/resource/role/pra/pra.role.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.686Z",
-        "updatedAt": "2025-09-26T10:00:33.686Z",
-        "scannedAt": "2025-09-26T10:00:33.686Z",
+        "createdAt": "2025-09-27T16:11:42.296Z",
+        "updatedAt": "2025-09-27T16:11:42.296Z",
+        "scannedAt": "2025-09-27T16:11:42.296Z",
         "path": "role/pra/pra.role.md"
       }
     },
@@ -45,9 +45,9 @@
       "description": "思维模式，指导AI的思考方式",
       "reference": "@user://.promptx/resource/role/pra/thought/academic-thinking.thought.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.687Z",
-        "updatedAt": "2025-09-26T10:00:33.687Z",
-        "scannedAt": "2025-09-26T10:00:33.687Z",
+        "createdAt": "2025-09-27T16:11:42.296Z",
+        "updatedAt": "2025-09-27T16:11:42.296Z",
+        "scannedAt": "2025-09-27T16:11:42.296Z",
         "path": "role/pra/thought/academic-thinking.thought.md"
       }
     },
@@ -59,9 +59,9 @@
       "description": "manual类型的资源",
       "reference": "@user://.promptx/resource/tool/05-asset-extractor/05-asset-extractor.manual.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.712Z",
-        "updatedAt": "2025-09-26T10:00:33.712Z",
-        "scannedAt": "2025-09-26T10:00:33.712Z",
+        "createdAt": "2025-09-27T16:11:42.297Z",
+        "updatedAt": "2025-09-27T16:11:42.297Z",
+        "scannedAt": "2025-09-27T16:11:42.297Z",
         "path": "tool/05-asset-extractor/05-asset-extractor.manual.md"
       }
     },
@@ -73,9 +73,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/05-asset-extractor/05-asset-extractor.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.719Z",
-        "updatedAt": "2025-09-26T10:00:33.719Z",
-        "scannedAt": "2025-09-26T10:00:33.719Z",
+        "createdAt": "2025-09-27T16:11:42.298Z",
+        "updatedAt": "2025-09-27T16:11:42.298Z",
+        "scannedAt": "2025-09-27T16:11:42.298Z",
         "path": "tool/05-asset-extractor/05-asset-extractor.tool.js"
       }
     },
@@ -87,9 +87,9 @@
       "description": "manual类型的资源",
       "reference": "@user://.promptx/resource/tool/06-asset-extractor/06-asset-extractor.manual.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.728Z",
-        "updatedAt": "2025-09-26T10:00:33.728Z",
-        "scannedAt": "2025-09-26T10:00:33.728Z",
+        "createdAt": "2025-09-27T16:11:42.299Z",
+        "updatedAt": "2025-09-27T16:11:42.299Z",
+        "scannedAt": "2025-09-27T16:11:42.299Z",
         "path": "tool/06-asset-extractor/06-asset-extractor.manual.md"
       }
     },
@@ -101,10 +101,24 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/06-asset-extractor/06-asset-extractor.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.737Z",
-        "updatedAt": "2025-09-26T10:00:33.737Z",
-        "scannedAt": "2025-09-26T10:00:33.737Z",
+        "createdAt": "2025-09-27T16:11:42.299Z",
+        "updatedAt": "2025-09-27T16:11:42.299Z",
+        "scannedAt": "2025-09-27T16:11:42.299Z",
         "path": "tool/06-asset-extractor/06-asset-extractor.tool.js"
+      }
+    },
+    {
+      "id": "07-entity-extractor",
+      "source": "user",
+      "protocol": "tool",
+      "name": "07 Entity Extractor tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/07-entity-extractor/07-entity-extractor.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-27T16:11:42.300Z",
+        "updatedAt": "2025-09-27T16:11:42.300Z",
+        "scannedAt": "2025-09-27T16:11:42.300Z",
+        "path": "tool/07-entity-extractor/07-entity-extractor.tool.js"
       }
     },
     {
@@ -115,10 +129,24 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/1-1-single-er/1-1-single-er.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.743Z",
-        "updatedAt": "2025-09-26T10:00:33.743Z",
-        "scannedAt": "2025-09-26T10:00:33.743Z",
+        "createdAt": "2025-09-27T16:11:42.300Z",
+        "updatedAt": "2025-09-27T16:11:42.300Z",
+        "scannedAt": "2025-09-27T16:11:42.300Z",
         "path": "tool/1-1-single-er/1-1-single-er.tool.js"
+      }
+    },
+    {
+      "id": "chapter-batch-processor",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Chapter Batch Processor tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/chapter-batch-processor/chapter-batch-processor.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-27T16:11:42.301Z",
+        "updatedAt": "2025-09-27T16:11:42.301Z",
+        "scannedAt": "2025-09-27T16:11:42.301Z",
+        "path": "tool/chapter-batch-processor/chapter-batch-processor.tool.js"
       }
     },
     {
@@ -129,9 +157,9 @@
       "description": "manual类型的资源",
       "reference": "@user://.promptx/resource/tool/json-chapter-splitter/json-chapter-splitter.manual.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.750Z",
-        "updatedAt": "2025-09-26T10:00:33.750Z",
-        "scannedAt": "2025-09-26T10:00:33.750Z",
+        "createdAt": "2025-09-27T16:11:42.301Z",
+        "updatedAt": "2025-09-27T16:11:42.301Z",
+        "scannedAt": "2025-09-27T16:11:42.301Z",
         "path": "tool/json-chapter-splitter/json-chapter-splitter.manual.md"
       }
     },
@@ -143,9 +171,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/json-chapter-splitter/json-chapter-splitter.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.754Z",
-        "updatedAt": "2025-09-26T10:00:33.754Z",
-        "scannedAt": "2025-09-26T10:00:33.754Z",
+        "createdAt": "2025-09-27T16:11:42.301Z",
+        "updatedAt": "2025-09-27T16:11:42.301Z",
+        "scannedAt": "2025-09-27T16:11:42.301Z",
         "path": "tool/json-chapter-splitter/json-chapter-splitter.tool.js"
       }
     },
@@ -157,9 +185,9 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/luban-uml/luban-uml.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.758Z",
-        "updatedAt": "2025-09-26T10:00:33.758Z",
-        "scannedAt": "2025-09-26T10:00:33.758Z",
+        "createdAt": "2025-09-27T16:11:42.302Z",
+        "updatedAt": "2025-09-27T16:11:42.302Z",
+        "scannedAt": "2025-09-27T16:11:42.302Z",
         "path": "tool/luban-uml/luban-uml.tool.js"
       }
     },
@@ -171,9 +199,9 @@
       "description": "manual类型的资源",
       "reference": "@user://.promptx/resource/tool/thesis-to-docx/thesis-to-docx.manual.md",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.763Z",
-        "updatedAt": "2025-09-26T10:00:33.763Z",
-        "scannedAt": "2025-09-26T10:00:33.763Z",
+        "createdAt": "2025-09-27T16:11:42.302Z",
+        "updatedAt": "2025-09-27T16:11:42.302Z",
+        "scannedAt": "2025-09-27T16:11:42.302Z",
         "path": "tool/thesis-to-docx/thesis-to-docx.manual.md"
       }
     },
@@ -185,24 +213,38 @@
       "description": "tool类型的资源",
       "reference": "@user://.promptx/resource/tool/thesis-to-docx/thesis-to-docx.tool.js",
       "metadata": {
-        "createdAt": "2025-09-26T10:00:33.766Z",
-        "updatedAt": "2025-09-26T10:00:33.766Z",
-        "scannedAt": "2025-09-26T10:00:33.766Z",
+        "createdAt": "2025-09-27T16:11:42.303Z",
+        "updatedAt": "2025-09-27T16:11:42.303Z",
+        "scannedAt": "2025-09-27T16:11:42.303Z",
         "path": "tool/thesis-to-docx/thesis-to-docx.tool.js"
+      }
+    },
+    {
+      "id": "word-to-md",
+      "source": "user",
+      "protocol": "tool",
+      "name": "Word To Md tool",
+      "description": "tool类型的资源",
+      "reference": "@user://.promptx/resource/tool/word-to-md/word-to-md.tool.js",
+      "metadata": {
+        "createdAt": "2025-09-27T16:11:42.303Z",
+        "updatedAt": "2025-09-27T16:11:42.303Z",
+        "scannedAt": "2025-09-27T16:11:42.303Z",
+        "path": "tool/word-to-md/word-to-md.tool.js"
       }
     }
   ],
   "stats": {
-    "totalResources": 13,
+    "totalResources": 16,
     "byProtocol": {
       "execution": 1,
       "role": 1,
       "thought": 1,
       "manual": 4,
-      "tool": 6
+      "tool": 9
     },
     "bySource": {
-      "user": 13
+      "user": 16
     }
   }
 }

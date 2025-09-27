@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "timestamp": 1758873889203,
+  "timestamp": 1758988680635,
   "cues": {
     "JSON DOCX生成器": {
       "word": "JSON DOCX生成器",
@@ -10,7 +10,7 @@
           "weight": 1582730907513.3
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "工具注册": {
       "word": "工具注册",
@@ -20,7 +20,7 @@
           "weight": 1424457816761.97
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "PromptX体系": {
       "word": "PromptX体系",
@@ -30,7 +30,7 @@
           "weight": 1282012035085.7732
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "Word文档": {
       "word": "Word文档",
@@ -40,7 +40,7 @@
           "weight": 1153810831577.1958
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "程序化生成": {
       "word": "程序化生成",
@@ -50,7 +50,7 @@
           "weight": 1038429748419.4762
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "JSON配置": {
       "word": "JSON配置",
@@ -60,7 +60,7 @@
           "weight": 934586773577.5286
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "DOCX文件": {
       "word": "DOCX文件",
@@ -70,7 +70,7 @@
           "weight": 841128096219.7758
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "Downloads目录": {
       "word": "Downloads目录",
@@ -80,12 +80,12 @@
           "weight": 757015286597.7982
         }
       ],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "测试成功": {
       "word": "测试成功",
       "connections": [],
-      "recallFrequency": 20
+      "recallFrequency": 21
     },
     "样式引用系统": {
       "word": "样式引用系统",
@@ -538,6 +538,111 @@
     },
     "内容生成原则": {
       "word": "内容生成原则",
+      "connections": [],
+      "recallFrequency": 0
+    },
+    "06-asset-extractor": {
+      "word": "06-asset-extractor",
+      "connections": [
+        {
+          "target": "工具升级",
+          "weight": 1583089812569.7
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "工具升级": {
+      "word": "工具升级",
+      "connections": [
+        {
+          "target": "递归处理",
+          "weight": 1424780831312.73
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "递归处理": {
+      "word": "递归处理",
+      "connections": [
+        {
+          "target": "嵌套资源",
+          "weight": 1282302748181.457
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "嵌套资源": {
+      "word": "嵌套资源",
+      "connections": [
+        {
+          "target": "chapter文件",
+          "weight": 1154072473363.3115
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "chapter文件": {
+      "word": "chapter文件",
+      "connections": [
+        {
+          "target": "items数组",
+          "weight": 1038665226026.9802
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "items数组": {
+      "word": "items数组",
+      "connections": [
+        {
+          "target": "imagePath",
+          "weight": 934798703424.2823
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "imagePath": {
+      "word": "imagePath",
+      "connections": [
+        {
+          "target": "tablePath",
+          "weight": 841318833081.854
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "tablePath": {
+      "word": "tablePath",
+      "connections": [
+        {
+          "target": "资源提取",
+          "weight": 757186949773.6687
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "资源提取": {
+      "word": "资源提取",
+      "connections": [
+        {
+          "target": "完整覆盖",
+          "weight": 681468254796.3019
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "完整覆盖": {
+      "word": "完整覆盖",
+      "connections": [
+        {
+          "target": "v2.0.0",
+          "weight": 613321429316.6718
+        }
+      ],
+      "recallFrequency": 0
+    },
+    "v2.0.0": {
+      "word": "v2.0.0",
       "connections": [],
       "recallFrequency": 0
     }
