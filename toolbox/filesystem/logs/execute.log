@@ -833,3 +833,72 @@
 2025-09-27T16:13:38.744Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
 2025-09-27T16:13:38.744Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/jiongjiong/.promptx' ] }
 2025-09-27T16:13:38.745Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-28T05:35:51.048Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/common-db-connector' }
+2025-09-28T05:35:51.068Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T05:35:51.068Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T05:35:51.070Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-28T05:37:34.505Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/common-db-connector/common-db-connector.tool.js' }
+2025-09-28T05:37:34.506Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T05:37:34.507Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T05:37:34.507Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-28T05:38:17.111Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/common-db-connector/common-db-connector.tool.js' }
+2025-09-28T05:38:17.112Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T05:38:17.112Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T05:38:17.115Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-28T06:07:37.092Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/uml-batch-generator' }
+2025-09-28T06:07:37.131Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:07:37.132Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:07:37.133Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-28T06:09:43.419Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:09:43.420Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:09:43.420Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:09:43.422Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-28T06:10:05.742Z [INFO] [filesystem] Executing filesystem operation { method: 'read_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:10:16.702Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:10:16.704Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:10:16.704Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:10:16.706Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-28T06:10:22.290Z [INFO] [filesystem] Executing filesystem operation { method: 'search_files', path: 'resource/tool/uml-batch-generator' }
+2025-09-28T06:10:22.293Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:10:22.293Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:10:22.311Z [INFO] [filesystem] Filesystem operation completed { method: 'search_files', success: true }
+2025-09-28T06:10:26.912Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:10:26.913Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:10:26.913Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:10:26.914Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-28T06:10:38.404Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:10:38.407Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:10:38.407Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:10:38.409Z [INFO] [filesystem] Filesystem operation completed { method: 'read_text_file', success: true }
+2025-09-28T06:10:57.321Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:10:57.326Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:10:57.326Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:10:57.343Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-28T06:11:11.573Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:11:11.576Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:11:11.577Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:11:11.583Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-28T06:12:04.773Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/uml-batch-generator/uml-batch-generator.tool.js' }
+2025-09-28T06:12:04.776Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T06:12:04.776Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T06:12:04.779Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-28T08:43:26.843Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/plantuml-renderer' }
+2025-09-28T08:43:26.869Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T08:43:26.869Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T08:43:26.870Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-28T08:44:21.860Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/plantuml-renderer/plantuml-renderer.tool.js' }
+2025-09-28T08:44:21.862Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T08:44:21.862Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T08:44:21.866Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-28T09:06:35.452Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/plantuml-jar-renderer' }
+2025-09-28T09:06:35.463Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T09:06:35.463Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T09:06:35.466Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-28T09:07:28.291Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/plantuml-jar-renderer/plantuml-jar-renderer.tool.js' }
+2025-09-28T09:07:28.295Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T09:07:28.295Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T09:07:28.298Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-28T09:08:06.149Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/plantuml-jar-renderer/plantuml-jar-renderer.tool.js' }
+2025-09-28T09:08:06.152Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-28T09:08:06.152Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-28T09:08:06.159Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }

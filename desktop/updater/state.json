@@ -1,27 +1,4 @@
 {
-  "currentState": "ready-to-install",
-  "lastCheck": 1758604690435,
-  "updateInfo": {
-    "version": "1.18.0",
-    "releaseNotes": "<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/Deepractice/PromptX/compare/v1.18.0...v1.18.1\"><tt>v1.18.0...v1.18.1</tt></a></p>",
-    "releaseDate": "2025-09-23T05:01:10.572Z",
-    "files": [
-      {
-        "url": "promptx-desktop-1.18.0-mac-x64.zip",
-        "size": 105509294
-      },
-      {
-        "url": "promptx-desktop-1.18.0-mac-arm64.zip",
-        "size": 98941276
-      },
-      {
-        "url": "promptx-desktop-1.18.0-mac-x64.dmg",
-        "size": 109527162
-      },
-      {
-        "url": "promptx-desktop-1.18.0-mac-arm64.dmg",
-        "size": 103021077
-      }
-    ]
-  }
+  "currentState": "idle",
+  "lastCheck": 1759042869947
 }
