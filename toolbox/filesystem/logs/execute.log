@@ -902,3 +902,61 @@
 2025-09-28T09:08:06.152Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
 2025-09-28T09:08:06.152Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
 2025-09-28T09:08:06.159Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T02:47:15.818Z [INFO] [filesystem] Executing filesystem operation { method: 'list_directory', path: 'paper/chapters' }
+2025-09-29T02:47:15.832Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:47:15.832Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:47:15.833Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'list_directory', error: "ENOENT: no such file or directory, scandir '/Users/pc/.promptx/paper/chapters'" } }
+2025-09-29T02:47:20.541Z [INFO] [filesystem] Executing filesystem operation { method: 'list_allowed_directories', path: undefined }
+2025-09-29T02:47:20.544Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:47:20.544Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:47:20.544Z [INFO] [filesystem] Returning allowed directories { directories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:47:27.204Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/08-docx-style-enhancer' }
+2025-09-29T02:47:27.207Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:47:27.208Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:47:27.209Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-29T02:48:37.836Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/08-docx-style-enhancer/08-docx-style-enhancer.tool.js' }
+2025-09-29T02:48:37.838Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:48:37.838Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:48:37.839Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-29T02:49:14.315Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/08-docx-style-enhancer/08-docx-style-enhancer.tool.js' }
+2025-09-29T02:49:14.318Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:49:14.318Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:49:14.322Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T02:49:27.972Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/08-docx-style-enhancer/08-docx-style-enhancer.tool.js' }
+2025-09-29T02:49:27.975Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:49:27.975Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:49:27.977Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T02:51:05.718Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/08-docx-style-enhancer/08-docx-style-enhancer.tool.js' }
+2025-09-29T02:51:05.724Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:51:05.724Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:51:05.726Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T02:51:36.387Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/08-docx-style-enhancer/08-docx-style-enhancer.tool.js' }
+2025-09-29T02:51:36.389Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:51:36.389Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:51:36.393Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T02:56:57.294Z [INFO] [filesystem] Executing filesystem operation { method: 'read_text_file', path: 'workflows/08 章节样式与标签配置.md' }
+2025-09-29T02:56:57.297Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T02:56:57.297Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T02:56:57.298Z [ERROR] [filesystem] Filesystem operation failed { error: { method: 'read_text_file', error: "ENOENT: no such file or directory, open '/Users/pc/.promptx/workflows/08 章节样式与标签配置.md'" } }
+2025-09-29T03:09:11.909Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'workflows/08 章节样式与标签配置.md' }
+2025-09-29T03:09:11.924Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T03:09:11.925Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T03:09:11.930Z [INFO] [filesystem] Auto-created directory for write_file { directory: '/Users/pc/.promptx/workflows' }
+2025-09-29T03:09:11.932Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-29T04:34:47.268Z [INFO] [filesystem] Executing filesystem operation { method: undefined, path: '/Users/pc/.promptx/toolbox/thesis-to-docx' }
+2025-09-29T04:43:23.360Z [INFO] [filesystem] Executing filesystem operation { method: 'create_directory', path: 'resource/tool/09-thesis-to-docx' }
+2025-09-29T04:43:23.369Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T04:43:23.369Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T04:43:23.370Z [INFO] [filesystem] Filesystem operation completed { method: 'create_directory', success: true }
+2025-09-29T04:44:48.216Z [INFO] [filesystem] Executing filesystem operation { method: 'write_file', path: 'resource/tool/09-thesis-to-docx/09-thesis-to-docx.tool.js' }
+2025-09-29T04:44:48.218Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T04:44:48.218Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T04:44:48.219Z [INFO] [filesystem] Filesystem operation completed { method: 'write_file', success: true }
+2025-09-29T04:45:43.100Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/09-thesis-to-docx/09-thesis-to-docx.tool.js' }
+2025-09-29T04:45:43.104Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T04:45:43.104Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T04:45:43.107Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
+2025-09-29T04:45:48.449Z [INFO] [filesystem] Executing filesystem operation { method: 'edit_file', path: 'resource/tool/09-thesis-to-docx/09-thesis-to-docx.tool.js' }
+2025-09-29T04:45:48.451Z [WARN] [filesystem] Failed to parse ALLOWED_DIRECTORIES { error: `Unexpected token '\\', "[\\"~/.promp"... is not valid JSON` }
+2025-09-29T04:45:48.451Z [INFO] [filesystem] Filesystem initialized { allowedDirectories: [ '/Users/pc/.promptx' ] }
+2025-09-29T04:45:48.454Z [INFO] [filesystem] Filesystem operation completed { method: 'edit_file', success: true }
